@@ -53,7 +53,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '5',
+      version: '6',
       requestMode: 'cors'
     },
     'esw-cache-first': {
@@ -66,22 +66,22 @@ module.exports = function(defaults) {
       patterns: [
         '/api/(.+)'
       ],
-    },
-    'esw-prember': {
-      version: '5'
-    },
-    'prember': {
-      baseRoot: 'https://smallrobot.co',
-      urls: [
-        '/',
-        '/consulting',
-        '/development',
-        '/support',
-        '/contact',
-        '/about',
-        '/ideas',
-      ]
-    }
+    } //,
+    // 'esw-prember': {
+    //   version: '5'
+    // },
+    // 'prember': {
+    //   baseRoot: 'https://smallrobot.co',
+    //   urls: [
+    //     '/',
+    //     '/consulting',
+    //     '/development',
+    //     '/support',
+    //     '/contact',
+    //     '/about',
+    //     '/ideas',
+    //   ]
+    // }
   });
   return app.toTree();
 };

@@ -37,7 +37,6 @@
     "ember-cli-qunit": "^4.3.2",
     "ember-cli-sass": "^7.1.7",
     "ember-cli-shims": "^1.2.0",
-    "ember-cli-spinjs": "^1.4.2",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-string-helpers": "^1.8.1",
     "ember-cli-swiper": "^1.0.1",

@@ -1,5 +1,5 @@
 {{#if section.show}}
-  <div class="outer {{section.background}} {{section.heroSize}}{{if section.isHero ' hero-active'}}{{if section.divider ' divided'}}{{if section.backgroundImage ' background-image'}}{{if section.parallax ' parallax'}}" style="{{section.backgroundImage.inlineBackground}}">
+  <div class="outer {{section.background}} {{section.heroSize}}{{if section.isHero ' hero-active'}}{{if section.divider ' divided'}}{{if section.backgroundImage ' background-image'}} {{if section.animated 'animated'}} {{section.animation}}" style="{{section.backgroundImage.inlineBackground}}">
     <div class='overlay {{section.overlay}}'>
 
       {{#if section.divider}}

@@ -40,7 +40,6 @@ Router.map(function() {
   this.route('consulting');
   this.route('development');
   this.route('support');
-  this.route('pricing');
   this.route('contact');
   this.route('blog', { path: 'ideas' }, function() {
     this.route('post', { path: ':article_id' });

@@ -53,7 +53,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '7',
+      version: '8',
       requestMode: 'cors'
     },
     'esw-cache-first': {
@@ -68,7 +68,7 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-      version: '7'
+      version: '8'
     },
     'prember': {
       baseRoot: 'https://smallrobot.co',

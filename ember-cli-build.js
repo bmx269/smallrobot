@@ -66,22 +66,22 @@ module.exports = function(defaults) {
       patterns: [
         '/api/(.+)'
       ],
-    },
-    'esw-prember': {
-      version: '8'
-    },
-    'prember': {
-      baseRoot: 'https://smallrobot.co',
-      urls: [
-        '/',
-        '/consulting',
-        '/development',
-        '/support',
-        '/contact',
-        '/about',
-        '/ideas',
-      ]
     }
+    // 'esw-prember': {
+     // version: '8'
+   // },
+   // 'prember': {
+   //   baseRoot: 'https://smallrobot.co',
+   //   urls: [
+   //     '/',
+    //    '/consulting',
+   //     '/development',
+   //     '/support',
+   //     '/contact',
+   //     '/about',
+   //     '/ideas',
+   //   ]
+   // }
   });
   return app.toTree();
 };

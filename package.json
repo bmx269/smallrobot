@@ -29,7 +29,6 @@
     "ember-cli-eslint": "^4.2.3",
     "ember-cli-flash": "^1.6.3",
     "ember-cli-head": "^0.4.1",
-    "ember-cli-hot-loader": "^0.4.1",
     "ember-cli-htmlbars": "^2.0.3",
     "ember-cli-htmlbars-inline-precompile": "^1.0.3",
     "ember-cli-image-transformer": "^1.4.0",

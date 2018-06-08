@@ -1,0 +1,15 @@
+<div class='element-listing'>
+  <div class='inner'>
+    {{#if (eq model "articles")}}
+      {{#if articles}}
+        {{#each (sort-by "created:desc" articles) as |article|}}
+          {{article-teaser article=article}}
+        {{/each}}
+      {{else}}
+        No Articles
+      {{/if}}
+    {{else if (eq model "team")}}
+        Team members
+    {{/if}}
+  </div>
+</div>

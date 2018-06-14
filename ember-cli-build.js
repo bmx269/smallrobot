@@ -44,6 +44,8 @@ module.exports = function(defaults) {
       ]
     },
     'ember-service-worker': {
+      enabled: false,
+      registrationStrategy: 'inline',
       versionStrategy: 'every-build'
     },
     'asset-cache': {
@@ -52,8 +54,10 @@ module.exports = function(defaults) {
         'favicons/**/*',
         'fonts/**/*',
         'img/**/*'
+        'img/**/*',
+        '/api/(.+)'
       ],
-      version: '5',
+      version: '9',
       requestMode: 'cors'
     },
     'esw-cache-first': {
@@ -68,20 +72,21 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-      version: '5'
-    },
-    'prember': {
-      baseRoot: 'https://smallrobot.co',
-      urls: [
-        '/',
-        '/consulting',
-        '/development',
-        '/support',
-        '/contact',
-        '/about',
-        '/ideas',
-      ]
-    }
+     version: '9'
+   },
+   'prember': {
+     baseRoot: 'https://smallrobot.co',
+     enabled: false,
+     urls: [
+       '/',
+       '/consulting',
+       '/development',
+       '/support',
+       '/contact',
+       '/about',
+       '/ideas',
+     ]
+   }
   });
   return app.toTree();
 };

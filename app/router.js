@@ -46,7 +46,7 @@ Router.map(function() {
     this.route('post', { path: ':article_id' });
   });
   this.route('loading');
-  // this.route('page', { path: ':slug'});
+  this.route('page', { path: ':slug'});
   this.route('notfound', { path: '/*path' });
 });
 

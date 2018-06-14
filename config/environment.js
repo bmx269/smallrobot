@@ -104,15 +104,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+
     },
 
     fastboot: {
-      hostWhitelist: ['smallrobot.co', 'dev.smallrobot.co', /^localhost:\d+$/]
+      hostWhitelist: ['smallrobot.co', 'dev.smallrobot.co', /^localhost:\d+$/],
+      // EXPERIMENTAL_RENDER_MODE_SERIALIZE: true
     }
   };
 
   if (environment === 'development') {
-    ENV.APP.FASTBOOT_DISABLED = true;
+    // ENV.APP.EXPERIMENTAL_RENDER_MODE_SERIALIZE = true;
+    // ENV.APP.FASTBOOT_DISABLED = true;
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

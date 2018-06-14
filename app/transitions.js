@@ -1,6 +1,6 @@
 export default function(){
 
-  const customDuration = 600;
+  // const customDuration = 600;
 
   // this.transition(
   //   this.toRoute(

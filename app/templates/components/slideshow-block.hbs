@@ -1,0 +1,38 @@
+<div class='slideshow'>
+  <div class='inner'>
+    {{#swiper-container
+      class="item-carousel"
+      loop=false
+      centered=false
+      nextButton='.swiper-next'
+      prevButton='.swiper-prev'
+      slidesPerView=5
+      spaceBetween=80
+      registerAs=itemSwiper
+      breakpoints=breakpoints
+      }}
+      {{#each (shuffle model) as |slide|}}
+        {{#swiper-slide class="d-flex justify-content-center align-items-center text-center"}}
+          <div class="slide-inner">
+            {{#if slide.image}}
+              <div class='image'>
+                <img src='{{slide.image.fullUrl}}' alt='' srcset=''>
+              </div>
+            {{/if}}
+            {{#if slide.body}}
+              <div class='text'>
+                {{html-safe slide.body.value}}
+              </div>
+            {{/if}}
+          </div>
+        {{/swiper-slide}}
+      {{/each}}
+    {{/swiper-container}}
+    <div class="swiper-next">
+      <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
+    </div>
+    <div class="swiper-prev">
+      <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
+    </div>
+  </div>
+</div>

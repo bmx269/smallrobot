@@ -5,11 +5,11 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    gzip: {
-      enabled: true,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
-    },
+    // gzip: {
+    //   enabled: true,
+    //   extensions: ['js', 'css', 'svg'],
+    //   keepUncompressed: true
+    // },
     'autoprefixer': {
       browsers: [
         'ie 11',
@@ -53,7 +53,6 @@ module.exports = function(defaults) {
         'assets/**/*',
         'favicons/**/*',
         'fonts/**/*',
-        'img/**/*'
         'img/**/*',
         '/api/(.+)'
       ],

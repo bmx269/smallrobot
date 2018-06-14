@@ -71,7 +71,7 @@
     "eslint-plugin-ember": "^5.2.0",
     "prember": "^0.4.0",
     "prember-middleware": "^0.1.0",
-    "prember-sitemap-generator": "^0.0.3",
+    "prember-sitemap-generator": "^0.1.1",
     "loader.js": "^4.7.0"
   },
   "engines": {

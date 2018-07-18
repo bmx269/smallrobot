@@ -12,7 +12,7 @@ module('Integration | Component | angled divider', function(hooks) {
 
     await render(hbs`{{angled-divider}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | angled divider', function(hooks) {
       {{/angled-divider}}
     `);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
   });
 });

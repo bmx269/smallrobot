@@ -12,7 +12,7 @@ module('Integration | Component | article teaser', function(hooks) {
 
     await render(hbs`{{article-teaser}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | article teaser', function(hooks) {
       {{/article-teaser}}
     `);
 
-    assert.equal(find('*').textContent.trim(), 'Read More');
+    assert.dom('*').hasText('Read More');
   });
 });

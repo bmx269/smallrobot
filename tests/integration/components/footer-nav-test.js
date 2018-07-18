@@ -12,7 +12,7 @@ module('Integration | Component | footer nav', function(hooks) {
 
     await render(hbs`{{footer-nav}}`);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | footer nav', function(hooks) {
       {{/footer-nav}}
     `);
 
-    assert.equal(find('*').textContent.trim(), '');
+    assert.dom('*').hasText('');
   });
 });

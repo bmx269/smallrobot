@@ -5,6 +5,11 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    brotli: {
+      enabled: false,
+      extensions: ['js', 'css', 'svg'],
+      keepUncompressed: true
+    },
     gzip: {
       enabled: true,
       extensions: ['js', 'css', 'svg'],
@@ -56,7 +61,7 @@ module.exports = function(defaults) {
         'img/**/*',
         '/api/(.+)'
       ],
-      version: '9',
+      version: '10',
       requestMode: 'cors'
     },
     'esw-cache-first': {
@@ -71,11 +76,11 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-     version: '9'
+     version: '10'
    },
    'prember': {
      baseRoot: 'https://smallrobot.co',
-     enabled: false,
+     enabled: true,
      urls: [
        '/',
        '/consulting',

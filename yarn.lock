@@ -3365,9 +3365,9 @@ ember-cli-fastboot@ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04
     md5-hex "^2.0.0"
     silent-error "^1.0.0"
 
-ember-cli-flash@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.6.5.tgz#a7d77ca5aab51f9406e8df7826a9b885dac8a701"
+ember-cli-flash@^1.6.6:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.6.6.tgz#f3d005c8ac41ecd0ac6a00304adaa57c8a07bc36"
   dependencies:
     ember-cli-babel "^6.10.0"
     ember-cli-htmlbars "^2.0.1"

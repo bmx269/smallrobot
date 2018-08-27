@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
@@ -76,21 +75,21 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-     version: '10'
-   },
-   'prember': {
-     baseRoot: 'https://smallrobot.co',
-     enabled: true,
-     urls: [
-       '/',
-       '/consulting',
-       '/development',
-       '/support',
-       '/contact',
-       '/about',
-       '/ideas',
-     ]
-   }
+      version: '10'
+  },
+  'prember': {
+    baseRoot: 'https://smallrobot.co',
+    enabled: true,
+    urls: [
+      '/',
+      '/consulting',
+      '/development',
+      '/support',
+      '/contact',
+      '/about',
+      '/ideas',
+    ]
+  }
   });
   return app.toTree();
 };

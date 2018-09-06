@@ -72,23 +72,23 @@ module.exports = function(defaults) {
       patterns: [
         '/api/(.+)'
       ],
-    },
-    'esw-prember': {
-      version: '11'
-    },
-  'prember': {
-    baseRoot: 'https://smallrobot.co',
-    enabled: true,
-    urls: [
-      '/',
-      '/consulting',
-      '/development',
-      '/support',
-      '/contact',
-      '/about',
-      '/ideas',
-    ]
-  }
+    }//,
+    // 'esw-prember': {
+    //   version: '11'
+    // },
+  // 'prember': {
+  //   baseRoot: 'https://smallrobot.co',
+  //   enabled: true,
+  //   urls: [
+  //     '/',
+  //     '/consulting',
+  //     '/development',
+  //     '/support',
+  //     '/contact',
+  //     '/about',
+  //     '/ideas',
+  //   ]
+  // }
   });
   return app.toTree();
 };

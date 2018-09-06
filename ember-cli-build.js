@@ -48,9 +48,12 @@ module.exports = function(defaults) {
       ]
     },
     'ember-service-worker': {
-      enabled: true,
+      enabled: process.env.EMBER_ENV === 'production',
       registrationStrategy: 'inline',
       versionStrategy: 'every-build'
+    },
+    fingerprint: {
+      extensions: ['js', 'css', 'map']
     },
     'asset-cache': {
       include: [

@@ -2977,7 +2977,7 @@ chokidar@1.7.0:
   optionalDependencies:
     fsevents "^1.0.0"
 
-chokidar@^2.0.2:
+chokidar@^2.0.0, chokidar@^2.0.2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.0.4.tgz#356ff4e2b0e8e43e322d18a372460bbcf3accd26"
   dependencies:
@@ -9532,6 +9532,12 @@ sane@^2.2.0, sane@^2.4.1:
     watch "~0.18.0"
   optionalDependencies:
     fsevents "^1.1.1"
+
+sass@^1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.13.2.tgz#e4c43cf3cc9e8451960831dc66a5b76a3b038024"
+  dependencies:
+    chokidar "^2.0.0"
 
 sax@^1.2.4:
   version "1.2.4"

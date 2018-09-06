@@ -256,7 +256,7 @@
   }
 
   &.section-background-blue-grad {
-    @include gradient-directional(($blue - 20), $blue, 135deg);
+    @include gradient-directional($blue-dark, $blue, 135deg);
 
   }
 

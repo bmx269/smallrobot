@@ -71,21 +71,21 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-     version: '9'
-   },
-   'prember': {
-     baseRoot: 'https://smallrobot.co',
-     enabled: false,
-     urls: [
-       '/',
-       '/consulting',
-       '/development',
-       '/support',
-       '/contact',
-       '/about',
-       '/ideas',
-     ]
-   }
+      version: '9'
+    },
+    'prember': {
+      baseRoot: 'https://smallrobot.co',
+      enabled: true,
+      urls: [
+        '/',
+        '/consulting',
+        '/development',
+        '/support',
+        '/contact',
+        '/about',
+        '/ideas',
+      ]
+    }
   });
   return app.toTree();
 };

@@ -29,7 +29,7 @@ const Router = EmberRouter.extend(RouterScroll, {
         const page = this.url;
         const title = this.getWithDefault('currentRouteName', 'unknown');
         this.metrics.trackPage({ page, title });
-     }
+      }
     });
   }
 });

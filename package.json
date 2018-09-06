@@ -70,9 +70,6 @@
     "ember-web-app": "^2.3.0",
     "eslint-plugin-ember": "^5.2.0",
     "loader.js": "^4.7.0",
-    "prember": "^0.4.0",
-    "prember-middleware": "^0.1.0",
-    "prember-sitemap-generator": "^0.1.1",
     "sass": "^1.13.2"
   },
   "engines": {

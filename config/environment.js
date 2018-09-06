@@ -137,7 +137,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // anything here will be deployed to staging and production
-    ENV.APP.host = 'https://smallrobot.co'//drupal
+    ENV.APP.host = 'https://api.smallrobot.co'//drupal
   }
 
   if (deployTarget === 'staging') {
@@ -146,6 +146,7 @@ module.exports = function(environment) {
 
   if (deployTarget === 'production') {
     ENV.rootURL = '/';
+    ENV.APP.host = 'https://api.smallrobot.co'//drupal
   }
 
   return ENV;

@@ -60,7 +60,7 @@ module.exports = function(defaults) {
         'img/**/*',
         '/api/(.+)'
       ],
-      version: '11'
+      version: '12'
     },
     'esw-cache-first': {
       patterns: [
@@ -74,21 +74,21 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-      version: '11'
+      version: '12'
     },
-  'prember': {
-    baseRoot: 'https://smallrobot.co',
-    enabled: true,
-    urls: [
-      '/',
-      '/consulting',
-      '/development',
-      '/support',
-      '/contact',
-      '/about',
-      '/ideas',
-    ]
-  }
+    'prember': {
+      baseRoot: 'https://smallrobot.co',
+      enabled: true,
+      urls: [
+        '/',
+        '/consulting',
+        '/development',
+        '/support',
+        '/contact',
+        '/about',
+        '/ideas',
+      ]
+    }
   });
   return app.toTree();
 };

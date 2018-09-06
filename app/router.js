@@ -46,7 +46,7 @@ Router.map(function() {
   });
   this.route('loading');
   this.route('page', { path: ':slug'});
-  this.route('notfound', { path: '/*path' });
+  // this.route('notfound', { path: '/*path' });
 });
 
 export default Router;

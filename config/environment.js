@@ -7,7 +7,7 @@ module.exports = function(environment) {
     modulePrefix: 'smallrobotco',
     environment,
     rootURL: '/',
-    host: 'https://smallrobot.co/api', //drupal
+    host: 'https://smallrobot.co', //drupal
     namespace: 'api',
     locationType: 'router-scroll',
     historySupportMiddleware: true,

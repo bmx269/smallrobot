@@ -1,19 +1,15 @@
+/* eslint-env node */
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // brotli: {
-    //   enabled: false,
-    //   extensions: ['js', 'css', 'svg'],
-    //   keepUncompressed: true
-    // },
-    // gzip: {
-    //   enabled: true,
-    //   extensions: ['js', 'css', 'svg'],
-    //   keepUncompressed: true
-    // },
+    gzip: {
+      enabled: true,
+      extensions: ['js', 'css', 'svg'],
+      keepUncompressed: true
+    },
     'autoprefixer': {
       browsers: [
         'ie 11',
@@ -48,12 +44,9 @@ module.exports = function(defaults) {
       ]
     },
     'ember-service-worker': {
-      enabled: process.env.EMBER_ENV === 'production',
+      enabled: true,
       registrationStrategy: 'inline',
       versionStrategy: 'every-build'
-    },
-    fingerprint: {
-      extensions: ['js', 'css', 'map']
     },
     'asset-cache': {
       include: [
@@ -63,7 +56,8 @@ module.exports = function(defaults) {
         'img/**/*',
         '/api/(.+)'
       ],
-      version: '12'
+      version: '9',
+      requestMode: 'cors'
     },
     'esw-cache-first': {
       patterns: [
@@ -77,7 +71,7 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-      version: '12'
+      version: '9'
     },
     'prember': {
       baseRoot: 'https://smallrobot.co',

@@ -50,25 +50,20 @@ module.exports = function(defaults) {
     },
     'asset-cache': {
       include: [
-        'assets/**/*',
-        'favicons/**/*',
-        'fonts/**/*',
-        'img/**/*',
-        '/api/(.+)'
+        'assets/**/*'
       ],
-      version: '9',
-      requestMode: 'cors'
+      version: '9'
     },
-    'esw-cache-first': {
-      patterns: [
-        '/assets/(.+)',
-        '/img/(.+)'
-      ]
-    },
+    // 'esw-cache-first': {
+    //   patterns: [
+    //     '/assets/(.+)'
+    //   ]
+    // },
     'esw-cache-fallback': {
       patterns: [
         '/api/(.+)'
       ],
+      version: '9',
     },
     'esw-prember': {
       version: '9'

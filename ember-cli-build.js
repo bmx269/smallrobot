@@ -45,7 +45,6 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: true,
-      registrationStrategy: 'inline',
       versionStrategy: 'every-build'
     },
     'asset-cache': {

@@ -12,7 +12,7 @@ export default DS.Model.extend({
 
   fullUrl: computed('uri', function() {
     const host = ENV.host;
-    let url = this.uri;
+    let url = this.url;
     return `${host}`+`${url}`;
   }),
   inlineBackground: computed('fullUrl', function () {

@@ -15,7 +15,7 @@ export default DS.Model.extend({
     let url = this.uri;
     return `${host}`+`${url}`;
   }),
-  inlineBackground: computed('url', function () {
-    return new htmlSafe( "background-image: url('" + this.url + "')" );
+  inlineBackground: computed('fullUrl', function () {
+    return new htmlSafe( "background-image: url('" + this.fullUrl + "')" );
   })
 });

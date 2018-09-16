@@ -42,16 +42,17 @@ module.exports = function(defaults) {
       versionStrategy: 'every-build',
       registrationStrategy: 'inline'
     },
-    // 'asset-cache': {
-    //   include: [
-    //     'assets/**/*',
-    //     'favicons/**/*',
-    //     'fonts/**/*',
-    //     'img/**/*',
-    //     '/api/(.+)'
-    //   ],
-    //   version: '11'
-    // },
+    'asset-cache': {
+      include: [
+        'assets/**/*',
+        'favicons/**/*',
+        'fonts/**/*',
+        'img/**/*',
+        '/api/(.+)',
+        '/sites/default/files/(.+)'
+      ],
+      // version: '11'
+    },
     // 'esw-cache-first': {
     //   patterns: [
     //     '/assets/(.+)',

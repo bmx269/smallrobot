@@ -146,7 +146,6 @@ module.exports = function(environment) {
 
   if (deployTarget === 'production') {
     ENV.rootURL = '/';
-    ENV.APP.host = 'https://api.smallrobot.co'//drupal
   }
 
   return ENV;

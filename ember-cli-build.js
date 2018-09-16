@@ -4,16 +4,6 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    brotli: {
-      enabled: false,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
-    },
-    gzip: {
-      enabled: true,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
-    },
     'autoprefixer': {
       browsers: [
         'ie 11',
@@ -49,7 +39,6 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: true,
-      registrationStrategy: 'inline',
       versionStrategy: 'every-build'
     },
     'asset-cache': {

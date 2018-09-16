@@ -39,7 +39,8 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: true,
-      versionStrategy: 'every-build'
+      versionStrategy: 'every-build',
+      registrationStrategy: 'inline'
     },
     // 'asset-cache': {
     //   include: [
@@ -59,7 +60,8 @@ module.exports = function(defaults) {
     // },
     'esw-cache-fallback': {
       patterns: [
-        '/api/(.+)'
+        '/api/(.+)',
+        '/sites/default/files/(.+)'
       ],
     }//,
     // 'esw-prember': {

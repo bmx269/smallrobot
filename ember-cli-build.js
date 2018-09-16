@@ -41,22 +41,22 @@ module.exports = function(defaults) {
       enabled: true,
       versionStrategy: 'every-build'
     },
-    'asset-cache': {
-      include: [
-        'assets/**/*',
-        'favicons/**/*',
-        'fonts/**/*',
-        'img/**/*',
-        '/api/(.+)'
-      ],
-      version: '11'
-    },
-    'esw-cache-first': {
-      patterns: [
-        '/assets/(.+)',
-        '/img/(.+)'
-      ]
-    },
+    // 'asset-cache': {
+    //   include: [
+    //     'assets/**/*',
+    //     'favicons/**/*',
+    //     'fonts/**/*',
+    //     'img/**/*',
+    //     '/api/(.+)'
+    //   ],
+    //   version: '11'
+    // },
+    // 'esw-cache-first': {
+    //   patterns: [
+    //     '/assets/(.+)',
+    //     '/img/(.+)'
+    //   ]
+    // },
     'esw-cache-fallback': {
       patterns: [
         '/api/(.+)'

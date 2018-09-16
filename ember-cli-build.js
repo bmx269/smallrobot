@@ -49,20 +49,20 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*',
         '/api/(.+)',
-        '/sites/default/files/(.+)'
+        'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
       // version: '11'
     },
-    // 'esw-cache-first': {
-    //   patterns: [
-    //     '/assets/(.+)',
-    //     '/img/(.+)'
-    //   ]
-    // },
+    'esw-cache-first': {
+      patterns: [
+        '/api/(.+)',
+        'https://api.smallrobot.co/sites/default/files/(.+)'
+      ]
+    },
     'esw-cache-fallback': {
       patterns: [
         '/api/(.+)',
-        '/sites/default/files/(.+)'
+        'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
     }//,
     // 'esw-prember': {

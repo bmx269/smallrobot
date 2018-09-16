@@ -45,27 +45,34 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: true,
-      versionStrategy: 'every-build'
+      versionStrategy: 'every-build',
+      registrationStrategy: 'inline'
     },
     'asset-cache': {
       include: [
-        'assets/**/*'
+        'assets/**/*',
+        'favicons/**/*',
+        'fonts/**/*',
+        'img/**/*',
+        '/api/(.+)',
+        'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
-      version: '9'
+      version: '12'
     },
-    // 'esw-cache-first': {
-    //   patterns: [
-    //     '/assets/(.+)'
-    //   ]
-    // },
+    'esw-cache-first': {
+      patterns: [
+        '/api/(.+)',
+        'https://api.smallrobot.co/sites/default/files/(.+)'
+      ]
+    },
     'esw-cache-fallback': {
       patterns: [
-        '/api/(.+)'
+        '/api/(.+)',
+        'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
-      version: '9',
     },
     'esw-prember': {
-      version: '9'
+      version: '12'
     },
     'prember': {
       baseRoot: 'https://smallrobot.co',

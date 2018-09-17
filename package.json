@@ -31,7 +31,6 @@
     "ember-cli-eslint": "^4.2.3",
     "ember-cli-fastboot": "ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19",
     "ember-cli-flash": "^1.6.6",
-    "ember-cli-gzip": "^1.2.0",
     "ember-cli-head": "^0.4.1",
     "ember-cli-htmlbars": "^3.0.0",
     "ember-cli-htmlbars-inline-precompile": "^1.0.3",

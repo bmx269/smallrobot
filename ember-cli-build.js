@@ -48,28 +48,30 @@ module.exports = function(defaults) {
         'favicons/**/*',
         'fonts/**/*',
         'img/**/*',
-        '/api/(.+)',
+        '/api/(.+)'
+      ],
+      manual: [
         'https://api.smallrobot.co/sites/default/files/(.+)',
         'https://pro.fontawesome.com/releases/v5.0.10/js/all.js'
       ],
-      version: '14'
+      requestMode: 'no-cors',
+      lenientErrors: true,
+      version: '15'
     },
-    'esw-cache-first': {
-      patterns: [
-        '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
-      ]
-    },
+    // 'esw-cache-first': {
+    //   patterns: [
+    //     '/api/(.+)',
+    //     'https://api.smallrobot.co/sites/default/files/(.+)'
+    //   ]
+    // },
     'esw-cache-fallback': {
       patterns: [
-        'assets/**/*',
-        'favicons/**/*',
-        'fonts/**/*',
-        'img/**/*',
         '/api/(.+)',
         'https://api.smallrobot.co/sites/default/files/(.+)',
         'https://pro.fontawesome.com/releases/v5.0.10/js/all.js'
       ],
+      // changing this version number will bust the cache
+      version: '15'
     }
   });
   return app.toTree();

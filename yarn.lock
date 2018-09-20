@@ -3750,7 +3750,8 @@ ember-cli-version-checker@^2.0.0, ember-cli-version-checker@^2.1.0, ember-cli-ve
 
 "ember-cli@https://github.com/ember-cli/ember-cli#master":
   version "3.4.2"
-  resolved "https://github.com/ember-cli/ember-cli#8dfe6ff092d9a14c49368fefaf5d91d7e9afd484"
+  uid "5253fb55d3ca2410bf8da58fa9cbf87b29789d93"
+  resolved "https://github.com/ember-cli/ember-cli#5253fb55d3ca2410bf8da58fa9cbf87b29789d93"
   dependencies:
     amd-name-resolver "^1.2.0"
     babel-plugin-transform-es2015-modules-amd "^6.24.1"

@@ -63,7 +63,6 @@ module.exports = function(defaults) {
     },
     'esw-cache-fallback': {
       patterns: [
-        '**/*',
         'assets/**/*',
         'favicons/**/*',
         'fonts/**/*',

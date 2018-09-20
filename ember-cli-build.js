@@ -1,3 +1,4 @@
+/* eslint-env node */
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
@@ -39,8 +40,8 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: true,
-      versionStrategy: 'every-build',
-      registrationStrategy: 'inline'
+      registrationStrategy: 'inline',
+      versionStrategy: 'every-build'
     },
     'asset-cache': {
       include: [
@@ -48,39 +49,50 @@ module.exports = function(defaults) {
         'favicons/**/*',
         'fonts/**/*',
         'img/**/*',
-        '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https\://api\.smallrobot\.co/api/(.+)'
       ],
-      // version: '11'
+      requestMode: 'cors',
+      lenientErrors: true,
+      version: '22'
     },
     'esw-cache-first': {
       patterns: [
-        '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https\://api\.smallrobot\.co/api/(.+)'
       ]
     },
     'esw-cache-fallback': {
       patterns: [
-        '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https\://api\.smallrobot\.co/api/(.+)',
+        'https\://api\.smallrobot\.co/api/sites/default/files/(.+)'
       ],
-    }//,
-    // 'esw-prember': {
-    //   version: '11'
-    // },
-  // 'prember': {
-  //   baseRoot: 'https://smallrobot.co',
-  //   enabled: true,
-  //   urls: [
-  //     '/',
-  //     '/consulting',
-  //     '/development',
-  //     '/support',
-  //     '/contact',
-  //     '/about',
-  //     '/ideas',
-  //   ]
-  // }
+      // changing this version number will bust the cache
+      version: '22'
+    },
+    emberCliConcat: {
+      js: {
+        concat: process.env.EMBER_ENV === 'production',
+        useAsync: process.env.EMBER_ENV === 'production'
+      },
+      css: {
+        concat: false
+      }
+    },
+    'esw-prember': {
+      version: '22'
+    },
+    'prember': {
+      baseRoot: 'https://smallrobot.co',
+      enabled: true,
+      urls: [
+        '/',
+        '/consulting',
+        '/development',
+        '/support',
+        '/contact',
+        '/about',
+        '/ideas',
+      ]
+    }
   });
   return app.toTree();
 };

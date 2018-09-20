@@ -48,24 +48,24 @@ module.exports = function(defaults) {
         'favicons/**/*',
         'fonts/**/*',
         'img/**/*',
-        '/api/(.+)'
+        'https\://api\.smallrobot\.co/api/(.+)'
       ],
       requestMode: 'cors',
       lenientErrors: true,
-      version: '18'
+      version: '21'
     },
     'esw-cache-first': {
       patterns: [
-        'https://api.smallrobot.co/api/(.+)'
+        'https\://api\.smallrobot\.co/api/(.+)'
       ]
     },
     'esw-cache-fallback': {
       patterns: [
-        'https://api.smallrobot.co/api/(.+)'//,
-        // 'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https\://api\.smallrobot\.co/api/(.+)',
+        'https\://api\.smallrobot\.co/api/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
-      version: '18'
+      version: '21'
     }
   });
   return app.toTree();

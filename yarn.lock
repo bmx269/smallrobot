@@ -3450,7 +3450,7 @@ ember-auto-import@^1.2.13:
     walk-sync "^0.3.2"
     webpack "^4.12.0"
 
-ember-burger-menu@^3.1.0:
+ember-burger-menu@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/ember-burger-menu/-/ember-burger-menu-3.3.2.tgz#8cbfbff82c2a55c277f1aa7872b61d2fd44c7fb2"
   dependencies:

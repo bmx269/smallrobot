@@ -52,7 +52,7 @@ module.exports = function(defaults) {
       ],
       manual: [
         'https://api.smallrobot.co/sites/default/files/(.+)',
-        'https://pro.fontawesome.com/releases/v5.0.10/js/all.js'
+        'https://pro.fontawesome.com/releases/v5.3.1/js/all.js'
       ],
       requestMode: 'no-cors',
       lenientErrors: true,
@@ -67,8 +67,7 @@ module.exports = function(defaults) {
     'esw-cache-fallback': {
       patterns: [
         '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)',
-        'https://pro.fontawesome.com/releases/v5.0.10/js/all.js'
+        'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
       version: '15'

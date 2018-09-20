@@ -44,10 +44,14 @@ module.exports = function(defaults) {
     },
     'asset-cache': {
       include: [
+        '**/*',
         'assets/**/*',
+        'favicons/**/*',
+        'fonts/**/*',
         'img/**/*',
         '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https://api.smallrobot.co/sites/default/files/(.+)',
+        'https://pro.fontawesome.com/releases/v5.0.10/js/all.js'
       ],
       version: '14'
     },
@@ -59,8 +63,14 @@ module.exports = function(defaults) {
     },
     'esw-cache-fallback': {
       patterns: [
+        '**/*',
+        'assets/**/*',
+        'favicons/**/*',
+        'fonts/**/*',
+        'img/**/*',
         '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https://api.smallrobot.co/sites/default/files/(.+)',
+        'https://pro.fontawesome.com/releases/v5.0.10/js/all.js'
       ],
     }
   });

@@ -40,8 +40,7 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: true,
-      versionStrategy: 'every-build',
-      registrationStrategy: 'inline'
+      versionStrategy: 'every-build'
     },
     'asset-cache': {
       include: [

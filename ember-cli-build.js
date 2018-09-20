@@ -52,21 +52,20 @@ module.exports = function(defaults) {
       ],
       requestMode: 'cors',
       lenientErrors: true,
-      version: '17'
+      version: '18'
     },
-    // 'esw-cache-first': {
-    //   patterns: [
-    //     '/api/(.+)',
-    //     'https://api.smallrobot.co/sites/default/files/(.+)'
-    //   ]
-    // },
+    'esw-cache-first': {
+      patterns: [
+        'https://api.smallrobot.co/api/(.+)'
+      ]
+    },
     'esw-cache-fallback': {
       patterns: [
-        '/api/(.+)',
-        'https://api.smallrobot.co/sites/default/files/(.+)'
+        'https://api.smallrobot.co/api/(.+)'//,
+        // 'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
-      version: '17'
+      version: '18'
     }
   });
   return app.toTree();

@@ -50,12 +50,9 @@ module.exports = function(defaults) {
         'img/**/*',
         '/api/(.+)'
       ],
-      manual: [
-        'https://api.smallrobot.co/sites/default/files/(.+)'
-      ],
       requestMode: 'cors',
       lenientErrors: true,
-      version: '16'
+      version: '17'
     },
     // 'esw-cache-first': {
     //   patterns: [
@@ -69,7 +66,7 @@ module.exports = function(defaults) {
         'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
-      version: '16'
+      version: '17'
     }
   });
   return app.toTree();

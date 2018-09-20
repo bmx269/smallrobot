@@ -51,12 +51,11 @@ module.exports = function(defaults) {
         '/api/(.+)'
       ],
       manual: [
-        'https://api.smallrobot.co/sites/default/files/(.+)',
-        'https://pro.fontawesome.com/releases/v5.3.1/js/all.js'
+        'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
-      requestMode: 'no-cors',
+      requestMode: 'cors',
       lenientErrors: true,
-      version: '15'
+      version: '16'
     },
     // 'esw-cache-first': {
     //   patterns: [
@@ -70,7 +69,7 @@ module.exports = function(defaults) {
         'https://api.smallrobot.co/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
-      version: '15'
+      version: '16'
     }
   });
   return app.toTree();

@@ -52,7 +52,7 @@ module.exports = function(defaults) {
       ],
       requestMode: 'cors',
       lenientErrors: true,
-      version: '21'
+      version: '23'
     },
     'esw-cache-first': {
       patterns: [
@@ -65,7 +65,23 @@ module.exports = function(defaults) {
         'https\://api\.smallrobot\.co/api/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
-      version: '21'
+      version: '23'
+    },
+    'esw-prember': {
+      version: '23'
+    },
+    'prember': {
+      baseRoot: 'https://smallrobot.co',
+      enabled: true,
+      urls: [
+        '/',
+        '/consulting',
+        '/development',
+        '/support',
+        '/contact',
+        '/about',
+        '/ideas',
+      ]
     }
   });
   return app.toTree();

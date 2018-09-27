@@ -66,23 +66,23 @@ module.exports = function(defaults) {
       ],
       // changing this version number will bust the cache
       version: '23'
-    },
-    'esw-prember': {
-      version: '23'
-    },
-    'prember': {
-      baseRoot: 'https://smallrobot.co',
-      enabled: false,
-      urls: [
-        '/',
-        '/consulting',
-        '/development',
-        '/support',
-        '/contact',
-        '/about',
-        '/ideas',
-      ]
     }
+    // 'esw-prember': {
+    //   version: '23'
+    // },
+    // 'prember': {
+    //   baseRoot: 'https://smallrobot.co',
+    //   enabled: false,
+    //   urls: [
+    //     '/',
+    //     '/consulting',
+    //     '/development',
+    //     '/support',
+    //     '/contact',
+    //     '/about',
+    //     '/ideas',
+    //   ]
+    // }
   });
   return app.toTree();
 };

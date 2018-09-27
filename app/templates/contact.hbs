@@ -5,10 +5,9 @@
   {{/each}}
 
   {{!contact-form}}
-
   <section class="page-section">
     <div class="outer">
-      <div class='overlay'>
+      <div class="overlay">
         <div class="content-wrapper">
           <div class="container-fluid">
             <div class="row justify-content-center">
@@ -17,14 +16,22 @@
                   <div class="inner">
                     <h2>We <strong>want</strong> to hear your ideas.</h2>
 
-                    <p class="lead">We get a majority of our business by word of mouth, and we truly appreciate the refreshing change that personal conversations can bring. In the world of texts, email, social media, or whatever technology can make our lives not personal, we would rather you contact us with your voice.</p>
-
-                    <p>We also understand that sometimes that is not possible, for that reason, we have our means of contact here.</p>
-
-                    <p>If you would like to schedule a time to talk, you can <a href="https://calendly.com/smallrobot" rel="noopener" target="_blank">see availability</a>.
+                    <p class="lead">
+                      We get a majority of our business by word of mouth, and we truly appreciate the refreshing change that personal conversations can bring. In the world of texts, email, social media, or whatever technology can make our lives not personal, we would rather you contact us with your voice.
                     </p>
 
-                    <p><a class="btn btn-green" href="https://calendly.com/smallrobot" target="_blank"><span class="fontawesome-icon-inline"><svg class="svg-inline--fa fa-clock fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg><!-- <i class="fas fa-clock"></i> -->&nbsp;</span>Schedule a Meeting</a>
+                    <p>
+                      We also understand that sometimes that is not possible, for that reason, we have our means of contact here.
+                    </p>
+
+                    <p>
+                      If you would like to schedule a time to talk, you can <a href="https://calendly.com/smallrobot" rel="noopener" target="_blank">see availability</a>.
+                    </p>
+
+                    <p>
+                      <a href="https://calendly.com/smallrobot" class="btn btn-green" target="_blank" rel="noopener">
+                        <i class="fas fa-clock"></i> Schedule a Meeting
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -33,16 +40,26 @@
                 <div class="element-text">
                   <div class="inner">
                     <h4>Location</h4>
-
-                    <p><strong>Small Robot Corp.</strong><br>
-                    Vancouver, BC,<br>
-                    Canada</p>
-
+                    <p>
+                      <strong>
+                        Small Robot Corp.
+                      </strong>
+                      <br>
+                      Vancouver, BC,
+                      <br>
+                      Canada
+                    </p>
                     <h4>Voice</h4>
-
-                    <p><a href="tel:+1(604) 762-6269"><i class="fas fa-phone-square"></i> +1(604) 764-6269</a><br>
-                    <a href="skype:bmx269?chat"><i class="fab fa-skype"></i> Skype chat</a><br>
-                    <a href="mailto:info@smallrobot.co"><i class="fas fa-envelope-square"></i> Email us</a>
+                    <p>
+                      <a href="tel:+1(604) 762-6269">
+                        <i class="fas fa-phone-square"></i> +1(604) 764-6269
+                      </a><br>
+                      <a href="skype:bmx269?chat">
+                        <i class="fab fa-skype"></i> Skype chat
+                      </a><br>
+                      <a href="mailto:info@smallrobot.co">
+                        <i class="fas fa-envelope-square"></i> Email us
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -58,11 +75,11 @@
 
   <section class="page-section">
     <div class="outer section-background-graylight">
-      <div class='overlay'>
+      <div class="overlay">
         {{angled-divider}}
         <div class="content-wrapper">
           <div class="container-fluid">
-            <div class='row justify-content-center'>
+            <div class="row justify-content-center">
               <h2 class="col-12 col-md-10 col-lg-8">Contact Form</h2>
               <form class="cd-form col-12 col-md-10 col-lg-8 floating-labels" name="contact" netlify-honeypot="bot-field"
                 {{action (route-action 'sendContactRequest' contactForm) on="submit"}} netlify>

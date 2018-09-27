@@ -29,7 +29,7 @@ const Router = EmberRouter.extend(RouterScroll, {
         const page = this.url;
         const title = this.getWithDefault('currentRouteName', 'unknown');
         this.metrics.trackPage({ page, title });
-     }
+      }
     });
   }
 });
@@ -46,7 +46,7 @@ Router.map(function() {
   });
   this.route('loading');
   // this.route('page', { path: ':slug'});
-  this.route('notfound', { path: '/*path' });
+  // this.route('notfound', { path: '/*path' });
 });
 
 export default Router;

@@ -11,11 +11,11 @@ export default DS.Model.extend({
   thumbnail: DS.hasMany('image', {inverse: 'thumbnail', async: false }),
 
   fullUrl: computed('uri', function() {
-    // const host = ENV.host;
+    const host = ENV.host;
     let url = this.url;
     return `${host}`+`${url}`;
   }),
-  inlineBackground: computed('url', function () {
-    return new htmlSafe( "background-image: url('" + this.url + "')" );
+  inlineBackground: computed('fullUrl', function () {
+    return new htmlSafe( "background-image: url('" + this.fullUrl + "')" );
   })
 });

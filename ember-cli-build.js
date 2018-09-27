@@ -72,7 +72,7 @@ module.exports = function(defaults) {
     },
     'prember': {
       baseRoot: 'https://smallrobot.co',
-      enabled: true,
+      enabled: false,
       urls: [
         '/',
         '/consulting',

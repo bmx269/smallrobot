@@ -7,7 +7,7 @@ module.exports = function(environment) {
     modulePrefix: 'smallrobotco',
     environment,
     rootURL: '/',
-    host: 'https://smallrobot.co/api', //drupal
+    // host: 'https://api.smallrobot.co', //drupal
     namespace: 'api',
     locationType: 'router-scroll',
     historySupportMiddleware: true,
@@ -137,7 +137,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // anything here will be deployed to staging and production
-    ENV.APP.host = 'https://smallrobot.co/api' //drupal
+    // ENV.APP.host = 'https://api.smallrobot.co'//drupal
   }
 
   if (deployTarget === 'staging') {

@@ -1,2 +1,2 @@
 /*    /index.html   200
-/api/*  https://api.smallrobot.co/:splat  200
+/api/*  https://api.smallrobot.co/api/:splat  200

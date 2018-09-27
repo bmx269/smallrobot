@@ -3,7 +3,7 @@ import AdapterFetch from 'ember-fetch/mixins/adapter-fetch';
 import ENV from '../config/environment';
 
 export default DS.JSONAPIAdapter.extend(AdapterFetch, {
-  host: ENV.host,
+  // host: ENV.host,
   namespace: ENV.namespace,
   // buildURL(record, suffix) {
   //   return this._super(record, suffix) + '?_format=api_json';

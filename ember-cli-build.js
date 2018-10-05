@@ -17,19 +17,6 @@ module.exports = function(defaults) {
       ],
       cascade: false
     },
-    brotli: {
-      enabled: false,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
-    },
-    gzip: {
-      enabled: false,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
-    },
-    'ember-cli-babel': {
-      includePolyfill: true
-    },
     'ember-cli-image-transformer': {
       images: [
         {
@@ -87,13 +74,10 @@ module.exports = function(defaults) {
   return app.toTree();
 };
 
-/**
- * Builds the prember urls for the blog and static pages
- * @returns {string[]} The urls for prember
- */
 function buildPremberUrls() {
   // Build prember urls
   const urls = [
+    '/loading',
     '/',
     '/consulting',
     '/development',
@@ -102,21 +86,6 @@ function buildPremberUrls() {
     '/about',
     '/ideas'
   ];
-
-  // const { extname } = require('path');
-  // const walkSync = require('walk-sync');
-
-  // const paths = walkSync('blog/posts');
-
-  // const mdFiles = paths.filter(path => extname(path) === '.md')
-  //   .map((path) => {
-  //     const stripMD = path.replace(/\.md/, '');
-  //     return `/blog/${stripMD}/`;
-  //   });
-
-  // mdFiles.forEach((file) => {
-  //   urls.push(file);
-  // });
 
   return urls;
 }

@@ -6,7 +6,9 @@ export default Route.extend({
   headData: service(),
 
   model() {
-    return this.store.findRecord('page', '93aec22a-3710-4fe0-ae09-663f6790bb79');
+    return RSVP.hash({
+      page: this.store.findRecord('page', '93aec22a-3710-4fe0-ae09-663f6790bb79'),
+    });
   },
 
   afterModel() {
@@ -18,4 +20,8 @@ export default Route.extend({
       url: 'https://smallrobot.co/'
     });
   },
+  setupController(controller, models) {
+    controller.set('page', models.page);
+  },
+
 });

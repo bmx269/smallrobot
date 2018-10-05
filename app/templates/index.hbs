@@ -1,7 +1,7 @@
-{{#if model}}
-  {{global-header page=model}}
+{{#if page}}
+  {{global-header page=page}}
 
-  {{#each model.section as |section|}}
+  {{#each page.section as |section|}}
     {{page-section section=section}}
   {{/each}}
 

@@ -17,6 +17,16 @@ module.exports = function(defaults) {
       ],
       cascade: false
     },
+    brotli: {
+      enabled: false,
+      extensions: ['js', 'css', 'svg'],
+      keepUncompressed: true
+    },
+    gzip: {
+      enabled: false,
+      extensions: ['js', 'css', 'svg'],
+      keepUncompressed: true
+    },
     'ember-cli-babel': {
       includePolyfill: true
     },
@@ -52,12 +62,7 @@ module.exports = function(defaults) {
       ],
       requestMode: 'cors',
       lenientErrors: true,
-      version: '23'
-    },
-    'esw-cache-first': {
-      patterns: [
-        'https\://api\.smallrobot\.co/api/(.+)'
-      ]
+      version: '24'
     },
     'esw-cache-fallback': {
       patterns: [
@@ -65,24 +70,53 @@ module.exports = function(defaults) {
         'https\://api\.smallrobot\.co/api/sites/default/files/(.+)'
       ],
       // changing this version number will bust the cache
-      version: '23'
+      version: '24'
+    },
+    'esw-prember': {
+      version: '24'
+    },
+    'prember': {
+      baseRoot: 'https://smallrobot.co',
+      enabled: true,
+      urls: buildPremberUrls()
+    },
+    SRI: {
+      enabled: false
     }
-    // 'esw-prember': {
-    //   version: '23'
-    // },
-    // 'prember': {
-    //   baseRoot: 'https://smallrobot.co',
-    //   enabled: false,
-    //   urls: [
-    //     '/',
-    //     '/consulting',
-    //     '/development',
-    //     '/support',
-    //     '/contact',
-    //     '/about',
-    //     '/ideas',
-    //   ]
-    // }
   });
   return app.toTree();
 };
+
+/**
+ * Builds the prember urls for the blog and static pages
+ * @returns {string[]} The urls for prember
+ */
+function buildPremberUrls() {
+  // Build prember urls
+  const urls = [
+    '/',
+    '/consulting',
+    '/development',
+    '/support',
+    '/contact',
+    '/about',
+    '/ideas'
+  ];
+
+  // const { extname } = require('path');
+  // const walkSync = require('walk-sync');
+
+  // const paths = walkSync('blog/posts');
+
+  // const mdFiles = paths.filter(path => extname(path) === '.md')
+  //   .map((path) => {
+  //     const stripMD = path.replace(/\.md/, '');
+  //     return `/blog/${stripMD}/`;
+  //   });
+
+  // mdFiles.forEach((file) => {
+  //   urls.push(file);
+  // });
+
+  return urls;
+}

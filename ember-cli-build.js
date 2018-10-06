@@ -77,7 +77,6 @@ module.exports = function(defaults) {
 function buildPremberUrls() {
   // Build prember urls
   const urls = [
-    '/loading',
     '/',
     '/consulting',
     '/development',

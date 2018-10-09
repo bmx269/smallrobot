@@ -13,7 +13,7 @@ export default DS.Model.extend({
   colVerticalAlignment: DS.attr('string'),
   heroSize: DS.attr('string'),
   overlay: DS.attr('string'),
-  backgroundImage: DS.belongsTo('file', { async: true }),
-  column: DS.hasMany('column', { async: true }),
-  page: DS.belongsTo('page', { async: true }),
+  backgroundImage: DS.belongsTo('file'),
+  column: DS.hasMany('column'),
+  page: DS.belongsTo('page'),
 });

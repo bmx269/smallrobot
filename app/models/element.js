@@ -1,10 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  column: DS.belongsTo('column', { async: true }),
-  text: DS.hasMany('text', { async: true }),
-  image: DS.hasMany('image', { async: true }),
-  listing: DS.hasMany('listing', { async: true })
+  column: DS.belongsTo('column'),
+  text: DS.hasMany('text'),
+  image: DS.hasMany('image'),
+  listing: DS.hasMany('listing'),
   // video: DS.hasMany('video'),
-  // slideshow: DS.hasMany('slideshow'),
+  slideshow: DS.hasMany('slideshow')
 });

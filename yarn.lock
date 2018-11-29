@@ -5037,10 +5037,10 @@ ember-cp-validations@^3.5.3:
     exists-sync "0.0.4"
     walk-sync "^0.3.1"
 
-ember-data@~3.4.4:
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-3.4.4.tgz#a201c2db1d7ca2cbe59a23ddf3cb96281fce216f"
-  integrity sha512-5DE1CxR1Eobue0y2WCkGSRUaOuE8ebktNElhcyPUcrksbnILxniPsKPVRq15X+5wLjaEb+XiscH68NLBGbjUvQ==
+ember-data@~3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-3.5.1.tgz#cc8fc5cc5bc4f5e151fec772b13679a10cce0abc"
+  integrity sha512-2kZdLywrRhIspCUGODkriwHIX+vR697r1dsV7U7bSZWm1ODiTgT5zzNK2UesOlvortruTvkeR2giltDKrliocg==
   dependencies:
     "@ember/ordered-set" "^2.0.0"
     babel-plugin-feature-flags "^0.3.1"

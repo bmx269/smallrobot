@@ -38,7 +38,7 @@
     "ember-cli-image-transformer": "2.1.0",
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-netlify": "^0.1.0",
-    "ember-cli-sass": "^7.1.7",
+    "ember-cli-sass": "^9.0.1",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-string-helpers": "^2.0.0",

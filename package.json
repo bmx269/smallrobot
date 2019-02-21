@@ -76,7 +76,7 @@
     "prember-middleware": "^0.1.0",
     "prember-sitemap-generator": "^0.1.1",
     "qunit-dom": "^0.8.4",
-    "sass": "^1.17.0"
+    "sass": "^1.17.1"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"

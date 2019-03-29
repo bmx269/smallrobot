@@ -4933,13 +4933,12 @@ ember-hbs-minifier@^0.3.0:
   dependencies:
     object-hash "1.2.0"
 
-ember-href-to@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/ember-href-to/-/ember-href-to-2.0.1.tgz#87c88daccf4b02c77f0a0292ab793ea7c6a25ced"
-  integrity sha512-dsMXJTIUd4dQKN7Sd93T5xKqltbYRnr9J4pgFs1bwvDXXQb7XP4WWPozn48+YGptmzvCbDaLsIMfwETuwl7RTA==
+ember-href-to@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ember-href-to/-/ember-href-to-3.0.0.tgz#63325ea16e643d0090dcf0eba45979aba4d5250d"
+  integrity sha512-Ri/CxWOGBWyoqspm1vb7Az5jKx0EiOm5cS/lUnpPb+5M/RR2S6FA47PFPzw9uDHi1800pCX+bW6cwCConVGHUg==
   dependencies:
-    ember-cli-babel "^6.8.2"
-    ember-router-service-polyfill "^1.0.2"
+    ember-cli-babel "^7.1.2"
 
 ember-inflector@^3.0.0:
   version "3.0.0"
@@ -5058,13 +5057,6 @@ ember-router-scroll@1.1.0:
     ember-cli-babel "^7.1.2"
     ember-compatibility-helpers "^1.1.2"
     ember-getowner-polyfill "^2.2.0"
-
-ember-router-service-polyfill@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/ember-router-service-polyfill/-/ember-router-service-polyfill-1.0.3.tgz#506d7fbd7179951410b7ffe8db171540601d88b1"
-  integrity sha1-UG1/vXF5lRQQt//o2xcVQGAdiLE=
-  dependencies:
-    ember-cli-babel "^6.8.2"
 
 ember-runtime-enumerable-includes-polyfill@^2.0.0:
   version "2.1.0"

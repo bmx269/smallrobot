@@ -66,7 +66,7 @@
     "ember-service-worker-asset-cache": "^0.6.4",
     "ember-service-worker-cache-fallback": "^0.6.2",
     "ember-service-worker-prember": "^0.4.0",
-    "ember-source": "~3.10.1",
+    "ember-source": "~3.11.0",
     "ember-truth-helpers": "^2.1.0",
     "ember-unused-components": "^1.0.2",
     "ember-web-app": "^2.3.1",

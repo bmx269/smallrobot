@@ -70,7 +70,7 @@
     "ember-truth-helpers": "^2.1.0",
     "ember-unused-components": "^1.0.2",
     "ember-web-app": "^2.3.1",
-    "eslint-plugin-ember": "^6.5.1",
+    "eslint-plugin-ember": "^6.7.0",
     "liquid-fire": "^0.30.0",
     "loader.js": "^4.7.0",
     "prember": "^1.0.3",

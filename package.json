@@ -48,7 +48,7 @@
     "ember-composable-helpers": "^2.3.1",
     "ember-concurrency": "^1.0.0",
     "ember-cp-validations": "^3.5.5",
-    "ember-data": "~3.11.0",
+    "ember-data": "~3.11.4",
     "ember-export-application-global": "^2.0.0",
     "ember-fetch": "^6.7.0",
     "ember-hammertime": "^1.6.0",

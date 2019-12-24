@@ -2740,15 +2740,15 @@ body@^5.1.0:
     raw-body "~1.1.0"
     safe-json-parse "~1.0.1"
 
-boilerplate-update@0.29.8:
-  version "0.29.8"
-  resolved "https://registry.yarnpkg.com/boilerplate-update/-/boilerplate-update-0.29.8.tgz#d5a672f5840a00e92806d2814a5dcfe687240c1f"
-  integrity sha512-V0wlq+x5DGu0YsX0RCpPCgmURLy5xaEUE5f5L/EJTeix4vka6g0vJduY2Y7qtMGdtmTX2ZULQw4QMtkbigs64g==
+boilerplate-update@0.29.14:
+  version "0.29.14"
+  resolved "https://registry.yarnpkg.com/boilerplate-update/-/boilerplate-update-0.29.14.tgz#bede1b5827d5a2810cad674d87a2eb19c6d954aa"
+  integrity sha512-3zMxLEA6lrl3xfg6D0An8tuOXe2vouVYRv32jND105MGbNnIhm2i3BIxn9HW6LwhHptidhE+g9HCs378gIiYqA==
   dependencies:
     cpr "^3.0.1"
     debug "^4.1.1"
     execa "^3.0.0"
-    git-diff-apply "0.19.7"
+    git-diff-apply "0.19.12"
     https-proxy-agent "^3.0.0"
     inquirer "^7.0.0"
     merge-package.json "^3.1.2"
@@ -5447,12 +5447,12 @@ ember-cli-uglify@^3.0.0:
     broccoli-uglify-sourcemap "^3.1.0"
     lodash.defaultsdeep "^4.6.0"
 
-ember-cli-update@^0.47.3:
-  version "0.47.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.47.3.tgz#9dbc00729f11e248514411c24a6a89212669bbe7"
-  integrity sha512-F0LDJJY5puCxHo0JJXTZ7gys9wo+Sv4d3a2T9Y3xJw1r4xi+YMwuI16Pnn3me0PJEHl2hF0skEDi4tWrcSNTrA==
+ember-cli-update@^0.47.5:
+  version "0.47.5"
+  resolved "https://registry.yarnpkg.com/ember-cli-update/-/ember-cli-update-0.47.5.tgz#c70d1c790e1ba0315b3307dd2f4ff0ef5719b374"
+  integrity sha512-dQ9LKwWaXRBq1D9dUO2Ztj+WjP/DPgCWtVXBUNnoFMMsZAo1bPbSFPjDSaAx7sJdNZhIe4vzGPyiPEWOPn3eQA==
   dependencies:
-    boilerplate-update "0.29.8"
+    boilerplate-update "0.29.14"
     debug "^4.1.1"
     execa "^3.4.0"
     fs-extra "^8.0.0"
@@ -7087,10 +7087,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-git-diff-apply@0.19.7:
-  version "0.19.7"
-  resolved "https://registry.yarnpkg.com/git-diff-apply/-/git-diff-apply-0.19.7.tgz#e5a3b7a38b4327f3a559e1ab101e179dd7c46581"
-  integrity sha512-UFM4a7l5TnPp2FYxBmlH6p7UEpbogBm5/dQG8Vaz8wsM/JP7uM8aRoBN5FBbV05ktOHBk3uisPS+P6pK9BnF8Q==
+git-diff-apply@0.19.12:
+  version "0.19.12"
+  resolved "https://registry.yarnpkg.com/git-diff-apply/-/git-diff-apply-0.19.12.tgz#d24cc3d8a2843d7652d4a79f4c19d24025e5ba45"
+  integrity sha512-adLTdeROWNoq5LE0ihjaUUr2pI9Khkgbnd6brRwsoagmsOO/cnlM6AcXPewSysQVn05IIJfUVujGJAvpzm0X8w==
   dependencies:
     debug "^4.0.0"
     fixturify "^1.0.0"

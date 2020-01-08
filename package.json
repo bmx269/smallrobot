@@ -74,7 +74,7 @@
     "prember-crawler": "^1.0.0",
     "prember-middleware": "^0.1.0",
     "qunit-dom": "^0.9.2",
-    "sass": "^1.24.1"
+    "sass": "^1.24.3"
   },
   "engines": {
     "node": "8.* || >= 10.*"

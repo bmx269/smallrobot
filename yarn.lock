@@ -4357,12 +4357,7 @@ colors@1.0.3:
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
   integrity sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=
 
-colors@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
-  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
-
-colors@^1.4.0:
+colors@1.4.0, colors@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -5372,10 +5367,10 @@ ember-cli-fastboot@^2.2.1:
     md5-hex "^2.0.0"
     silent-error "^1.1.0"
 
-ember-cli-flash@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.8.0.tgz#365decadc850e77b70c1c64ce6ab6f58662f7c38"
-  integrity sha512-Iymt+7MnYPXzz1c23aYNVqj4aq7HGc8oGUSzNsgs9SwLpIoiYafYB3M81x/mqOyLLUVPjBst3Z6cF42FKAAyMw==
+ember-cli-flash@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.8.1.tgz#2836adc9a2d075769cc0aad14b313c23358284c0"
+  integrity sha512-wonc/qa90HYfKv4oqkDfZh/qSNhm01VPW6mvuX6wtU8lcNjG9zfVNcT6NWwXWxFgUgrALv5saloeECbTiETptw==
   dependencies:
     ember-cli-babel "^7.1.2"
     ember-cli-htmlbars "^3.0.0"

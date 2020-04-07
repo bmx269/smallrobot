@@ -67,7 +67,7 @@
     "ember-source": "~3.15.0",
     "ember-truth-helpers": "^2.1.0",
     "ember-unused-components": "^1.2.0",
-    "ember-web-app": "^3.0.1",
+    "ember-web-app": "^4.0.0",
     "eslint-plugin-ember": "^7.7.1",
     "loader.js": "^4.7.0",
     "prember": "^1.0.3",

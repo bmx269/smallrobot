@@ -71,7 +71,7 @@
     "ember-truth-helpers": "^2.1.0",
     "ember-unused-components": "^1.2.0",
     "ember-web-app": "^4.0.0",
-    "eslint-plugin-ember": "^8.5.2",
+    "eslint-plugin-ember": "^8.6.0",
     "loader.js": "^4.7.0",
     "prember": "^1.0.3",
     "prember-crawler": "^1.0.0",

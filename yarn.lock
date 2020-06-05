@@ -7122,12 +7122,7 @@ ember-resolver@^8.0.0:
     ember-cli-version-checker "^5.0.2"
     resolve "^1.15.1"
 
-ember-rfc176-data@^0.3.1, ember-rfc176-data@^0.3.12, ember-rfc176-data@^0.3.13:
-  version "0.3.13"
-  resolved "https://registry.yarnpkg.com/ember-rfc176-data/-/ember-rfc176-data-0.3.13.tgz#ed1712a26e65fec703655f35410414aa1982cf3b"
-  integrity sha512-m9JbwQlT6PjY7x/T8HslnXP7Sz9bx/pz3FrNfNi2NesJnbNISly0Lix6NV1fhfo46572cpq4jrM+/6yYlMefTQ==
-
-ember-rfc176-data@^0.3.13:
+ember-rfc176-data@^0.3.1, ember-rfc176-data@^0.3.13:
   version "0.3.13"
   resolved "https://registry.yarnpkg.com/ember-rfc176-data/-/ember-rfc176-data-0.3.13.tgz#ed1712a26e65fec703655f35410414aa1982cf3b"
   integrity sha512-m9JbwQlT6PjY7x/T8HslnXP7Sz9bx/pz3FrNfNi2NesJnbNISly0Lix6NV1fhfo46572cpq4jrM+/6yYlMefTQ==
@@ -14747,10 +14742,10 @@ sane@^4.0.0, sane@^4.1.0:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass@^1.26.5:
-  version "1.26.5"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.5.tgz#2d7aecfbbabfa298567c8f06615b6e24d2d68099"
-  integrity sha512-FG2swzaZUiX53YzZSjSakzvGtlds0lcbF+URuU9mxOv7WBh7NhXEVDa4kPKN4hN6fC2TkOTOKqiqp6d53N9X5Q==
+sass@^1.26.8:
+  version "1.26.8"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.8.tgz#312652530721f9568d4c4000b0db07ec6eb23325"
+  integrity sha512-yvtzyrKLGiXQu7H12ekXqsfoGT/aTKeMDyVzCB675k1HYuaj0py63i8Uf4SI9CHXj6apDhpfwbUr3gGOjdpu2Q==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 

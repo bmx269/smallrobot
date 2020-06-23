@@ -27,7 +27,7 @@
     "ember-cli": "~3.18.0",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-autoprefixer": "^1.0.2",
-    "ember-cli-babel": "^7.20.4",
+    "ember-cli-babel": "^7.21.0",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-document-title": "^0.4.0",
     "ember-cli-eslint": "^5.1.0",

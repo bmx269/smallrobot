@@ -7576,10 +7576,10 @@ ember-service-worker-prember@^0.4.0:
     broccoli-plugin "^1.3.1"
     rev-hash "^2.0.0"
 
-ember-service-worker@^0.8.4:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-0.8.4.tgz#81097c3c545f8baa03574a8dfe16fd7b0ad1c521"
-  integrity sha512-+8+urgqSBQFvQdhltY8Hesr/q+KnLySMb9bY88ajt9CFWkgGSeur61YHVFWdtQNWo2JhkkYGW/jJfNw5XTp12A==
+ember-service-worker@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-9.0.0.tgz#764d37016ede34f39d6e770470c79b59bd5609d5"
+  integrity sha512-KDZcMWm7axZUbBq3B8XON5eFXECy1FOkKk+ZTjiJeGLiTC4HWkbqElxYZz8oH8JrPrtUQ9OzeeVkA9MpZ1jM7w==
   dependencies:
     "@rollup/plugin-replace" "2.3.0"
     broccoli-caching-writer "^3.0.3"
@@ -7589,7 +7589,7 @@ ember-service-worker@^0.8.4:
     broccoli-rollup "4.0.0"
     broccoli-uglify-sourcemap "^3.2.0"
     clone "^2.1.2"
-    ember-cli-babel "^7.13.2"
+    ember-cli-babel "^7.22.1"
     glob "^7.1.6"
     hash-for-dep "^1.5.1"
 

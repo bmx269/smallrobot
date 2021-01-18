@@ -22,7 +22,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-ajax": "^5.0.0",
-    "ember-auto-import": "^1.8.0",
+    "ember-auto-import": "^1.10.1",
     "ember-burger-menu": "^3.3.4",
     "ember-cli": "~3.22.0",
     "ember-cli-app-version": "^3.2.0",

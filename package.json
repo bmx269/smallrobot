@@ -61,7 +61,7 @@
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^8.0.2",
     "ember-route-action-helper": "2.0.8",
-    "ember-router-scroll": "3.3.3",
+    "ember-router-scroll": "4.0.1",
     "ember-scroll-to": "^0.6.5",
     "ember-service-worker": "^9.0.1",
     "ember-service-worker-asset-cache": "^0.6.4",

@@ -7231,10 +7231,10 @@ ember-cli-fastboot@^2.2.3:
     md5-hex "^2.0.0"
     silent-error "^1.1.0"
 
-ember-cli-flash@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-2.1.0.tgz#73730fe039f80aef264325cb85ef05fccf111eba"
-  integrity sha512-ktuX1QQGaIF1TsUEKVB2skaxnfvpciqMZ6bQkFppimkgpHU3ruypWl0Z6NRZ8jCUeXbcHOeXA+fih95CPQyxBQ==
+ember-cli-flash@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-2.1.2.tgz#58043bf4ae96fba8fa2b15684e66bfcd21294d28"
+  integrity sha512-SxlQd1s7rb0drcxt2sgzUIe7Z53LgP8xwwYpBQfUN6ZDHLRLPAEFe05TGZFwRSBIPYdJCspOpKoLQ+ufxkHw/Q==
   dependencies:
     ember-cli-babel "^7.18.0"
     ember-cli-htmlbars "^4.2.3"

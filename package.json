@@ -51,7 +51,7 @@
     "ember-cp-validations": "^3.5.6",
     "ember-data": "~3.24.0",
     "ember-export-application-global": "^2.0.1",
-    "ember-fetch": "^8.0.4",
+    "ember-fetch": "^8.1.0",
     "ember-hammertime": "^1.6.0",
     "ember-hbs-minifier": "^0.5.0",
     "ember-href-to": "^4.1.0",

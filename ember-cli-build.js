@@ -4,7 +4,7 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const crawl = require('prember-crawler');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     'sassOptions': {
       // This tells ember-cli-sass to avoid generating the sourcemap file (like vendor.css.map)

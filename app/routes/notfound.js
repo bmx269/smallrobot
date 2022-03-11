@@ -7,16 +7,16 @@ export default Route.extend({
 
   model() {
     return this.store.query('page', {
-        filter:
-          {
-            'slug':{
-              'value': '/404'
-            },
+      filter:
+        {
+          'slug':{
+            'value': '/404'
           },
-      })
-      .then(pages => {
-        return pages.get('firstObject');
-      });
+        },
+    })
+    .then(pages => {
+      return pages.get('firstObject');
+    });
   },
 
   afterModel() {

@@ -1,57 +1,56 @@
-  <GlobalHeader @page={{page}} />
+<GlobalHeader @page={{page}} />
 
-  {{#each page.section as |section|}}
-    <PageSection @section={{section}} />
-  {{/each}}
+{{#each page.section as |section|}}
+  <PageSection @section={{section}} />
+{{/each}}
 
-  {{!contact-form}}
-  <section class="page-section">
-    <div class="outer">
-      <div class="overlay">
-        <div class="content-wrapper">
-          <div class="container-fluid">
-            <div class="row justify-content-center">
-              <div class="section-column col-12  col-md-8 col-lg-7 col-xl-6">
-                <div class="element-text">
-                  <div class="inner">
-                    <h2>We <strong>want</strong> to hear your ideas.</h2>
+{{!contact-form}}
+<section class="page-section">
+  <div class="outer">
+    <div class="overlay">
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="section-column col-12  col-md-8 col-lg-7 col-xl-6">
+              <div class="element-text">
+                <div class="inner">
+                  <h2>We <strong>want</strong> to hear your ideas.</h2>
 
-                    <p class="lead">
-                      We get a majority of our business by word of mouth, and we truly appreciate the refreshing change that personal conversations can bring. In the world of texts, email, social media, or whatever technology can make our lives not personal, we would rather you contact us with your voice.
-                    </p>
+                  <p class="lead">
+                    We get a majority of our business by word of mouth, and we truly appreciate the refreshing change
+                    that personal conversations can bring. In the world of texts, email, social media, or whatever
+                    technology can make our lives not personal, we would rather you contact us with your voice.
+                  </p>
 
-                    <p>
-                      We also understand that sometimes that is not possible, for that reason, we have our means of contact here.
-                    </p>
-                  </div>
+                  <p>
+                    We also understand that sometimes that is not possible, for that reason, we have our means of
+                    contact here.
+                  </p>
                 </div>
               </div>
-              <div class="section-column col-12 col-md-3 col-lg-3 col-xl-3">
-                <div class="element-text">
-                  <div class="inner">
-                    <h4>Location</h4>
-                    <p>
-                      <strong>
-                        Small Robot Corp.
-                      </strong>
-                      <br>
-                      Vancouver, BC,
-                      <br>
-                      Canada
-                    </p>
-                    <h4>Voice</h4>
-                    <p>
-                      <a href="tel:+1-604-764-6269">
-                        <i class="fas fa-phone-square"></i> +1-604-764-6269
-                      </a><br>
-                      <a href="skype:bmx269?chat">
-                        <i class="fab fa-skype"></i> Skype chat
-                      </a><br>
-                      <a href="mailto:info@smallrobot.co">
-                        <i class="fas fa-envelope-square"></i> Email us
-                      </a>
-                    </p>
-                  </div>
+            </div>
+            <div class="section-column col-12 col-md-3 col-lg-3 col-xl-3">
+              <div class="element-text">
+                <div class="inner">
+                  <h4>Location</h4>
+                  <p>
+                    <strong>
+                      Small Robot Corp.
+                    </strong>
+                    <br>
+                    Vancouver, BC,
+                    <br>
+                    Canada
+                  </p>
+                  <h4>Voice</h4>
+                  <p>
+                    <a href="tel:+1-604-764-6269">
+                      <i class="fas fa-phone-square"></i> +1-604-764-6269
+                    </a><br>
+                    <a href="mailto:info@smallrobot.co">
+                      <i class="fas fa-envelope-square"></i> Email us
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -59,84 +58,92 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 
-  <section class="page-section">
-    <div class="outer section-background-graylight">
-      <div class="overlay">
-        <AngledDivider />
-        <div class="content-wrapper">
-          <div class="container-fluid">
-            <div class="row justify-content-center">
-              <h2 class="col-12 col-md-10 col-lg-8">Contact Form</h2>
-              <form class="cd-form col-12 col-md-10 col-lg-8 floating-labels" name="contact" netlify-honeypot="bot-field" {{action (route-action 'sendContactRequest' contactForm) on="submit"}} netlify>
-                  <div class="row">
-                    <div class="col-12 d-none bot-field">
-                      <label>Don’t fill this out if you're human:
-                        <input name="bot-field"></label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <Input @id="fullName" @name="fullName" @type="text" @value={{contactForm.fullName}} class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <label for="organization">Organization</label>
-                        <Input @id="organization" @name="organization" @type="text" @value={{contactForm.organization}} class="form-control" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <Input @id="email" @name="email" @type="email" @aria-describedby="emailHelp" @value={{contactForm.email}} class="form-control" />
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <Input @id="phone" @name="phone" placeholder="XXX-XXX-XXXX" @type="text" @value={{contactForm.phone}} class="form-control" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label for="message">Message</label>
-                        <Textarea @id="message" @name="message" @value={{contactForm.message}} @rows="4" class="form-control" />
-                      </div>
-                    </div>
-                  </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <button type="submit" class="btn btn-gray"
-                        disabled={{v-get contactForm 'isTruelyInvalid'}}>Submit</button>
-                    </div>
+<section class="page-section">
+  <div class="outer section-background-graylight">
+    <div class="overlay">
+      <AngledDivider />
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <h2 class="col-12 col-md-10 col-lg-8">Contact Form</h2>
+            <form class="cd-form col-12 col-md-10 col-lg-8 floating-labels" name="contact" netlify-honeypot="bot-field"
+              {{action (route-action 'sendContactRequest' contactForm) on="submit" }} netlify>
+              <div class="row">
+                <div class="col-12 d-none bot-field">
+                  <label>Don’t fill this out if you're human:
+                    <input name="bot-field"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <Input @id="fullName" @name="fullName" @type="text" @value={{contactForm.fullName}}
+                      class="form-control" />
                   </div>
                 </div>
-                <div class="alerts">
-                  <div>
-                    {{#each flashMessages.queue as |flash|}}
-                      <FlashMessage @flash={{flash}} />
-                    {{/each}}
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <Input @id="organization" @name="organization" @type="text" @value={{contactForm.organization}}
+                      class="form-control" />
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <Input @id="email" @name="email" @type="email" @aria-describedby="emailHelp"
+                      @value={{contactForm.email}} class="form-control" />
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                      else.</small>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <Input @id="phone" @name="phone" placeholder="XXX-XXX-XXXX" @type="text"
+                      @value={{contactForm.phone}} class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <Textarea @id="message" @name="message" @value={{contactForm.message}} @rows="4"
+                      class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-gray" disabled={{v-get contactForm 'isTruelyInvalid'
+                      }}>Submit</button>
+                  </div>
+                </div>
+              </div>
+              <div class="alerts">
+                <div>
+                  {{#each flashMessages.queue as |flash|}}
+                    <FlashMessage @flash={{flash}} />
+                  {{/each}}
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <GlobalFooter />
+<GlobalFooter />

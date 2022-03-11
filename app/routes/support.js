@@ -6,7 +6,7 @@ export default Route.extend({
   headData: service(),
 
   model() {
-    return this.store.findRecord('page', '37ddbded-ed77-4445-ad5e-40c842d24041');
+    return this.store.findRecord('page', '37ddbded-ed77-4445--ad5e40c842d24041');
   },
 
   afterModel() {

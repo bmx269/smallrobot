@@ -1,0 +1,36 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+/bower_components/
+
+# build output — Nuxt
+/.nuxt/
+/.output/
+/.data/
+/.nitro/
+/.cache/
+# no trailing slash: `nuxt generate` leaves `dist` as a symlink to .output/public,
+# and a trailing slash would only match a real directory
+/dist
+
+
+# env
+.env
+.env.*
+!.env.example
+
+# misc
+/.pnp*
+.sass-cache/
+/connect.lock
+/coverage/
+.DS_Store
+.idea/
+.vscode/
+*.log
+/libpeerconnection.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+

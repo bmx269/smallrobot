@@ -1,0 +1,110 @@
+# Apache config for the self-hosted deployment.
+#
+# Lives in public/ so it deploys with the site and survives server-side vhost
+# regeneration. Nuxt copies dotfiles from public/ into .output/public/ (verified).
+#
+# Replaces the old Netlify headers/redirects files.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # -------------------------------------------------------------------------
+  # External redirects, carried over from netlify.toml
+  # -------------------------------------------------------------------------
+  # smallrobot.org -> smallrobot.co, covering bare and www over both schemes. These are
+  # live SEO redirects; dropping them loses that domain's accumulated link equity.
+  #
+  # NOTE: Apache can only honour this if it answers for smallrobot.org at all — the domain
+  # must be configured on the server as a domain or alias of this document root.
+  RewriteCond %{HTTP_HOST} ^(www\.)?smallrobot\.org$ [NC]
+  RewriteRule ^(.*)$ https://smallrobot.co/$1 [R=301,L]
+
+  # Canonical host is the bare domain, matching the old CNAME.
+  RewriteCond %{HTTP_HOST} ^www\.smallrobot\.co$ [NC]
+  RewriteRule ^(.*)$ https://smallrobot.co/$1 [R=301,L]
+
+  # -------------------------------------------------------------------------
+  # Clean URLs without trailing-slash redirects
+  # -------------------------------------------------------------------------
+  # Nuxt writes /about/index.html, but the site's URLs — and the canonical tags in
+  # useSeo — have no trailing slash. Left alone, mod_dir would 301 /about to /about/,
+  # adding a hop and contradicting our own canonicals. Production serves /about directly
+  # with 200, so match that: turn off the redirect and resolve the file internally.
+  DirectorySlash Off
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*?)/?$ /$1/index.html [L]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 404s
+# ---------------------------------------------------------------------------
+# Every route is prerendered to a real file, so an unmatched path is a genuine 404 and
+# should say so. Deliberately NOT falling back to the SPA shell (200.html): that would
+# return HTTP 200 for missing pages, which reads as a soft 404 to crawlers.
+#
+# /404/index.html is the fully-rendered CMS 404 page, prerendered explicitly (see
+# nitro.prerender.routes in nuxt.config.ts). NOT /404.html — Nitro writes that file as a
+# client-only SPA shell with an empty body, which is useless as an error document.
+#
+# Consequence worth knowing: content added in Drupal does not appear until the site is
+# rebuilt, because its URL has no file yet. That is inherent to prerendering — automate it
+# with a scheduled CI build or a Drupal webhook rather than by weakening this.
+ErrorDocument 404 /404/index.html
+
+# ---------------------------------------------------------------------------
+# Caching
+# ---------------------------------------------------------------------------
+<IfModule mod_setenvif.c>
+  # Only /_nuxt/ is content-hashed, so only /_nuxt/ is safe to treat as immutable.
+  # Everything in /img/ keeps its filename across edits and must NOT be pinned for a year.
+  SetEnvIf Request_URI "^/_nuxt/" HASHED_ASSET=1
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Hashed: a changed file gets a new URL, so this can never go stale.
+  Header set Cache-Control "public, max-age=31536000, immutable" env=HASHED_ASSET
+
+  # Unhashed static assets — cached, but able to pick up a replaced file within a day.
+  <FilesMatch "\.(woff2?|ttf|eot|svg|png|jpe?g|gif|webp|avif|ico)$">
+    Header set Cache-Control "public, max-age=86400" env=!HASHED_ASSET
+  </FilesMatch>
+
+  # HTML is unhashed and is how a deploy becomes visible, so it must revalidate.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # The service worker kill switch MUST revalidate, or affected visitors stay stuck on the
+  # old worker still serving the old site. See public/sw.js. Listed after the generic
+  # rules so it wins.
+  <FilesMatch "^sw\.js$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+
+  # The old .netlifyheaders set `Content-Encoding: gzip` by hand. Deliberately NOT carried
+  # over: declaring that header without actually gzipping the body serves corrupt files.
+  # Compression is mod_deflate/mod_brotli's job, below.
+</IfModule>
+
+# Images and fonts are already compressed; re-compressing burns CPU for nothing.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Misc
+# ---------------------------------------------------------------------------
+DirectoryIndex index.html
+
+# Don't advertise the directory tree for any path lacking an index.
+Options -Indexes

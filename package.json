@@ -1,0 +1,35 @@
+{
+  "name": "smallrobotco",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Small Robot Website",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "nuxt typecheck",
+    "diff:prod": "node scripts/diff-vs-production.mjs",
+    "diff:structure": "node scripts/compare-structure.mjs",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.5.1",
+    "swiper": "^14.0.7",
+    "vue": "^3.5.40",
+    "vue-router": "^5.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10",
+    "vue-tsc": "^3.3.9"
+  },
+  "engines": {
+    "node": "^24.11.0"
+  }
+}

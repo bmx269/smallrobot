@@ -1,0 +1,43 @@
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,600,800");
+
+@import url('https://rsms.me/inter/inter.css');
+
+// @supports (font-variation-settings: normal) {
+//   html { font-family: 'Inter var', sans-serif; }
+// }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+// Vendored from ember-burger-menu 3.3.4 (abandoned; last published 2022). Only the
+// variables, structure, and the two animations this site actually used are kept —
+// `@animation="reveal"` and `@itemAnimation="stack"` per the old application.hbs.
+// The markup that goes with these class names is now ours, in layouts/default.vue.
+@import 'vendor/burger-menu/variables';
+@import 'vendor/burger-menu/structure';
+@import 'vendor/burger-menu/animations/reveal';
+@import 'vendor/burger-menu/animations/menu-item/stack';
+
+@import 'bootstrap/bootstrap';
+
+@import 'global/animate';
+@import 'global/base';
+@import 'global/typography';
+
+@import 'components/angled-divider';
+@import 'components/hero-splash';
+@import 'components/main-nav';
+@import 'components/footer-nav';
+@import 'components/page-section';
+
+@import 'components/elements';

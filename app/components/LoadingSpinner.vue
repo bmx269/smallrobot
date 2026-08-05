@@ -1,0 +1,15 @@
+<template>
+  <div class="outer">
+    <div class="overlay">
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="d-flex flex-wrap h-100 w-100 justify-content-center align-items-center">
+            <div>
+              <img src="/img/loader.gif" alt="loading animation">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,115 @@
+name: CI
+
+on:
+  push:
+    branches: [main, vue]
+  pull_request:
+  # Manual runs deploy whatever branch they are dispatched from — this is how a staging
+  # deploy of `vue` works before it merges to main.
+  workflow_dispatch:
+
+# Replaces .circleci/config.yml (Node 8) and .travis.yml (Node 6), both of which
+# had been dead for years.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          # Single source of truth: .tool-versions (Node 24, the active LTS — Nuxt 4
+          # requires ^22.19 || ^24.11 || >=26). CI can no longer drift from local.
+          node-version-file: '.tool-versions'
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run typecheck
+
+      - run: npm test
+
+      # Hits the live Drupal API, so it fails if the backend is unreachable or its
+      # content model changes in a way that breaks the queries — worth knowing about.
+      # The endpoints come from secrets; with them absent this fails loudly rather
+      # than shipping a build with no data.
+      - run: npm run generate
+        env:
+          NUXT_PUBLIC_API_BASE: ${{ secrets.NUXT_PUBLIC_API_BASE }}
+          NUXT_PUBLIC_FILE_BASE: ${{ secrets.NUXT_PUBLIC_FILE_BASE }}
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: static-site
+          path: .output/public
+          retention-days: 7
+          # Since v4.4 hidden files are excluded by default, which would silently drop
+          # .htaccess — the file the whole Apache setup depends on. The verify step in
+          # the deploy job would catch it, but better it never breaks.
+          include-hidden-files: true
+
+  # ---------------------------------------------------------------------------
+  # Deploy the static build to the web host.
+  #
+  # Builds happen in CI, never on the server, so a broken build cannot take the
+  # site down — the deploy only ever ships an artifact that already passed
+  # typecheck, tests and generate.
+  #
+  # Runs on push to main and on manual dispatch (any branch, for staging). Until
+  # the repository has deploy secrets configured, the job short-circuits with a
+  # notice instead of failing.
+  #
+  # Required repository secrets (values live only in GitHub, never in the repo):
+  #   DEPLOY_SSH_KEY   private half of a dedicated deploy keypair; public half in
+  #                    the deploy user's ~/.ssh/authorized_keys
+  #   DEPLOY_HOST      server hostname or address
+  #   DEPLOY_USER      unprivileged deploy user (NOT root) that owns the docroot
+  #   DEPLOY_PATH      absolute path of the document root
+  # ---------------------------------------------------------------------------
+  deploy:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    # `secrets` is not usable in a job-level `if`, so expose presence via env instead.
+    env:
+      DEPLOY_CONFIGURED: ${{ secrets.DEPLOY_SSH_KEY != '' && secrets.DEPLOY_HOST != '' }}
+    steps:
+      - name: Check deploy secrets
+        if: env.DEPLOY_CONFIGURED != 'true'
+        run: echo "::notice::Deploy secrets not configured — skipping deploy. Set DEPLOY_SSH_KEY, DEPLOY_HOST, DEPLOY_USER, DEPLOY_PATH to enable."
+
+      - uses: actions/download-artifact@v8
+        if: env.DEPLOY_CONFIGURED == 'true'
+        with:
+          name: static-site
+          path: site
+
+      - name: Set up SSH
+        if: env.DEPLOY_CONFIGURED == 'true'
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Fresh runner every time, so pin the host key on first contact. For a
+          # stricter setup, add a DEPLOY_KNOWN_HOSTS secret and write it here instead.
+          ssh-keyscan -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Rsync to VPS
+        if: env.DEPLOY_CONFIGURED == 'true'
+        run: |
+          # --delete keeps the docroot an exact mirror of the build: files removed from
+          # the site (old hashed bundles, deleted pages) disappear rather than rot.
+          # Not atomic — a visitor mid-deploy could see a torn state for a second or
+          # two. Acceptable here; the upgrade path is rsync to a timestamped dir and a
+          # symlink swap, which needs the vhost docroot pointed at the symlink first.
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/deploy_key" \
+            site/ "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/"
+
+      - name: Verify deployment
+        if: env.DEPLOY_CONFIGURED == 'true'
+        run: |
+          # The htaccess ships with the site; if it made it, everything did.
+          ssh -i ~/.ssh/deploy_key "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+            "test -f '${{ secrets.DEPLOY_PATH }}/.htaccess' && test -f '${{ secrets.DEPLOY_PATH }}/index.html'"
+          echo "::notice::Deployed to ${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}"

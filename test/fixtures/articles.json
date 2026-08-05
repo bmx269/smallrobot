@@ -1,0 +1,503 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http://jsonapi.org/format/1.0/"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "type": "article",
+      "id": "ce8e970b-d144-4bb4-ae45-a71e25a872ec",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/article/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec?resourceVersion=id%3A1217"
+        },
+        "working-copy": {
+          "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec?resourceVersion=rel%3Aworking-copy"
+        }
+      },
+      "attributes": {
+        "drupal_internal__nid": 91,
+        "status": true,
+        "title": "Building Small Robot - The Product",
+        "created": "2019-10-18T20:09:19+00:00",
+        "changed": "2019-10-18T20:09:19+00:00",
+        "path": {
+          "alias": "/building-small-robot-product",
+          "pid": 20,
+          "langcode": "en"
+        },
+        "body": {
+          "value": "<p>I, like many, have ideas for products we <strong>want</strong> to build, yet find it hard to get moving.&nbsp;</p>\r\n\r\n<p>For me, my latest idea has me actually moving forward with what I think is a good idea.&nbsp;</p>\r\n\r\n<p>Not an idea that will make millions of people happy, or buy into it, but a simple product that will help in an area that I do not see being utilized.</p>\r\n\r\n<p>I have decided I am going to try and document my challenges, and journey a bit in writing.</p>\r\n\r\n<p>Please join me on the journey to create Small Robot&nbsp;The Product.</p>\r\n\r\n<h3>Challenge 1 - API or Full Stack</h3>\r\n\r\n<p>Currently I have been using Drupal 8 as an&nbsp;API (JSON:API) up until now, but now I have concerns that a fully decoupled Drupal 8 will not scale as I want it to. I am constantly wondering if I should change&nbsp;the from the API / Front end app approach, to something like full stack Ruby on Rails, Phoenix, or Laravel. The reason the thought to change is there, is that I see products like Shopify, TransmissionFM, Basecamp, and others, that are successfully using Ruby on Rails, and in their cases, not running as an API + Front end.&nbsp;</p>\r\n\r\n<p>I will leave that challenge, as the first one I am really second guessing myself on.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+          "format": "full_html",
+          "processed": "<p>I, like many, have ideas for products we <strong>want</strong> to build, yet find it hard to get moving.&nbsp;</p>\n<p>For me, my latest idea has me actually moving forward with what I think is a good idea.&nbsp;</p>\n<p>Not an idea that will make millions of people happy, or buy into it, but a simple product that will help in an area that I do not see being utilized.</p>\n<p>I have decided I am going to try and document my challenges, and journey a bit in writing.</p>\n<p>Please join me on the journey to create Small Robot&nbsp;The Product.</p>\n<h3>Challenge 1 - API or Full Stack</h3>\n<p>Currently I have been using Drupal 8 as an&nbsp;API (JSON:API) up until now, but now I have concerns that a fully decoupled Drupal 8 will not scale as I want it to. I am constantly wondering if I should change&nbsp;the from the API / Front end app approach, to something like full stack Ruby on Rails, Phoenix, or Laravel. The reason the thought to change is there, is that I see products like Shopify, TransmissionFM, Basecamp, and others, that are successfully using Ruby on Rails, and in their cases, not running as an API + Front end.&nbsp;</p>\n<p>I will leave that challenge, as the first one I am really second guessing myself on.&nbsp;</p>\n<p>&nbsp;</p>\n",
+          "summary": ""
+        },
+        "dashedTitle": "building-smallrobot-the-product",
+        "heroBackgroundUrl": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+        "heroColor": "background-black",
+        "heroLayout": "hero-center",
+        "heroOverlay": null,
+        "navColor": "nav-light"
+      },
+      "relationships": {
+        "node_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec/relationships/node_type?resourceVersion=id%3A1217"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec/uid?resourceVersion=id%3A1217"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec/relationships/uid?resourceVersion=id%3A1217"
+            }
+          }
+        },
+        "bio": {
+          "data": {
+            "type": "bio",
+            "id": "40ae49e0-5103-44fe-9768-456fdb3a0dd3",
+            "meta": {
+              "drupal_internal__target_id": 50
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec/bio?resourceVersion=id%3A1217"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/ce8e970b-d144-4bb4-ae45-a71e25a872ec/relationships/bio?resourceVersion=id%3A1217"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "article",
+      "id": "928f0c19-21cc-4267-879d-05e697049391",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/article/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391?resourceVersion=id%3A1422"
+        },
+        "working-copy": {
+          "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391?resourceVersion=rel%3Aworking-copy"
+        }
+      },
+      "attributes": {
+        "drupal_internal__nid": 89,
+        "status": true,
+        "title": "Using a Vue.js app in a D8 Paragraph",
+        "created": "2019-10-18T19:16:55+00:00",
+        "changed": "2020-05-12T22:49:03+00:00",
+        "path": {
+          "alias": "/using-vuejs-app-d8-paragraph",
+          "pid": 18,
+          "langcode": "en"
+        },
+        "body": {
+          "value": "<p>I have had been given the task to pull data from a&nbsp;REST API into a Drupal 8 Paragraph, to be rendered on any specific page. The API would provide the data for a profile, showing in a listing, and a full bio.&nbsp;</p>\r\n\r\n<p>I wanted to keep this as simple as possible, and at the same time, make it cool.&nbsp;</p>\r\n\r\n<p>For this task, I decided to use <a href=\"https://vuejs.org/\" target=\"_blank\">Vue.js</a>&nbsp;inside a template. I felt that this would give me a way to work with Vue in a way that is not as common - inside a Drupal 8 template.&nbsp;</p>\r\n\r\n<p>I created a Paragraph type called a Profile Listing. In that Paragraph, I added some fields that I would be using to control the API call. In this case, a related taxonomy, limit, and offset, and a few other fields.</p>\r\n\r\n<h3>The Template</h3>\r\n\r\n<p>Using a template I created for that Paragraph, I did some markup tricks to get twig to render correctly. Notice the <code>{' '}</code> wrapping the <code>{{ profile.firstname }}</code>.</p>\r\n\r\n<pre>\r\n<code>{# string wrapper is to prevent Twig processing the Vue vars #}\r\n&lt;div id=\"App\"&gt;\r\n  &lt;div v-for=\"profile in profiles\" class=\"card\"&gt;\r\n    &lt;h2 class=\"name\"&gt;{{ '{{ profile.firstName }} {{ profile.lastName }}' }}&lt;/h2&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;</code></pre>\r\n\r\n<p>This allows the HTML to not be filtered in the template. This does make it so that ticks ` have to be used instead of single quotes inside that template.</p>\r\n\r\n<p>You can also write it this way:</p>\r\n\r\n<pre>\r\n<code>&lt;div id=\"App\"&gt;\r\n  &lt;div v-for=\"profile in profiles\" class=\"card\"&gt;\r\n    &lt;h2 class=\"name\"&gt;&lt;span v-html=\"profile.firstName\"&gt;&lt;/span&gt; &lt;span v-html=\"profile.lastName\"&gt;&lt;/span&gt;&lt;/h2&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;</code></pre>\r\n\r\n<p>Next&nbsp;I pulled the CDN versions of Vue into the template, as well as Axios, a data management plugin.</p>\r\n\r\n<pre>\r\n<code>&lt;script src=\"https://cdn.jsdelivr.net/npm/vue@2.6.0\"&gt;&lt;/script&gt;\r\n&lt;script src=\"https://unpkg.com/axios/dist/axios.min.js\"&gt;&lt;/script&gt;</code></pre>\r\n\r\n<p>Then inside a following script tag, I write the app. Since the app is inside the Paragraph, all field values can be used in the markup, allowing you to filter based on the values. This is a very shortened and modified version, but you get the picture.</p>\r\n\r\n<pre>\r\n<code>&lt;script&gt; const myApp = new Vue({\r\n  el: '#App',\r\n  data () {\r\n    return {\r\n      profiles: [],\r\n      loaded: false\r\n      }\r\n    },\r\n  methods: {\r\n    async getProfiles(id) {\r\n      const = 'https://example.com/api/';\r\n      let endpoint = 'profiles' </code></pre>\r\n\r\n<p>Notice the following API call, which includes the field values to filter the result.</p>\r\n\r\n<pre>\r\n<code>  try {\r\n    const resp = await axios.get(url + endpoint + '?args[0]=\r\n      {% if content.field_setting|field_value %}\r\n        {{ content.field_setting|field_value }}  \r\n      {% else %}all{% endif %}\r\n      &amp;limit={{ content.field_limit|field_value }}  \r\n      &amp;offset={{ content.field_offset|field_value }}');\r\n\r\n      this.profiles = resp.data;\r\n      this.loaded = true;\r\n     }\r\n     catch (err) {\r\n        console.log(err)\r\n      }\r\n     },\r\n   },\r\n   mounted() {\r\n    profileParams = 'all';\r\n    this.getProfiles(profileParams);\r\n  }\r\n});\r\n&lt;/script&gt;</code></pre>\r\n\r\n<p>The result is pretty awesome. Now anytime that paragraph is used, the app loads the Vue app, with the REST data.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+          "format": "full_html",
+          "processed": "<p>I have had been given the task to pull data from a&nbsp;REST API into a Drupal 8 Paragraph, to be rendered on any specific page. The API would provide the data for a profile, showing in a listing, and a full bio.&nbsp;</p>\n<p>I wanted to keep this as simple as possible, and at the same time, make it cool.&nbsp;</p>\n<p>For this task, I decided to use <a href=\"https://vuejs.org/\" target=\"_blank\">Vue.js</a>&nbsp;inside a template. I felt that this would give me a way to work with Vue in a way that is not as common - inside a Drupal 8 template.&nbsp;</p>\n<p>I created a Paragraph type called a Profile Listing. In that Paragraph, I added some fields that I would be using to control the API call. In this case, a related taxonomy, limit, and offset, and a few other fields.</p>\n<h3>The Template</h3>\n<p>Using a template I created for that Paragraph, I did some markup tricks to get twig to render correctly. Notice the <code>{' '}</code> wrapping the <code>{{ profile.firstname }}</code>.</p>\n<pre>\n<code>{# string wrapper is to prevent Twig processing the Vue vars #}\n&lt;div id=\"App\"&gt;\n  &lt;div v-for=\"profile in profiles\" class=\"card\"&gt;\n    &lt;h2 class=\"name\"&gt;{{ '{{ profile.firstName }} {{ profile.lastName }}' }}&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</code></pre><p>This allows the HTML to not be filtered in the template. This does make it so that ticks ` have to be used instead of single quotes inside that template.</p>\n<p>You can also write it this way:</p>\n<pre>\n<code>&lt;div id=\"App\"&gt;\n  &lt;div v-for=\"profile in profiles\" class=\"card\"&gt;\n    &lt;h2 class=\"name\"&gt;&lt;span v-html=\"profile.firstName\"&gt;&lt;/span&gt; &lt;span v-html=\"profile.lastName\"&gt;&lt;/span&gt;&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</code></pre><p>Next&nbsp;I pulled the CDN versions of Vue into the template, as well as Axios, a data management plugin.</p>\n<pre>\n<code>&lt;script src=\"https://cdn.jsdelivr.net/npm/vue@2.6.0\"&gt;&lt;/script&gt;\n&lt;script src=\"https://unpkg.com/axios/dist/axios.min.js\"&gt;&lt;/script&gt;</code></pre><p>Then inside a following script tag, I write the app. Since the app is inside the Paragraph, all field values can be used in the markup, allowing you to filter based on the values. This is a very shortened and modified version, but you get the picture.</p>\n<pre>\n<code>&lt;script&gt; const myApp = new Vue({\n  el: '#App',\n  data () {\n    return {\n      profiles: [],\n      loaded: false\n      }\n    },\n  methods: {\n    async getProfiles(id) {\n      const = 'https://example.com/api/';\n      let endpoint = 'profiles' </code></pre><p>Notice the following API call, which includes the field values to filter the result.</p>\n<pre>\n<code>  try {\n    const resp = await axios.get(url + endpoint + '?args[0]=\n      {% if content.field_setting|field_value %}\n        {{ content.field_setting|field_value }}  \n      {% else %}all{% endif %}\n      &amp;limit={{ content.field_limit|field_value }}  \n      &amp;offset={{ content.field_offset|field_value }}');\n\n      this.profiles = resp.data;\n      this.loaded = true;\n     }\n     catch (err) {\n        console.log(err)\n      }\n     },\n   },\n   mounted() {\n    profileParams = 'all';\n    this.getProfiles(profileParams);\n  }\n});\n&lt;/script&gt;</code></pre><p>The result is pretty awesome. Now anytime that paragraph is used, the app loads the Vue app, with the REST data.</p>\n<p>&nbsp;</p>\n",
+          "summary": ""
+        },
+        "dashedTitle": "using-vuejs-app-in-d8-paragraph",
+        "heroBackgroundUrl": "https://images.unsplash.com/photo-1446729444801-31245ddba81a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+        "heroColor": "background-black",
+        "heroLayout": "hero-center",
+        "heroOverlay": "overlay-graydark",
+        "navColor": "nav-light"
+      },
+      "relationships": {
+        "node_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391/relationships/node_type?resourceVersion=id%3A1422"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391/uid?resourceVersion=id%3A1422"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391/relationships/uid?resourceVersion=id%3A1422"
+            }
+          }
+        },
+        "bio": {
+          "data": {
+            "type": "bio",
+            "id": "40ae49e0-5103-44fe-9768-456fdb3a0dd3",
+            "meta": {
+              "drupal_internal__target_id": 50
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391/bio?resourceVersion=id%3A1422"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/928f0c19-21cc-4267-879d-05e697049391/relationships/bio?resourceVersion=id%3A1422"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "article",
+      "id": "c3cf5209-446e-45b9-b9cd-b34239f19022",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/article/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022?resourceVersion=id%3A808"
+        },
+        "working-copy": {
+          "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022?resourceVersion=rel%3Aworking-copy"
+        }
+      },
+      "attributes": {
+        "drupal_internal__nid": 51,
+        "status": true,
+        "title": "Lack of Interest",
+        "created": "2019-01-29T01:10:41+00:00",
+        "changed": "2019-01-30T06:26:31+00:00",
+        "path": {
+          "alias": "/lack-interest",
+          "pid": 17,
+          "langcode": "en"
+        },
+        "body": {
+          "value": "<p>I enjoy making the web look good.</p>\r\n\r\n<p><strong>This</strong> is something I struggle with in my work. I feel that there are a lot of web development folks who just don't take the time, or even want to learn about design.</p>\r\n\r\n<blockquote>\r\n<p>“I don't have an eye for design...”</p>\r\n</blockquote>\r\n\r\n<p>This is an expression I hear more often as an excuse as to why a \"style guide\" has not been followed. This&nbsp;makes me question why I can see the&nbsp;obvious patterns in a design, and other developers can not.</p>\r\n\r\n<p>Does this come from a lack of interest?</p>\r\n\r\n<p>I sometimes feel that is the case, but don't actually believe that is the case for all. Why then is it so hard for some to understand design, and how can we help these folks to learn?</p>\r\n",
+          "format": "full_html",
+          "processed": "<p>I enjoy making the web look good.</p>\n<p><strong>This</strong> is something I struggle with in my work. I feel that there are a lot of web development folks who just don't take the time, or even want to learn about design.</p>\n<blockquote><p>“I don't have an eye for design...”</p>\n</blockquote>\n<p>This is an expression I hear more often as an excuse as to why a \"style guide\" has not been followed. This&nbsp;makes me question why I can see the&nbsp;obvious patterns in a design, and other developers can not.</p>\n<p>Does this come from a lack of interest?</p>\n<p>I sometimes feel that is the case, but don't actually believe that is the case for all. Why then is it so hard for some to understand design, and how can we help these folks to learn?</p>\n",
+          "summary": ""
+        },
+        "dashedTitle": "lack-of-interest",
+        "heroBackgroundUrl": "https://images.unsplash.com/photo-1467052267474-1b9d6554bf2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+        "heroColor": "background-black",
+        "heroLayout": "hero-center",
+        "heroOverlay": "overlay-black",
+        "navColor": "nav-light"
+      },
+      "relationships": {
+        "node_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022/relationships/node_type?resourceVersion=id%3A808"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022/uid?resourceVersion=id%3A808"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022/relationships/uid?resourceVersion=id%3A808"
+            }
+          }
+        },
+        "bio": {
+          "data": {
+            "type": "bio",
+            "id": "40ae49e0-5103-44fe-9768-456fdb3a0dd3",
+            "meta": {
+              "drupal_internal__target_id": 50
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022/bio?resourceVersion=id%3A808"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/c3cf5209-446e-45b9-b9cd-b34239f19022/relationships/bio?resourceVersion=id%3A808"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "article",
+      "id": "e337b696-9de3-4b3c-8b93-0e3b063f63c4",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/article/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4?resourceVersion=id%3A1614"
+        },
+        "working-copy": {
+          "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4?resourceVersion=rel%3Aworking-copy"
+        }
+      },
+      "attributes": {
+        "drupal_internal__nid": 18,
+        "status": true,
+        "title": "Potential for Decoupled Development",
+        "created": "2017-11-30T08:14:12+00:00",
+        "changed": "2022-12-20T00:57:46+00:00",
+        "path": {
+          "alias": "/blog/potential-decoupled-development",
+          "pid": 14,
+          "langcode": "en"
+        },
+        "body": {
+          "value": "<p><em>Decoupled Drupal</em>, what does that even mean?&nbsp;When I first heard that expression, it took me a while to understand what it really meant. To be \"decoupled\" from something, means to remove a connection, or coupling. What we are doing is not really removing that connection, but separating it into different concerns. In the case of Drupal, we decouple the&nbsp;content management from the presentation completely, making Drupal an API.&nbsp;</p>\r\n\r\n<p>If you know what an API is, you are going to understand what Decoupled Drupal is then, it is making Drupal an API only.&nbsp;By decoupling, you are able to use Drupal as a data provider for an application, website, web based application, smart watch, kiosk, TV, all of the above.&nbsp;The potential usage is almost crazy.&nbsp;</p>\r\n\r\n<p>To share some insight, I have been using Drupal 8, as an API for multiple projects since late 2016. In that time, we (Small Robot) have built a conference schedule planner, a voting kiosk, multiple Progressive Web Apps (PWA), including the site you are currently viewing. Each one of these projects has had challenges, in each projects way, as there is not really a \"guide\" on how to build what you may want. In the past year and a half, at the time of writing, the tools to make Drupal work decoupled have received a lot of improvements, and there is still more work taking place.</p>\r\n\r\n<p>Decoupling Drupal is not just about Drupal as an API, it also has a lot to do with the presentation side of things. When you do not use Drupal to output to the theme layer, you now rely on your development to make the site output anything, to any screen. This is a blessing, and a curse. Let's examine some of the pros and cons of this.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+          "format": "full_html",
+          "processed": "<p><em>Decoupled Drupal</em>, what does that even mean?&nbsp;When I first heard that expression, it took me a while to understand what it really meant. To be \"decoupled\" from something, means to remove a connection, or coupling. What we are doing is not really removing that connection, but separating it into different concerns. In the case of Drupal, we decouple the&nbsp;content management from the presentation completely, making Drupal an API.&nbsp;</p>\n<p>If you know what an API is, you are going to understand what Decoupled Drupal is then, it is making Drupal an API only.&nbsp;By decoupling, you are able to use Drupal as a data provider for an application, website, web based application, smart watch, kiosk, TV, all of the above.&nbsp;The potential usage is almost crazy.&nbsp;</p>\n<p>To share some insight, I have been using Drupal 8, as an API for multiple projects since late 2016. In that time, we (Small Robot) have built a conference schedule planner, a voting kiosk, multiple Progressive Web Apps (PWA), including the site you are currently viewing. Each one of these projects has had challenges, in each projects way, as there is not really a \"guide\" on how to build what you may want. In the past year and a half, at the time of writing, the tools to make Drupal work decoupled have received a lot of improvements, and there is still more work taking place.</p>\n<p>Decoupling Drupal is not just about Drupal as an API, it also has a lot to do with the presentation side of things. When you do not use Drupal to output to the theme layer, you now rely on your development to make the site output anything, to any screen. This is a blessing, and a curse. Let's examine some of the pros and cons of this.</p>\n<p>&nbsp;</p>\n",
+          "summary": ""
+        },
+        "dashedTitle": "potential-for-decoupled-development",
+        "heroBackgroundUrl": "https://images.unsplash.com/photo-1668122989567-9e9d36f4539d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2748&q=80",
+        "heroColor": null,
+        "heroLayout": "hero-center",
+        "heroOverlay": null,
+        "navColor": "nav-light"
+      },
+      "relationships": {
+        "node_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4/relationships/node_type?resourceVersion=id%3A1614"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4/uid?resourceVersion=id%3A1614"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4/relationships/uid?resourceVersion=id%3A1614"
+            }
+          }
+        },
+        "bio": {
+          "data": {
+            "type": "bio",
+            "id": "40ae49e0-5103-44fe-9768-456fdb3a0dd3",
+            "meta": {
+              "drupal_internal__target_id": 50
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4/bio?resourceVersion=id%3A1614"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/article/e337b696-9de3-4b3c-8b93-0e3b063f63c4/relationships/bio?resourceVersion=id%3A1614"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "bio",
+      "id": "40ae49e0-5103-44fe-9768-456fdb3a0dd3",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/bio/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3?resourceVersion=id%3A792"
+        },
+        "working-copy": {
+          "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3?resourceVersion=rel%3Aworking-copy"
+        }
+      },
+      "attributes": {
+        "drupal_internal__nid": 50,
+        "drupal_internal__vid": 792,
+        "langcode": "en",
+        "revision_timestamp": "2019-01-20T20:33:28+00:00",
+        "status": true,
+        "title": "Trent Stromkins",
+        "created": "2019-01-20T06:12:57+00:00",
+        "changed": "2019-01-20T20:33:28+00:00",
+        "promote": true,
+        "sticky": false,
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        },
+        "body": null,
+        "linkedin": "https://www.linkedin.com/in/trentstromkins",
+        "professionalTitle": "Founder & CEO, Software Engineer",
+        "twitter": "bmx269"
+      },
+      "relationships": {
+        "node_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/relationships/node_type?resourceVersion=id%3A792"
+            }
+          }
+        },
+        "revision_uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/revision_uid?resourceVersion=id%3A792"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/relationships/revision_uid?resourceVersion=id%3A792"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/uid?resourceVersion=id%3A792"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/relationships/uid?resourceVersion=id%3A792"
+            }
+          }
+        },
+        "photo": {
+          "data": {
+            "type": "file",
+            "id": "b949d713-0184-4a63-b63e-e4c5805d8391",
+            "meta": {
+              "alt": "portrait of Trent Stromkins",
+              "title": "",
+              "width": 360,
+              "height": 415,
+              "drupal_internal__target_id": 91
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/photo?resourceVersion=id%3A792"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/bio/40ae49e0-5103-44fe-9768-456fdb3a0dd3/relationships/photo?resourceVersion=id%3A792"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "file",
+      "id": "b949d713-0184-4a63-b63e-e4c5805d8391",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/file/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/file/b949d713-0184-4a63-b63e-e4c5805d8391"
+        }
+      },
+      "attributes": {
+        "drupal_internal__fid": 91,
+        "filename": "Trent.jpg",
+        "uri": "/sites/default/files/2019-01/Trent.jpg",
+        "filemime": "image/jpeg",
+        "filesize": 39025,
+        "status": true,
+        "created": "2019-01-20T06:13:43+00:00",
+        "changed": "2019-01-20T06:14:09+00:00"
+      },
+      "relationships": {
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/file/b949d713-0184-4a63-b63e-e4c5805d8391/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/file/b949d713-0184-4a63-b63e-e4c5805d8391/relationships/uid"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "count": 4
+  },
+  "links": {
+    "describedby": {
+      "href": "https://cms.example.com/api/article/collection/schema"
+    },
+    "self": {
+      "href": "https://cms.example.com/api/article?filter%5Bstatus%5D=1&include=bio%2Cbio.photo&sort=-created"
+    }
+  }
+}

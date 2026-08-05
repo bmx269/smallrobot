@@ -1,0 +1,1829 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http://jsonapi.org/format/1.0/"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "type": "page",
+      "id": "93aec22a-3710-4fe0-ae09-663f6790bb79",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/page/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79?resourceVersion=id%3A1618"
+        },
+        "working-copy": {
+          "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79?resourceVersion=rel%3Aworking-copy"
+        }
+      },
+      "attributes": {
+        "status": true,
+        "title": "Home",
+        "created": "2017-10-18T00:12:04+00:00",
+        "changed": "2023-01-06T00:34:20+00:00",
+        "path": {
+          "alias": "/home",
+          "pid": 1,
+          "langcode": "en"
+        },
+        "metaTags": null,
+        "heroActive": true,
+        "navColor": "nav-light",
+        "slug": "/home"
+      },
+      "relationships": {
+        "node_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79/relationships/node_type?resourceVersion=id%3A1618"
+            }
+          }
+        },
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79/uid?resourceVersion=id%3A1618"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79/relationships/uid?resourceVersion=id%3A1618"
+            }
+          }
+        },
+        "section": {
+          "data": [
+            {
+              "type": "section",
+              "id": "e202a6f6-6f0d-4142-bbbd-6d9ee395b03b",
+              "meta": {
+                "drupal_internal__target_id": 80
+              }
+            },
+            {
+              "type": "section",
+              "id": "2f877e91-99a3-43f2-924c-1a3e63197f81",
+              "meta": {
+                "drupal_internal__target_id": 2
+              }
+            },
+            {
+              "type": "section",
+              "id": "c25b1798-fc34-4fff-ba56-bf982fc89b90",
+              "meta": {
+                "drupal_internal__target_id": 35
+              }
+            },
+            {
+              "type": "section",
+              "id": "ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4",
+              "meta": {
+                "drupal_internal__target_id": 38
+              }
+            },
+            {
+              "type": "section",
+              "id": "e925ca7a-819f-46c6-b1c1-0c657ce6a13b",
+              "meta": {
+                "drupal_internal__target_id": 45
+              }
+            },
+            {
+              "type": "section",
+              "id": "c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd",
+              "meta": {
+                "drupal_internal__target_id": 27
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79/section?resourceVersion=id%3A1618"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/page/93aec22a-3710-4fe0-ae09-663f6790bb79/relationships/section?resourceVersion=id%3A1618"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "section",
+      "id": "e202a6f6-6f0d-4142-bbbd-6d9ee395b03b",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/section/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/section/e202a6f6-6f0d-4142-bbbd-6d9ee395b03b"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 80,
+        "title": "Application Hero",
+        "created": "2018-03-16T22:03:55+00:00",
+        "changed": "2023-01-06T00:34:20+00:00",
+        "animated": false,
+        "animation": "slideInDown",
+        "background": "section-background-graydark",
+        "backgroundImageUrl": "/img/app-splash.jpg",
+        "colHorizontalAlignment": "justify-content-start",
+        "colVerticalAlignment": "align-items-center",
+        "divider": false,
+        "extraClasses": null,
+        "heroSize": "tall",
+        "isHero": true,
+        "overlay": "overlay-blue",
+        "reverse": false,
+        "show": true
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/section/e202a6f6-6f0d-4142-bbbd-6d9ee395b03b/relationships/layout_type"
+            }
+          }
+        },
+        "backgroundImage": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/e202a6f6-6f0d-4142-bbbd-6d9ee395b03b/backgroundImage"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/e202a6f6-6f0d-4142-bbbd-6d9ee395b03b/relationships/backgroundImage"
+            }
+          }
+        },
+        "column": {
+          "data": [
+            {
+              "type": "column",
+              "id": "269fb6c9-ac3b-42ca-8a7f-99211881094f",
+              "meta": {
+                "drupal_internal__target_id": 79
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/e202a6f6-6f0d-4142-bbbd-6d9ee395b03b/column"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/e202a6f6-6f0d-4142-bbbd-6d9ee395b03b/relationships/column"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "2f877e91-99a3-43f2-924c-1a3e63197f81",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/section/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/section/2f877e91-99a3-43f2-924c-1a3e63197f81"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 2,
+        "title": "Services Consulting",
+        "created": "2017-10-18T00:13:45+00:00",
+        "changed": "2019-01-09T20:25:58+00:00",
+        "animated": false,
+        "animation": "fadeInUp",
+        "background": null,
+        "backgroundImageUrl": null,
+        "colHorizontalAlignment": "justify-content-start",
+        "colVerticalAlignment": "align-items-center",
+        "divider": true,
+        "extraClasses": null,
+        "heroSize": null,
+        "isHero": false,
+        "overlay": null,
+        "reverse": true,
+        "show": true
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/section/2f877e91-99a3-43f2-924c-1a3e63197f81/relationships/layout_type"
+            }
+          }
+        },
+        "backgroundImage": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/2f877e91-99a3-43f2-924c-1a3e63197f81/backgroundImage"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/2f877e91-99a3-43f2-924c-1a3e63197f81/relationships/backgroundImage"
+            }
+          }
+        },
+        "column": {
+          "data": [
+            {
+              "type": "column",
+              "id": "55f22545-468b-438d-87e0-4ef21e40b939",
+              "meta": {
+                "drupal_internal__target_id": 113
+              }
+            },
+            {
+              "type": "column",
+              "id": "aa53e1a5-4442-4841-81c7-df1456e5584d",
+              "meta": {
+                "drupal_internal__target_id": 28
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/2f877e91-99a3-43f2-924c-1a3e63197f81/column"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/2f877e91-99a3-43f2-924c-1a3e63197f81/relationships/column"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "c25b1798-fc34-4fff-ba56-bf982fc89b90",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/section/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/section/c25b1798-fc34-4fff-ba56-bf982fc89b90"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 35,
+        "title": "Services Development",
+        "created": "2017-11-24T04:27:20+00:00",
+        "changed": "2021-11-25T22:29:40+00:00",
+        "animated": false,
+        "animation": "fadeInUp",
+        "background": "section-background-graylight",
+        "backgroundImageUrl": null,
+        "colHorizontalAlignment": null,
+        "colVerticalAlignment": "align-items-center",
+        "divider": true,
+        "extraClasses": null,
+        "heroSize": null,
+        "isHero": false,
+        "overlay": null,
+        "reverse": false,
+        "show": true
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/section/c25b1798-fc34-4fff-ba56-bf982fc89b90/relationships/layout_type"
+            }
+          }
+        },
+        "backgroundImage": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/c25b1798-fc34-4fff-ba56-bf982fc89b90/backgroundImage"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/c25b1798-fc34-4fff-ba56-bf982fc89b90/relationships/backgroundImage"
+            }
+          }
+        },
+        "column": {
+          "data": [
+            {
+              "type": "column",
+              "id": "deca3b9b-dd6d-4939-9c42-2579684fa0aa",
+              "meta": {
+                "drupal_internal__target_id": 34
+              }
+            },
+            {
+              "type": "column",
+              "id": "22acab65-ab72-4264-a6b5-87b263dfad9f",
+              "meta": {
+                "drupal_internal__target_id": 33
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/c25b1798-fc34-4fff-ba56-bf982fc89b90/column"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/c25b1798-fc34-4fff-ba56-bf982fc89b90/relationships/column"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/section/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/section/ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 38,
+        "title": "Services Support",
+        "created": "2017-11-24T04:29:47+00:00",
+        "changed": "2019-01-09T20:35:40+00:00",
+        "animated": false,
+        "animation": "fadeInUp",
+        "background": null,
+        "backgroundImageUrl": null,
+        "colHorizontalAlignment": null,
+        "colVerticalAlignment": "align-items-center",
+        "divider": true,
+        "extraClasses": null,
+        "heroSize": null,
+        "isHero": false,
+        "overlay": null,
+        "reverse": true,
+        "show": true
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/section/ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4/relationships/layout_type"
+            }
+          }
+        },
+        "backgroundImage": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4/backgroundImage"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4/relationships/backgroundImage"
+            }
+          }
+        },
+        "column": {
+          "data": [
+            {
+              "type": "column",
+              "id": "9d0e0153-24bd-4e3f-a0fa-3b7b1aee7787",
+              "meta": {
+                "drupal_internal__target_id": 114
+              }
+            },
+            {
+              "type": "column",
+              "id": "5925b10e-65ea-4c07-88a0-79bbc08804d4",
+              "meta": {
+                "drupal_internal__target_id": 36
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4/column"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/ea18753c-8c3c-411d-a5c6-1bb7cb6aa4d4/relationships/column"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "e925ca7a-819f-46c6-b1c1-0c657ce6a13b",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/section/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/section/e925ca7a-819f-46c6-b1c1-0c657ce6a13b"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 45,
+        "title": "CTA",
+        "created": "2017-12-02T01:18:01+00:00",
+        "changed": "2019-01-14T03:07:37+00:00",
+        "animated": false,
+        "animation": null,
+        "background": "section-background-black",
+        "backgroundImageUrl": "/img/2018-11/cta-space_0.jpg",
+        "colHorizontalAlignment": "justify-content-center",
+        "colVerticalAlignment": null,
+        "divider": false,
+        "extraClasses": null,
+        "heroSize": null,
+        "isHero": false,
+        "overlay": null,
+        "reverse": false,
+        "show": true
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/section/e925ca7a-819f-46c6-b1c1-0c657ce6a13b/relationships/layout_type"
+            }
+          }
+        },
+        "backgroundImage": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/e925ca7a-819f-46c6-b1c1-0c657ce6a13b/backgroundImage"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/e925ca7a-819f-46c6-b1c1-0c657ce6a13b/relationships/backgroundImage"
+            }
+          }
+        },
+        "column": {
+          "data": [
+            {
+              "type": "column",
+              "id": "c63694db-0286-4166-bfe0-a91ac8553a18",
+              "meta": {
+                "drupal_internal__target_id": 44
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/e925ca7a-819f-46c6-b1c1-0c657ce6a13b/column"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/e925ca7a-819f-46c6-b1c1-0c657ce6a13b/relationships/column"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/section/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/section/c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 27,
+        "title": "Clients",
+        "created": "2017-11-08T18:22:07+00:00",
+        "changed": "2018-11-10T09:44:13+00:00",
+        "animated": false,
+        "animation": null,
+        "background": "section-background-black",
+        "backgroundImageUrl": null,
+        "colHorizontalAlignment": "justify-content-center",
+        "colVerticalAlignment": null,
+        "divider": false,
+        "extraClasses": null,
+        "heroSize": null,
+        "isHero": false,
+        "overlay": null,
+        "reverse": false,
+        "show": true
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/section/c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd/relationships/layout_type"
+            }
+          }
+        },
+        "backgroundImage": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd/backgroundImage"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd/relationships/backgroundImage"
+            }
+          }
+        },
+        "column": {
+          "data": [
+            {
+              "type": "column",
+              "id": "9c7427e2-7010-476a-9f30-4ecba6ec1b9e",
+              "meta": {
+                "drupal_internal__target_id": 26
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/section/c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd/column"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/section/c857dbc2-8c7e-4ff1-b4b0-4fcce7ba44cd/relationships/column"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "269fb6c9-ac3b-42ca-8a7f-99211881094f",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/269fb6c9-ac3b-42ca-8a7f-99211881094f"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 79,
+        "title": "Hero Text",
+        "created": "2018-03-16T22:03:47+00:00",
+        "changed": "2019-01-09T18:05:51+00:00",
+        "columnWidthLg": "col-lg-5",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/269fb6c9-ac3b-42ca-8a7f-99211881094f/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "text",
+              "id": "c6b54140-6cd7-499d-829d-ddc08a7f107a",
+              "meta": {
+                "drupal_internal__target_id": 46
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/269fb6c9-ac3b-42ca-8a7f-99211881094f/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/269fb6c9-ac3b-42ca-8a7f-99211881094f/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "55f22545-468b-438d-87e0-4ef21e40b939",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/55f22545-468b-438d-87e0-4ef21e40b939"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 113,
+        "title": "Consulting Image",
+        "created": "2019-01-09T20:25:45+00:00",
+        "changed": "2019-01-14T03:19:12+00:00",
+        "columnWidthLg": "col-lg-5",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/55f22545-468b-438d-87e0-4ef21e40b939/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/55f22545-468b-438d-87e0-4ef21e40b939/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/55f22545-468b-438d-87e0-4ef21e40b939/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "aa53e1a5-4442-4841-81c7-df1456e5584d",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/aa53e1a5-4442-4841-81c7-df1456e5584d"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 28,
+        "title": "Consulting",
+        "created": "2017-11-13T19:32:52+00:00",
+        "changed": "2018-03-19T23:23:06+00:00",
+        "columnWidthLg": "col-lg-7",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/aa53e1a5-4442-4841-81c7-df1456e5584d/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "text",
+              "id": "b03351f3-32af-456c-8a2b-c5b502af1409",
+              "meta": {
+                "drupal_internal__target_id": 18
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/aa53e1a5-4442-4841-81c7-df1456e5584d/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/aa53e1a5-4442-4841-81c7-df1456e5584d/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "deca3b9b-dd6d-4939-9c42-2579684fa0aa",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/deca3b9b-dd6d-4939-9c42-2579684fa0aa"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 34,
+        "title": "Development Image",
+        "created": "2017-11-24T04:27:12+00:00",
+        "changed": "2019-12-17T17:16:45+00:00",
+        "columnWidthLg": "col-lg-5",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/deca3b9b-dd6d-4939-9c42-2579684fa0aa/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "image",
+              "id": "e9effa2c-1399-41df-a6de-57d4dda7b2df",
+              "meta": {
+                "drupal_internal__target_id": 70
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/deca3b9b-dd6d-4939-9c42-2579684fa0aa/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/deca3b9b-dd6d-4939-9c42-2579684fa0aa/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "22acab65-ab72-4264-a6b5-87b263dfad9f",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/22acab65-ab72-4264-a6b5-87b263dfad9f"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 33,
+        "title": "Development",
+        "created": "2017-11-24T04:25:53+00:00",
+        "changed": "2018-03-23T21:20:49+00:00",
+        "columnWidthLg": "col-lg-7",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/22acab65-ab72-4264-a6b5-87b263dfad9f/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "text",
+              "id": "52172d5c-851b-4d0d-9ed0-b6682fd34f90",
+              "meta": {
+                "drupal_internal__target_id": 19
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/22acab65-ab72-4264-a6b5-87b263dfad9f/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/22acab65-ab72-4264-a6b5-87b263dfad9f/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "9d0e0153-24bd-4e3f-a0fa-3b7b1aee7787",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/9d0e0153-24bd-4e3f-a0fa-3b7b1aee7787"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 114,
+        "title": "Support Image",
+        "created": "2019-01-09T20:32:19+00:00",
+        "changed": "2019-01-14T03:19:12+00:00",
+        "columnWidthLg": "col-lg-5",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/9d0e0153-24bd-4e3f-a0fa-3b7b1aee7787/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/9d0e0153-24bd-4e3f-a0fa-3b7b1aee7787/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/9d0e0153-24bd-4e3f-a0fa-3b7b1aee7787/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "5925b10e-65ea-4c07-88a0-79bbc08804d4",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/5925b10e-65ea-4c07-88a0-79bbc08804d4"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 36,
+        "title": "Support",
+        "created": "2017-11-24T04:29:10+00:00",
+        "changed": "2018-03-19T23:23:06+00:00",
+        "columnWidthLg": "col-lg-7",
+        "columnWidthMd": "col-md-6",
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/5925b10e-65ea-4c07-88a0-79bbc08804d4/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "text",
+              "id": "0a964a95-6ab3-4953-8143-b62b9404efdb",
+              "meta": {
+                "drupal_internal__target_id": 22
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/5925b10e-65ea-4c07-88a0-79bbc08804d4/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/5925b10e-65ea-4c07-88a0-79bbc08804d4/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "c63694db-0286-4166-bfe0-a91ac8553a18",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/c63694db-0286-4166-bfe0-a91ac8553a18"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 44,
+        "title": "CTA Text",
+        "created": "2017-12-02T01:17:52+00:00",
+        "changed": "2018-03-19T19:32:58+00:00",
+        "columnWidthLg": null,
+        "columnWidthMd": null,
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/c63694db-0286-4166-bfe0-a91ac8553a18/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "text",
+              "id": "ce45ff15-4339-424c-a9ee-4b9eb8cab52f",
+              "meta": {
+                "drupal_internal__target_id": 30
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/c63694db-0286-4166-bfe0-a91ac8553a18/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/c63694db-0286-4166-bfe0-a91ac8553a18/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "column",
+      "id": "9c7427e2-7010-476a-9f30-4ecba6ec1b9e",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/column/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/column/9c7427e2-7010-476a-9f30-4ecba6ec1b9e"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 26,
+        "title": "Clients",
+        "created": "2017-11-08T18:22:05+00:00",
+        "changed": "2018-03-19T19:32:58+00:00",
+        "columnWidthLg": null,
+        "columnWidthMd": null,
+        "columnWidthSm": null,
+        "columnWidthXl": null,
+        "columnWidthXs": "col-12",
+        "extraClasses": null
+      },
+      "relationships": {
+        "layout_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/column/9c7427e2-7010-476a-9f30-4ecba6ec1b9e/relationships/layout_type"
+            }
+          }
+        },
+        "element": {
+          "data": [
+            {
+              "type": "text",
+              "id": "9cd2f3cf-c613-4f90-b0ba-78d1e9f718db",
+              "meta": {
+                "drupal_internal__target_id": 17
+              }
+            },
+            {
+              "type": "slideshow",
+              "id": "def89daa-2c4b-48e0-918a-84251a95a6d7",
+              "meta": {
+                "drupal_internal__target_id": 16
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/column/9c7427e2-7010-476a-9f30-4ecba6ec1b9e/element"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/column/9c7427e2-7010-476a-9f30-4ecba6ec1b9e/relationships/element"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "id": "c6b54140-6cd7-499d-829d-ddc08a7f107a",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/text/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/text/c6b54140-6cd7-499d-829d-ddc08a7f107a"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 46,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<h1 class=\"hero-title\">we craft<br />\r\n<b>experiences</b><br />\r\nwith the web</h1>\r\n\r\n<p class=\"byline\">Interactive web based kiosk @ Telus World of Science Vancouver, BC</p>\r\n",
+          "format": "full_html",
+          "processed": "<h1 class=\"hero-title\">we craft<br>\n<b>experiences</b><br>\nwith the web</h1>\n<p class=\"byline\">Interactive web based kiosk @ Telus World of Science Vancouver, BC</p>\n"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/text/c6b54140-6cd7-499d-829d-ddc08a7f107a/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/text/c6b54140-6cd7-499d-829d-ddc08a7f107a/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/text/c6b54140-6cd7-499d-829d-ddc08a7f107a/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "id": "b03351f3-32af-456c-8a2b-c5b502af1409",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/text/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/text/b03351f3-32af-456c-8a2b-c5b502af1409"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 18,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<h2>Idea Planning</h2>\r\n\r\n<p class=\"lead\">Whether you are looking to develop a new project, evaluating changes, or looking for some technical advice, Small Robot can help you determine what to do next.</p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"/consulting\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-comments\"></i>&nbsp;</span>Help Take The Next Step</a></p>\r\n",
+          "format": "full_html",
+          "processed": "<h2>Idea Planning</h2>\n<p class=\"lead\">Whether you are looking to develop a new project, evaluating changes, or looking for some technical advice, Small Robot can help you determine what to do next.</p>\n<p><a class=\"btn btn-primary\" href=\"/consulting\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-comments\"></i>&nbsp;</span>Help Take The Next Step</a></p>\n"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/text/b03351f3-32af-456c-8a2b-c5b502af1409/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/text/b03351f3-32af-456c-8a2b-c5b502af1409/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/text/b03351f3-32af-456c-8a2b-c5b502af1409/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "image",
+      "id": "e9effa2c-1399-41df-a6de-57d4dda7b2df",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/image/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/image/e9effa2c-1399-41df-a6de-57d4dda7b2df"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 70,
+        "created": null,
+        "changed": null,
+        "image_url": null
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/image/e9effa2c-1399-41df-a6de-57d4dda7b2df/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/image/e9effa2c-1399-41df-a6de-57d4dda7b2df/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/image/e9effa2c-1399-41df-a6de-57d4dda7b2df/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": {
+            "type": "file",
+            "id": "3d95765a-25b2-4f32-a915-5d9256c8ca10",
+            "meta": {
+              "alt": "Drupal Ember Vuejs Wordpress Logos",
+              "title": "",
+              "width": 100,
+              "height": 100,
+              "drupal_internal__target_id": 93
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/image/e9effa2c-1399-41df-a6de-57d4dda7b2df/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/image/e9effa2c-1399-41df-a6de-57d4dda7b2df/relationships/image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "id": "52172d5c-851b-4d0d-9ed0-b6682fd34f90",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/text/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/text/52172d5c-851b-4d0d-9ed0-b6682fd34f90"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 19,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<h2>Idea Development</h2>\r\n\r\n<p class=\"lead\">Small, large, and all areas in between, we are here to help make you ideas a reality. Using tools like the Drupal, Wordpress, Vuejs, Ember.js, and more, Small Robot can provide web &amp; application development services for any size project. We enjoy new challenges, and fresh ideas, so let's build something exciting together.</p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"/development\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-code\"></i>&nbsp;</span>Let's Build Something</a></p>\r\n",
+          "format": "full_html",
+          "processed": "<h2>Idea Development</h2>\n<p class=\"lead\">Small, large, and all areas in between, we are here to help make you ideas a reality. Using tools like the Drupal, Wordpress, Vuejs, Ember.js, and more, Small Robot can provide web &amp; application development services for any size project. We enjoy new challenges, and fresh ideas, so let's build something exciting together.</p>\n<p><a class=\"btn btn-primary\" href=\"/development\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-code\"></i>&nbsp;</span>Let's Build Something</a></p>\n"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/text/52172d5c-851b-4d0d-9ed0-b6682fd34f90/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/text/52172d5c-851b-4d0d-9ed0-b6682fd34f90/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/text/52172d5c-851b-4d0d-9ed0-b6682fd34f90/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "id": "0a964a95-6ab3-4953-8143-b62b9404efdb",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/text/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/text/0a964a95-6ab3-4953-8143-b62b9404efdb"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 22,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<h2>Specialized&nbsp;Support</h2>\r\n\r\n<p class=\"lead\">We can help you get back to doing what your business needs, by supporting you, or your team, maintain your web project. With our monthly service agreements, as well as On Demand services, we have the ability to support your needs.</p>\r\n\r\n<p><a class=\"btn btn-primary\" href=\"/support\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-shield-check\"></i>&nbsp;</span>Learn How We Help</a></p>\r\n",
+          "format": "full_html",
+          "processed": "<h2>Specialized&nbsp;Support</h2>\n<p class=\"lead\">We can help you get back to doing what your business needs, by supporting you, or your team, maintain your web project. With our monthly service agreements, as well as On Demand services, we have the ability to support your needs.</p>\n<p><a class=\"btn btn-primary\" href=\"/support\"><span class=\"fontawesome-icon-inline\"><i class=\"fas fa-shield-check\"></i>&nbsp;</span>Learn How We Help</a></p>\n"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/text/0a964a95-6ab3-4953-8143-b62b9404efdb/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/text/0a964a95-6ab3-4953-8143-b62b9404efdb/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/text/0a964a95-6ab3-4953-8143-b62b9404efdb/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "id": "ce45ff15-4339-424c-a9ee-4b9eb8cab52f",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/text/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/text/ce45ff15-4339-424c-a9ee-4b9eb8cab52f"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 30,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<h2 class=\"text-align-center\"><span class=\"white\">we can help you <strong>build your web ideas</strong></span></h2>\n\n<p class=\"text-align-center\"><a class=\"btn btn-pink\" href=\"/contact\">Let's Chat</a></p>\n",
+          "format": "full_html",
+          "processed": "<h2 class=\"text-align-center\"><span class=\"white\">we can help you <strong>build your web ideas</strong></span></h2>\n<p class=\"text-align-center\"><a class=\"btn btn-pink\" href=\"/contact\">Let's Chat</a></p>\n"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/text/ce45ff15-4339-424c-a9ee-4b9eb8cab52f/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/text/ce45ff15-4339-424c-a9ee-4b9eb8cab52f/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/text/ce45ff15-4339-424c-a9ee-4b9eb8cab52f/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "id": "9cd2f3cf-c613-4f90-b0ba-78d1e9f718db",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/text/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/text/9cd2f3cf-c613-4f90-b0ba-78d1e9f718db"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 17,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<h2 class=\"text-align-center\"><span class=\"pink\">Some of our Clients</span></h2>\r\n",
+          "format": "full_html",
+          "processed": "<h2 class=\"text-align-center\"><span class=\"pink\">Some of our Clients</span></h2>\n"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/text/9cd2f3cf-c613-4f90-b0ba-78d1e9f718db/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/text/9cd2f3cf-c613-4f90-b0ba-78d1e9f718db/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/text/9cd2f3cf-c613-4f90-b0ba-78d1e9f718db/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slideshow",
+      "id": "def89daa-2c4b-48e0-918a-84251a95a6d7",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slideshow/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slideshow/def89daa-2c4b-48e0-918a-84251a95a6d7"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 16,
+        "created": null,
+        "changed": null,
+        "style": null
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slideshow/def89daa-2c4b-48e0-918a-84251a95a6d7/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slideshow/def89daa-2c4b-48e0-918a-84251a95a6d7/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slideshow/def89daa-2c4b-48e0-918a-84251a95a6d7/relationships/uid"
+            }
+          }
+        },
+        "slide": {
+          "data": [
+            {
+              "type": "slide",
+              "id": "40b7745b-1c5a-4d4e-8aac-19a800cd8dd7",
+              "meta": {
+                "drupal_internal__target_id": 11
+              }
+            },
+            {
+              "type": "slide",
+              "id": "4c58f738-5e51-424b-a689-211592478762",
+              "meta": {
+                "drupal_internal__target_id": 12
+              }
+            },
+            {
+              "type": "slide",
+              "id": "dd6076da-3daf-43d3-babc-41a4758aeb20",
+              "meta": {
+                "drupal_internal__target_id": 15
+              }
+            },
+            {
+              "type": "slide",
+              "id": "64c6ebe2-dcf3-49e9-a273-a76c71ac725b",
+              "meta": {
+                "drupal_internal__target_id": 14
+              }
+            },
+            {
+              "type": "slide",
+              "id": "f8b8e6e4-e9f2-4917-9913-91c0d4a24548",
+              "meta": {
+                "drupal_internal__target_id": 29
+              }
+            },
+            {
+              "type": "slide",
+              "id": "9867b7bf-f73d-4228-a962-429ffecec200",
+              "meta": {
+                "drupal_internal__target_id": 65
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slideshow/def89daa-2c4b-48e0-918a-84251a95a6d7/slide"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slideshow/def89daa-2c4b-48e0-918a-84251a95a6d7/relationships/slide"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "file",
+      "id": "3d95765a-25b2-4f32-a915-5d9256c8ca10",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/file/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/file/3d95765a-25b2-4f32-a915-5d9256c8ca10"
+        }
+      },
+      "attributes": {
+        "drupal_internal__fid": 93,
+        "filename": "dev-platforms.svg",
+        "uri": "/sites/default/files/2020-05/dev-platforms.svg",
+        "filemime": "image/svg+xml",
+        "filesize": 19688,
+        "status": true,
+        "created": "2020-05-12T22:55:30+00:00",
+        "changed": "2020-05-12T22:55:45+00:00"
+      },
+      "relationships": {
+        "uid": {
+          "data": {
+            "type": "user",
+            "id": "f2161fdf-d42e-4a25-ab4a-1f31ec931d33",
+            "meta": {
+              "drupal_internal__target_id": 1
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/file/3d95765a-25b2-4f32-a915-5d9256c8ca10/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/file/3d95765a-25b2-4f32-a915-5d9256c8ca10/relationships/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slide",
+      "id": "40b7745b-1c5a-4d4e-8aac-19a800cd8dd7",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slide/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slide/40b7745b-1c5a-4d4e-8aac-19a800cd8dd7"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 11,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<svg width=\"200px\" height=\"100%\" viewBox=\"0 0 240 83\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" xmlns:serif=\"http://www.serif.com/\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\"><g><g><path d=\"M7.391,40.833l-5.55,0l0,-2.834l15.032,0l-0.895,2.834l-5.117,0l0,16.218l-3.47,0l0,-16.218Z\" style=\"fill-rule:nonzero;\"/><path d=\"M18.955,37.999l10.523,0l-0.925,2.834l-6.129,0l0,5.088l6.1,0l0,2.833l-6.1,0l0,5.465l7.083,0l0,2.832l-10.552,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M33.178,37.999l3.469,0l0,16.22l6.765,0l0,2.832l-10.234,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M46.13,53.64c-0.492,-0.983 -0.723,-2.255 -0.723,-3.7l0,-11.941l3.469,0l0,11.71c0,1.011 0.174,1.878 0.521,2.572c0.665,1.359 1.994,2.139 3.902,2.139c1.909,0 3.239,-0.78 3.904,-2.139c0.346,-0.694 0.52,-1.561 0.52,-2.602l0,-11.68l3.469,0l0,11.941c0,1.474 -0.232,2.746 -0.723,3.729c-1.185,2.457 -3.671,3.671 -7.17,3.671c-3.526,0 -6.013,-1.214 -7.169,-3.7Z\" style=\"fill-rule:nonzero;\"/><path d=\"M64.661,53.033c1.128,0.78 2.573,1.387 4.307,1.387c1.591,0 3.18,-0.607 3.18,-2.255c0,-3.729 -8.239,-3.267 -8.239,-9.077c0,-2.804 2.226,-5.261 6.187,-5.261c1.966,0 3.614,0.433 4.654,0.953l0,3.18c-1.503,-0.78 -3.035,-1.214 -4.538,-1.214c-1.33,0 -2.602,0.521 -2.602,2.052c0,3.498 8.239,3.036 8.239,9.079c0,3.382 -2.891,5.463 -6.794,5.463c-2.226,0 -4.308,-0.636 -5.753,-1.648l1.359,-2.659Z\" style=\"fill-rule:nonzero;\"/><path d=\"M81.139,37.999l2.37,0l3.701,11.449c0.376,1.243 0.895,2.775 1.272,4.278l0.058,0c0.462,-1.589 0.896,-2.833 1.387,-4.249l2.833,-8.24l-1.127,-3.238l2.313,0l3.844,11.507c0.406,1.185 0.955,2.747 1.331,4.191l0.057,0c0.376,-1.502 0.752,-2.804 1.185,-4.133l3.614,-11.565l2.255,0l-6.302,19.139l-1.705,0l-3.036,-8.933c-0.521,-1.533 -0.925,-2.718 -1.331,-4.106l-0.085,0c-0.405,1.388 -0.752,2.429 -1.331,4.106l-3.15,8.933l-1.735,0l-6.418,-19.139Z\" style=\"fill-rule:nonzero;\"/><path d=\"M122.538,47.627c0,-4.481 -2.516,-7.922 -7.025,-7.922c-4.251,0 -7.026,3.209 -7.026,7.922c0,4.711 2.775,7.863 7.026,7.863c4.249,0 7.025,-3.152 7.025,-7.863Zm-16.306,0c0,-5.783 3.931,-9.771 9.281,-9.771c5.404,0 9.279,4.076 9.279,9.771c0,5.955 -4.076,9.713 -9.279,9.713c-5.32,0 -9.281,-3.816 -9.281,-9.713Z\" style=\"fill-rule:nonzero;\"/><path d=\"M131.036,47.164c1.04,0 1.879,-0.203 2.632,-0.636c0.982,-0.578 1.648,-1.647 1.648,-3.122c0,-1.128 -0.377,-2.111 -1.215,-2.718c-0.606,-0.52 -1.561,-0.896 -3.036,-0.896l-1.821,0l0,7.372l1.792,0Zm-3.931,-9.165l3.874,0c1.995,0 3.324,0.376 4.307,1.013c1.532,0.954 2.226,2.515 2.226,4.192c0,2.63 -1.416,4.278 -3.873,5.03l0,0.058c0.577,0.289 1.3,1.358 2.284,3.035l3.469,5.724l-2.487,0l-3.325,-5.522c-0.896,-1.503 -1.618,-2.428 -2.196,-2.573l-2.14,0l0,8.095l-2.139,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M141.848,37.999l2.139,0l0,17.26l7.084,0l0,1.792l-9.223,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M157.807,55.259c5.926,0 7.949,-3.644 7.949,-7.921c0,-4.366 -2.486,-7.546 -8.007,-7.546l-2.256,0l0,15.467l2.314,0Zm-4.452,-17.26l4.566,0c6.824,0 10.09,3.99 10.09,9.425c0,5.464 -3.296,9.627 -10.175,9.627l-4.481,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M13,74.627c0,-3.151 -1.59,-5.348 -4.076,-5.348c-2.545,0 -4.135,2.197 -4.135,5.348c0,3.123 1.59,5.319 4.106,5.319c2.515,0 4.105,-2.196 4.105,-5.319Zm-10.408,0c0,-4.018 2.458,-7.168 6.332,-7.168c3.787,0 6.301,3.15 6.301,7.168c0,3.991 -2.485,7.141 -6.33,7.141c-3.816,0 -6.303,-3.15 -6.303,-7.141Z\" style=\"fill-rule:nonzero;\"/><path d=\"M17.798,69.539l-1.821,0l0,-1.733l1.821,0l0,-2.401c0,-3.353 2.053,-4.394 3.932,-4.394c0.665,0 1.474,0.146 2.111,0.435l-0.463,1.733c-0.433,-0.172 -0.954,-0.316 -1.474,-0.316c-1.388,0 -1.995,0.894 -1.995,2.457l0,2.486l3.469,0l-0.636,1.733l-2.833,0l0,11.941l-2.111,0l0,-11.941Z\" style=\"fill-rule:nonzero;\"/><path d=\"M31.472,78.647c0.925,0.607 2.371,1.271 4.135,1.271c2.052,0 3.845,-0.838 3.845,-3.092c0,-4.569 -8.384,-4.019 -8.384,-9.714c0,-2.689 2.052,-4.828 5.608,-4.828c1.734,0 3.267,0.433 4.134,0.867l0,1.994c-1.185,-0.664 -2.631,-1.04 -4.076,-1.04c-1.706,0 -3.44,0.752 -3.44,2.804c0,4.307 8.383,3.845 8.383,9.772c0,3.18 -2.457,5.087 -6.1,5.087c-2.167,0 -3.874,-0.664 -5.001,-1.445l0.896,-1.676Z\" style=\"fill-rule:nonzero;\"/><path d=\"M57.462,80.439c-1.792,0.954 -3.585,1.329 -5.319,1.329c-5.696,0 -9.078,-3.988 -9.078,-9.568c0,-5.552 3.816,-9.916 9.454,-9.916c2.023,0 3.758,0.463 4.712,1.011l0,2.025c-1.33,-0.724 -2.747,-1.187 -4.684,-1.187c-4.452,0 -7.227,3.412 -7.227,7.893c0,4.655 2.689,7.892 7.025,7.892c1.764,0 3.238,-0.492 4.538,-1.185l0.579,1.706Z\" style=\"fill-rule:nonzero;\"/><rect x=\"60.323\" y=\"62.428\" width=\"2.14\" height=\"19.052\" style=\"fill-rule:nonzero;\"/><path d=\"M66.568,62.428l9.193,0l-0.665,1.792l-6.389,0l0,6.621l6.274,0l0,1.764l-6.274,0l0,7.082l7.228,0l0,1.793l-9.367,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M78.652,62.428l2.052,0l8.847,11.564c1.215,1.619 2.11,2.892 2.746,3.874l0.058,0c-0.029,-1.04 -0.058,-1.879 -0.058,-3.354l0,-12.084l2.14,0l0,19.052l-1.793,0l-9.192,-12.027c-1.157,-1.502 -2.025,-2.718 -2.69,-3.672l-0.058,0c0.058,0.954 0.087,1.764 0.087,3.268l0,12.431l-2.139,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M111.435,80.439c-1.793,0.954 -3.586,1.329 -5.319,1.329c-5.696,0 -9.078,-3.988 -9.078,-9.568c0,-5.552 3.816,-9.916 9.453,-9.916c2.024,0 3.759,0.463 4.712,1.011l0,2.025c-1.33,-0.724 -2.746,-1.187 -4.682,-1.187c-4.453,0 -7.228,3.412 -7.228,7.893c0,4.655 2.688,7.892 7.025,7.892c1.764,0 3.239,-0.492 4.539,-1.185l0.578,1.706Z\" style=\"fill-rule:nonzero;\"/><path d=\"M113.69,62.428l9.193,0l-0.666,1.792l-6.389,0l0,6.621l6.274,0l0,1.764l-6.274,0l0,7.082l7.229,0l0,1.793l-9.367,0l0,-19.052Z\" style=\"fill-rule:nonzero;\"/><path d=\"M3.125,30.816c0.583,0.396 1.753,0.723 2.828,0.723c2.626,0 3.93,-1.515 3.93,-3.296c0,-1.64 -0.941,-2.584 -2.829,-3.368c-1.533,-0.627 -2.22,-1.145 -2.22,-2.215c0,-0.782 0.589,-1.706 2.117,-1.706c0.989,0 1.727,0.312 2.085,0.528l0.402,-1.204c-0.477,-0.274 -1.317,-0.54 -2.435,-0.54c-2.191,0 -3.647,1.318 -3.647,3.097c0,1.592 1.17,2.584 2.944,3.244c1.481,0.589 2.103,1.216 2.103,2.279c0,1.161 -0.873,1.95 -2.356,1.95c-0.972,0 -1.91,-0.318 -2.544,-0.715l-0.378,1.223Z\" style=\"fill-rule:nonzero;\"/><path d=\"M18.66,29.844c-0.568,0.271 -1.436,0.448 -2.304,0.448c-2.639,0 -4.222,-1.727 -4.222,-4.602c0,-3.057 1.744,-4.724 4.289,-4.724c0.917,0 1.661,0.198 2.19,0.449l0.357,-1.196c-0.374,-0.198 -1.247,-0.481 -2.59,-0.481c-3.383,0 -5.789,2.319 -5.789,6.008c0,3.774 2.339,5.793 5.468,5.793c1.328,0 2.373,-0.262 2.89,-0.522l-0.289,-1.173Z\" style=\"fill-rule:nonzero;\"/><rect x=\"20.357\" y=\"19.909\" width=\"1.469\" height=\"11.459\" style=\"fill-rule:nonzero;\"/><path d=\"M29.607,24.775l-4.285,0l0,-3.643l4.542,0l0,-1.223l-6.011,0l0,11.459l6.267,0l0,-1.224l-4.798,0l0,-4.155l4.285,0l0,-1.214Z\" style=\"fill-rule:nonzero;\"/><path d=\"M32.903,31.368l0,-4.807c0,-1.95 -0.021,-3.338 -0.111,-4.798l0.049,-0.016c0.556,1.264 1.298,2.571 2.055,3.842l3.496,5.779l1.476,0l0,-11.459l-1.372,0l0,4.732c0,1.796 0.03,3.202 0.161,4.759l-0.037,0.015c-0.527,-1.188 -1.185,-2.424 -1.987,-3.756l-3.514,-5.75l-1.588,0l0,11.459l1.372,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M49.023,29.844c-0.568,0.271 -1.436,0.448 -2.305,0.448c-2.638,0 -4.222,-1.727 -4.222,-4.602c0,-3.057 1.745,-4.724 4.289,-4.724c0.917,0 1.661,0.198 2.19,0.449l0.357,-1.196c-0.374,-0.198 -1.247,-0.481 -2.59,-0.481c-3.382,0 -5.789,2.319 -5.789,6.008c0,3.774 2.339,5.793 5.468,5.793c1.329,0 2.374,-0.262 2.891,-0.522l-0.289,-1.173Z\" style=\"fill-rule:nonzero;\"/><path d=\"M56.362,24.775l-4.285,0l0,-3.643l4.542,0l0,-1.223l-6.012,0l0,11.459l6.269,0l0,-1.224l-4.799,0l0,-4.155l4.285,0l0,-1.214Z\" style=\"fill-rule:nonzero;\"/><path d=\"M86.258,21.007c0.225,-0.061 0.64,-0.109 1.207,-0.109c1.511,0.004 2.405,0.712 2.405,2.144c0,1.332 -0.949,2.215 -2.419,2.215l-1.193,0l0,-4.25Zm-1.419,10.309l1.419,0l0,-4.975l1.107,0c1.264,0.029 1.843,0.63 2.153,2.2c0.285,1.427 0.532,2.44 0.706,2.775l1.47,0c-0.21,-0.419 -0.468,-1.473 -0.808,-3.063c-0.269,-1.293 -0.769,-2.114 -1.632,-2.404l0,-0.04c1.181,-0.453 2.052,-1.438 2.052,-2.93c0,-0.899 -0.301,-1.674 -0.869,-2.197c-0.674,-0.624 -1.648,-0.902 -3.072,-0.902c-0.894,0 -1.841,0.084 -2.526,0.238l0,11.298Z\"/><path d=\"M92.962,31.316l5.767,0l0,-1.203l-4.341,0l0,-10.256l-1.426,0l0,11.459Z\" style=\"fill-rule:nonzero;\"/><path d=\"M101.108,21.045c0.323,-0.066 0.779,-0.122 1.361,-0.122c2.684,0 3.999,1.647 3.986,4.434c0,3.364 -1.602,4.891 -4.189,4.886c-0.416,0 -0.844,-0.007 -1.158,-0.059l0,-9.139Zm-1.424,10.237c0.627,0.083 1.398,0.123 2.282,0.123c1.91,0 3.456,-0.521 4.424,-1.512c0.953,-0.971 1.558,-2.459 1.558,-4.584c0,-2.029 -0.619,-3.418 -1.598,-4.292c-0.877,-0.814 -2.173,-1.237 -3.98,-1.237c-0.996,0 -1.915,0.087 -2.686,0.238l0,11.264Z\"/><path d=\"M64.594,31.316l1.46,-5.818c0.372,-1.416 0.617,-2.57 0.798,-3.768l0.033,0c0.151,1.192 0.381,2.363 0.7,3.753l1.328,5.833l1.458,0l2.911,-11.459l-1.441,0l-1.327,5.671c-0.309,1.385 -0.589,2.651 -0.805,4.04l-0.04,0c-0.171,-1.34 -0.46,-2.675 -0.76,-4.041l-1.286,-5.67l-1.393,0l-1.378,5.688c-0.351,1.472 -0.679,2.795 -0.851,4.038l-0.046,0c-0.185,-1.207 -0.448,-2.585 -0.751,-4.019l-1.233,-5.707l-1.494,0l2.668,11.459l1.449,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M78.458,30.261c2.336,0 3.656,-2.15 3.656,-4.741c0,-2.268 -1.184,-4.638 -3.64,-4.638c-2.454,0 -3.673,2.285 -3.673,4.757c0,2.404 1.321,4.622 3.64,4.622l0.017,0Zm-0.068,1.202c-3.03,0 -5.129,-2.336 -5.129,-5.79c0,-3.623 2.234,-5.993 5.282,-5.993c3.131,0 5.146,2.387 5.146,5.773c0,3.911 -2.387,6.01 -5.282,6.01l-0.017,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M115.861,27.037c-1.614,-0.033 -3.447,0.253 -3.447,1.833c0,0.976 0.639,1.413 1.378,1.413c1.077,0 1.766,-0.673 2.002,-1.363c0.05,-0.151 0.067,-0.319 0.067,-0.47l0,-1.413Zm1.446,2.203c0,0.707 0.034,1.396 0.118,1.951l-1.328,0l-0.135,-1.026l-0.051,0c-0.437,0.639 -1.328,1.211 -2.488,1.211c-1.649,0 -2.489,-1.16 -2.489,-2.337c0,-1.968 1.748,-3.045 4.893,-3.027l0,-0.169c0,-0.673 -0.185,-1.9 -1.849,-1.883c-0.774,0 -1.564,0.219 -2.136,0.605l-0.336,-0.992c0.672,-0.42 1.664,-0.706 2.69,-0.706c2.506,0 3.111,1.698 3.111,3.33l0,3.043Z\" style=\"fill-rule:nonzero;\"/><path d=\"M120.638,21.101l0,1.951l2.119,0l0,1.127l-2.119,0l0,4.389c0,1.009 0.286,1.58 1.111,1.58c0.402,0 0.638,-0.034 0.857,-0.101l0.067,1.127c-0.286,0.101 -0.74,0.202 -1.312,0.202c-0.69,0 -1.244,-0.235 -1.598,-0.622c-0.402,-0.454 -0.571,-1.177 -0.571,-2.136l0,-4.439l-1.262,0l0,-1.127l1.262,0l0,-1.497l1.446,-0.454Z\" style=\"fill-rule:nonzero;\"/></g><g><path d=\"M224.214,33.706c0,0 2.404,0.213 6.435,0.213c4.024,0 8.065,0.504 8.065,0.504c0,0 -0.933,3.791 -1.976,7.368c-1.347,4.63 -2.823,9.272 -2.823,9.272c0,0 -2.61,-6.381 -4.885,-9.601c-2.584,-3.657 -4.816,-7.756 -4.816,-7.756Zm-2.791,0.436c0,0 2.175,3.87 4.824,7.49c2.211,3.031 5.092,10.118 5.092,10.118c0,0 -6.547,0.502 -9.572,0.502c-3.034,0 -14.387,-0.502 -14.387,-0.502c0,0 4.307,-4.287 6.565,-7.058c2.267,-2.778 7.478,-10.55 7.478,-10.55Zm-29.308,-0.757c0,0 6.088,0.356 12.925,0.118c6.32,-0.22 13.522,0.017 13.522,0.017c0,0 -3.121,4.717 -4.626,6.736c-1.501,2.017 -8.717,10.36 -8.717,10.36c0,0 -4.388,-5.061 -6.156,-6.826c-1.766,-1.769 -6.948,-10.405 -6.948,-10.405Zm-2.931,0.736c0,0 3.417,5.519 4.931,7.54c1.516,2.018 9.079,10.34 9.079,10.34c0,0 -5.036,0.251 -8.319,0.251c-3.282,0 -14.304,-0.35 -14.304,-0.35c0,0 1.184,-4.69 2.445,-6.961c1.262,-2.273 6.168,-10.82 6.168,-10.82Zm-2.841,-0.294c0,0 -3.786,5.639 -4.794,8.163c-1.012,2.523 -3.519,9.01 -3.519,9.01c0,0 -2.374,-4.786 -3.685,-9.208c-1.025,-3.441 -2.281,-7.873 -2.281,-7.873c0,0 4.654,-0.092 8.436,-0.092l5.843,0Zm-8.145,-18.396c0,0 1.212,2.364 3.442,7.063c1.921,4.063 4.777,8.356 4.777,8.356c0,0 -3.255,0.259 -6.023,0.259c-2.769,0 -8.052,0.265 -8.052,0.265c0,0 1.462,-4.351 2.491,-7.742c1.254,-4.143 3.365,-8.201 3.365,-8.201Zm23.962,-2.999c0,0 -4.55,6.069 -5.804,7.32c-1.251,1.254 -7.306,10.586 -7.306,10.586c0,0 -3.527,-5.799 -4.539,-7.82c-1.013,-2.017 -4.259,-9.158 -4.259,-9.158c0,0 3.999,-0.422 9.297,-0.928c5.302,-0.504 12.611,0 12.611,0Zm3.325,0.242c0,0 3.174,4.693 5.944,7.977c2.77,3.281 7.001,10.043 7.001,10.043c0,0 -4.595,-0.601 -8.932,-0.477c-4.536,0.121 -17.495,0.555 -17.495,0.555c0,0 4.039,-5.59 5.551,-8.354c1.513,-2.772 7.931,-9.744 7.931,-9.744Zm25.582,0.717c0,0 -1.476,5.877 -3.24,8.151c-1.766,2.273 -6.068,8.792 -6.068,8.792c0,0 -4.032,-5.521 -5.787,-8.036c-1.764,-2.514 -7.258,-9.861 -7.258,-9.861c0,0 4.564,-0.693 10.729,-0.469c5.012,0.176 11.624,1.423 11.624,1.423Zm2.632,1.066c0,0 2.107,5.244 3.136,8.846c1.037,3.61 2.196,8.339 2.196,8.339c0,0 -4.486,-0.614 -6.531,-0.1c-2.058,0.515 -8.321,-0.221 -8.321,-0.221c0,0 3.549,-5.695 5.226,-8.08c2.1,-2.983 4.294,-8.784 4.294,-8.784Zm-16.022,-13.556c0,0 3.117,2.068 5.886,3.837c2.77,1.766 7.234,5.749 7.234,5.749c0,0 -7.041,-0.866 -12.837,-1.122c-5.8,-0.249 -9.426,0.481 -9.426,0.481c0,0 3.848,-4.407 4.859,-5.669c1.011,-1.265 4.284,-3.276 4.284,-3.276Zm-19.798,-1.075c0,0 4.579,-0.026 7.592,-0.277c3.027,-0.253 9.298,0.277 9.298,0.277c0,0 -3.458,2.908 -4.721,4.421c-1.264,1.517 -3.853,4.988 -3.853,4.988c0,0 -2.34,-1.847 -3.601,-3.363c-1.261,-1.515 -4.715,-6.046 -4.715,-6.046Zm-4.089,0.642c0,0 2.334,0.667 4.007,3.172c1.671,2.508 5.153,6.267 5.153,6.267c0,0 -4.979,0.415 -8.322,0c-3.342,-0.419 -13.85,0.654 -13.85,0.654c0,0 3.864,-3.771 6.37,-5.579c3.209,-2.318 6.642,-4.514 6.642,-4.514Z\"/><path d=\"M194.061,63.316c0,0 -3.117,-2.067 -5.885,-3.838c-2.77,-1.765 -7.232,-5.747 -7.232,-5.747c0,0 7.038,0.866 12.834,1.12c5.798,0.25 9.427,-0.48 9.427,-0.48c0,0 -3.849,4.407 -4.861,5.668c-1.01,1.265 -4.283,3.277 -4.283,3.277Zm19.801,1.074c0,0 -4.584,0.028 -7.594,0.278c-3.028,0.253 -9.298,-0.278 -9.298,-0.278c0,0 3.458,-2.907 4.72,-4.421c1.265,-1.517 3.853,-4.987 3.853,-4.987c0,0 2.34,1.848 3.601,3.363c1.262,1.515 4.718,6.045 4.718,6.045Zm4.087,-0.641c0,0 -2.335,-0.667 -4.007,-3.172c-1.671,-2.509 -5.154,-6.267 -5.154,-6.267c0,0 4.978,-0.415 8.323,0c3.342,0.418 13.849,-0.655 13.849,-0.655c0,0 -3.863,3.772 -6.369,5.58c-3.211,2.317 -6.642,4.514 -6.642,4.514Z\"/></g></g></svg>",
+          "format": "pure_html",
+          "processed": "<svg width=\"200px\" height=\"100%\" viewBox=\"0 0 240 83\" version=\"1.1\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g><g><path d=\"M7.391,40.833l-5.55,0l0,-2.834l15.032,0l-0.895,2.834l-5.117,0l0,16.218l-3.47,0l0,-16.218Z\" style=\"fill-rule:nonzero;\" /><path d=\"M18.955,37.999l10.523,0l-0.925,2.834l-6.129,0l0,5.088l6.1,0l0,2.833l-6.1,0l0,5.465l7.083,0l0,2.832l-10.552,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M33.178,37.999l3.469,0l0,16.22l6.765,0l0,2.832l-10.234,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M46.13,53.64c-0.492,-0.983 -0.723,-2.255 -0.723,-3.7l0,-11.941l3.469,0l0,11.71c0,1.011 0.174,1.878 0.521,2.572c0.665,1.359 1.994,2.139 3.902,2.139c1.909,0 3.239,-0.78 3.904,-2.139c0.346,-0.694 0.52,-1.561 0.52,-2.602l0,-11.68l3.469,0l0,11.941c0,1.474 -0.232,2.746 -0.723,3.729c-1.185,2.457 -3.671,3.671 -7.17,3.671c-3.526,0 -6.013,-1.214 -7.169,-3.7Z\" style=\"fill-rule:nonzero;\" /><path d=\"M64.661,53.033c1.128,0.78 2.573,1.387 4.307,1.387c1.591,0 3.18,-0.607 3.18,-2.255c0,-3.729 -8.239,-3.267 -8.239,-9.077c0,-2.804 2.226,-5.261 6.187,-5.261c1.966,0 3.614,0.433 4.654,0.953l0,3.18c-1.503,-0.78 -3.035,-1.214 -4.538,-1.214c-1.33,0 -2.602,0.521 -2.602,2.052c0,3.498 8.239,3.036 8.239,9.079c0,3.382 -2.891,5.463 -6.794,5.463c-2.226,0 -4.308,-0.636 -5.753,-1.648l1.359,-2.659Z\" style=\"fill-rule:nonzero;\" /><path d=\"M81.139,37.999l2.37,0l3.701,11.449c0.376,1.243 0.895,2.775 1.272,4.278l0.058,0c0.462,-1.589 0.896,-2.833 1.387,-4.249l2.833,-8.24l-1.127,-3.238l2.313,0l3.844,11.507c0.406,1.185 0.955,2.747 1.331,4.191l0.057,0c0.376,-1.502 0.752,-2.804 1.185,-4.133l3.614,-11.565l2.255,0l-6.302,19.139l-1.705,0l-3.036,-8.933c-0.521,-1.533 -0.925,-2.718 -1.331,-4.106l-0.085,0c-0.405,1.388 -0.752,2.429 -1.331,4.106l-3.15,8.933l-1.735,0l-6.418,-19.139Z\" style=\"fill-rule:nonzero;\" /><path d=\"M122.538,47.627c0,-4.481 -2.516,-7.922 -7.025,-7.922c-4.251,0 -7.026,3.209 -7.026,7.922c0,4.711 2.775,7.863 7.026,7.863c4.249,0 7.025,-3.152 7.025,-7.863Zm-16.306,0c0,-5.783 3.931,-9.771 9.281,-9.771c5.404,0 9.279,4.076 9.279,9.771c0,5.955 -4.076,9.713 -9.279,9.713c-5.32,0 -9.281,-3.816 -9.281,-9.713Z\" style=\"fill-rule:nonzero;\" /><path d=\"M131.036,47.164c1.04,0 1.879,-0.203 2.632,-0.636c0.982,-0.578 1.648,-1.647 1.648,-3.122c0,-1.128 -0.377,-2.111 -1.215,-2.718c-0.606,-0.52 -1.561,-0.896 -3.036,-0.896l-1.821,0l0,7.372l1.792,0Zm-3.931,-9.165l3.874,0c1.995,0 3.324,0.376 4.307,1.013c1.532,0.954 2.226,2.515 2.226,4.192c0,2.63 -1.416,4.278 -3.873,5.03l0,0.058c0.577,0.289 1.3,1.358 2.284,3.035l3.469,5.724l-2.487,0l-3.325,-5.522c-0.896,-1.503 -1.618,-2.428 -2.196,-2.573l-2.14,0l0,8.095l-2.139,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M141.848,37.999l2.139,0l0,17.26l7.084,0l0,1.792l-9.223,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M157.807,55.259c5.926,0 7.949,-3.644 7.949,-7.921c0,-4.366 -2.486,-7.546 -8.007,-7.546l-2.256,0l0,15.467l2.314,0Zm-4.452,-17.26l4.566,0c6.824,0 10.09,3.99 10.09,9.425c0,5.464 -3.296,9.627 -10.175,9.627l-4.481,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M13,74.627c0,-3.151 -1.59,-5.348 -4.076,-5.348c-2.545,0 -4.135,2.197 -4.135,5.348c0,3.123 1.59,5.319 4.106,5.319c2.515,0 4.105,-2.196 4.105,-5.319Zm-10.408,0c0,-4.018 2.458,-7.168 6.332,-7.168c3.787,0 6.301,3.15 6.301,7.168c0,3.991 -2.485,7.141 -6.33,7.141c-3.816,0 -6.303,-3.15 -6.303,-7.141Z\" style=\"fill-rule:nonzero;\" /><path d=\"M17.798,69.539l-1.821,0l0,-1.733l1.821,0l0,-2.401c0,-3.353 2.053,-4.394 3.932,-4.394c0.665,0 1.474,0.146 2.111,0.435l-0.463,1.733c-0.433,-0.172 -0.954,-0.316 -1.474,-0.316c-1.388,0 -1.995,0.894 -1.995,2.457l0,2.486l3.469,0l-0.636,1.733l-2.833,0l0,11.941l-2.111,0l0,-11.941Z\" style=\"fill-rule:nonzero;\" /><path d=\"M31.472,78.647c0.925,0.607 2.371,1.271 4.135,1.271c2.052,0 3.845,-0.838 3.845,-3.092c0,-4.569 -8.384,-4.019 -8.384,-9.714c0,-2.689 2.052,-4.828 5.608,-4.828c1.734,0 3.267,0.433 4.134,0.867l0,1.994c-1.185,-0.664 -2.631,-1.04 -4.076,-1.04c-1.706,0 -3.44,0.752 -3.44,2.804c0,4.307 8.383,3.845 8.383,9.772c0,3.18 -2.457,5.087 -6.1,5.087c-2.167,0 -3.874,-0.664 -5.001,-1.445l0.896,-1.676Z\" style=\"fill-rule:nonzero;\" /><path d=\"M57.462,80.439c-1.792,0.954 -3.585,1.329 -5.319,1.329c-5.696,0 -9.078,-3.988 -9.078,-9.568c0,-5.552 3.816,-9.916 9.454,-9.916c2.023,0 3.758,0.463 4.712,1.011l0,2.025c-1.33,-0.724 -2.747,-1.187 -4.684,-1.187c-4.452,0 -7.227,3.412 -7.227,7.893c0,4.655 2.689,7.892 7.025,7.892c1.764,0 3.238,-0.492 4.538,-1.185l0.579,1.706Z\" style=\"fill-rule:nonzero;\" /><rect x=\"60.323\" y=\"62.428\" width=\"2.14\" height=\"19.052\" style=\"fill-rule:nonzero;\" /><path d=\"M66.568,62.428l9.193,0l-0.665,1.792l-6.389,0l0,6.621l6.274,0l0,1.764l-6.274,0l0,7.082l7.228,0l0,1.793l-9.367,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M78.652,62.428l2.052,0l8.847,11.564c1.215,1.619 2.11,2.892 2.746,3.874l0.058,0c-0.029,-1.04 -0.058,-1.879 -0.058,-3.354l0,-12.084l2.14,0l0,19.052l-1.793,0l-9.192,-12.027c-1.157,-1.502 -2.025,-2.718 -2.69,-3.672l-0.058,0c0.058,0.954 0.087,1.764 0.087,3.268l0,12.431l-2.139,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M111.435,80.439c-1.793,0.954 -3.586,1.329 -5.319,1.329c-5.696,0 -9.078,-3.988 -9.078,-9.568c0,-5.552 3.816,-9.916 9.453,-9.916c2.024,0 3.759,0.463 4.712,1.011l0,2.025c-1.33,-0.724 -2.746,-1.187 -4.682,-1.187c-4.453,0 -7.228,3.412 -7.228,7.893c0,4.655 2.688,7.892 7.025,7.892c1.764,0 3.239,-0.492 4.539,-1.185l0.578,1.706Z\" style=\"fill-rule:nonzero;\" /><path d=\"M113.69,62.428l9.193,0l-0.666,1.792l-6.389,0l0,6.621l6.274,0l0,1.764l-6.274,0l0,7.082l7.229,0l0,1.793l-9.367,0l0,-19.052Z\" style=\"fill-rule:nonzero;\" /><path d=\"M3.125,30.816c0.583,0.396 1.753,0.723 2.828,0.723c2.626,0 3.93,-1.515 3.93,-3.296c0,-1.64 -0.941,-2.584 -2.829,-3.368c-1.533,-0.627 -2.22,-1.145 -2.22,-2.215c0,-0.782 0.589,-1.706 2.117,-1.706c0.989,0 1.727,0.312 2.085,0.528l0.402,-1.204c-0.477,-0.274 -1.317,-0.54 -2.435,-0.54c-2.191,0 -3.647,1.318 -3.647,3.097c0,1.592 1.17,2.584 2.944,3.244c1.481,0.589 2.103,1.216 2.103,2.279c0,1.161 -0.873,1.95 -2.356,1.95c-0.972,0 -1.91,-0.318 -2.544,-0.715l-0.378,1.223Z\" style=\"fill-rule:nonzero;\" /><path d=\"M18.66,29.844c-0.568,0.271 -1.436,0.448 -2.304,0.448c-2.639,0 -4.222,-1.727 -4.222,-4.602c0,-3.057 1.744,-4.724 4.289,-4.724c0.917,0 1.661,0.198 2.19,0.449l0.357,-1.196c-0.374,-0.198 -1.247,-0.481 -2.59,-0.481c-3.383,0 -5.789,2.319 -5.789,6.008c0,3.774 2.339,5.793 5.468,5.793c1.328,0 2.373,-0.262 2.89,-0.522l-0.289,-1.173Z\" style=\"fill-rule:nonzero;\" /><rect x=\"20.357\" y=\"19.909\" width=\"1.469\" height=\"11.459\" style=\"fill-rule:nonzero;\" /><path d=\"M29.607,24.775l-4.285,0l0,-3.643l4.542,0l0,-1.223l-6.011,0l0,11.459l6.267,0l0,-1.224l-4.798,0l0,-4.155l4.285,0l0,-1.214Z\" style=\"fill-rule:nonzero;\" /><path d=\"M32.903,31.368l0,-4.807c0,-1.95 -0.021,-3.338 -0.111,-4.798l0.049,-0.016c0.556,1.264 1.298,2.571 2.055,3.842l3.496,5.779l1.476,0l0,-11.459l-1.372,0l0,4.732c0,1.796 0.03,3.202 0.161,4.759l-0.037,0.015c-0.527,-1.188 -1.185,-2.424 -1.987,-3.756l-3.514,-5.75l-1.588,0l0,11.459l1.372,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M49.023,29.844c-0.568,0.271 -1.436,0.448 -2.305,0.448c-2.638,0 -4.222,-1.727 -4.222,-4.602c0,-3.057 1.745,-4.724 4.289,-4.724c0.917,0 1.661,0.198 2.19,0.449l0.357,-1.196c-0.374,-0.198 -1.247,-0.481 -2.59,-0.481c-3.382,0 -5.789,2.319 -5.789,6.008c0,3.774 2.339,5.793 5.468,5.793c1.329,0 2.374,-0.262 2.891,-0.522l-0.289,-1.173Z\" style=\"fill-rule:nonzero;\" /><path d=\"M56.362,24.775l-4.285,0l0,-3.643l4.542,0l0,-1.223l-6.012,0l0,11.459l6.269,0l0,-1.224l-4.799,0l0,-4.155l4.285,0l0,-1.214Z\" style=\"fill-rule:nonzero;\" /><path d=\"M86.258,21.007c0.225,-0.061 0.64,-0.109 1.207,-0.109c1.511,0.004 2.405,0.712 2.405,2.144c0,1.332 -0.949,2.215 -2.419,2.215l-1.193,0l0,-4.25Zm-1.419,10.309l1.419,0l0,-4.975l1.107,0c1.264,0.029 1.843,0.63 2.153,2.2c0.285,1.427 0.532,2.44 0.706,2.775l1.47,0c-0.21,-0.419 -0.468,-1.473 -0.808,-3.063c-0.269,-1.293 -0.769,-2.114 -1.632,-2.404l0,-0.04c1.181,-0.453 2.052,-1.438 2.052,-2.93c0,-0.899 -0.301,-1.674 -0.869,-2.197c-0.674,-0.624 -1.648,-0.902 -3.072,-0.902c-0.894,0 -1.841,0.084 -2.526,0.238l0,11.298Z\" /><path d=\"M92.962,31.316l5.767,0l0,-1.203l-4.341,0l0,-10.256l-1.426,0l0,11.459Z\" style=\"fill-rule:nonzero;\" /><path d=\"M101.108,21.045c0.323,-0.066 0.779,-0.122 1.361,-0.122c2.684,0 3.999,1.647 3.986,4.434c0,3.364 -1.602,4.891 -4.189,4.886c-0.416,0 -0.844,-0.007 -1.158,-0.059l0,-9.139Zm-1.424,10.237c0.627,0.083 1.398,0.123 2.282,0.123c1.91,0 3.456,-0.521 4.424,-1.512c0.953,-0.971 1.558,-2.459 1.558,-4.584c0,-2.029 -0.619,-3.418 -1.598,-4.292c-0.877,-0.814 -2.173,-1.237 -3.98,-1.237c-0.996,0 -1.915,0.087 -2.686,0.238l0,11.264Z\" /><path d=\"M64.594,31.316l1.46,-5.818c0.372,-1.416 0.617,-2.57 0.798,-3.768l0.033,0c0.151,1.192 0.381,2.363 0.7,3.753l1.328,5.833l1.458,0l2.911,-11.459l-1.441,0l-1.327,5.671c-0.309,1.385 -0.589,2.651 -0.805,4.04l-0.04,0c-0.171,-1.34 -0.46,-2.675 -0.76,-4.041l-1.286,-5.67l-1.393,0l-1.378,5.688c-0.351,1.472 -0.679,2.795 -0.851,4.038l-0.046,0c-0.185,-1.207 -0.448,-2.585 -0.751,-4.019l-1.233,-5.707l-1.494,0l2.668,11.459l1.449,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M78.458,30.261c2.336,0 3.656,-2.15 3.656,-4.741c0,-2.268 -1.184,-4.638 -3.64,-4.638c-2.454,0 -3.673,2.285 -3.673,4.757c0,2.404 1.321,4.622 3.64,4.622l0.017,0Zm-0.068,1.202c-3.03,0 -5.129,-2.336 -5.129,-5.79c0,-3.623 2.234,-5.993 5.282,-5.993c3.131,0 5.146,2.387 5.146,5.773c0,3.911 -2.387,6.01 -5.282,6.01l-0.017,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M115.861,27.037c-1.614,-0.033 -3.447,0.253 -3.447,1.833c0,0.976 0.639,1.413 1.378,1.413c1.077,0 1.766,-0.673 2.002,-1.363c0.05,-0.151 0.067,-0.319 0.067,-0.47l0,-1.413Zm1.446,2.203c0,0.707 0.034,1.396 0.118,1.951l-1.328,0l-0.135,-1.026l-0.051,0c-0.437,0.639 -1.328,1.211 -2.488,1.211c-1.649,0 -2.489,-1.16 -2.489,-2.337c0,-1.968 1.748,-3.045 4.893,-3.027l0,-0.169c0,-0.673 -0.185,-1.9 -1.849,-1.883c-0.774,0 -1.564,0.219 -2.136,0.605l-0.336,-0.992c0.672,-0.42 1.664,-0.706 2.69,-0.706c2.506,0 3.111,1.698 3.111,3.33l0,3.043Z\" style=\"fill-rule:nonzero;\" /><path d=\"M120.638,21.101l0,1.951l2.119,0l0,1.127l-2.119,0l0,4.389c0,1.009 0.286,1.58 1.111,1.58c0.402,0 0.638,-0.034 0.857,-0.101l0.067,1.127c-0.286,0.101 -0.74,0.202 -1.312,0.202c-0.69,0 -1.244,-0.235 -1.598,-0.622c-0.402,-0.454 -0.571,-1.177 -0.571,-2.136l0,-4.439l-1.262,0l0,-1.127l1.262,0l0,-1.497l1.446,-0.454Z\" style=\"fill-rule:nonzero;\" /></g><g><path d=\"M224.214,33.706c0,0 2.404,0.213 6.435,0.213c4.024,0 8.065,0.504 8.065,0.504c0,0 -0.933,3.791 -1.976,7.368c-1.347,4.63 -2.823,9.272 -2.823,9.272c0,0 -2.61,-6.381 -4.885,-9.601c-2.584,-3.657 -4.816,-7.756 -4.816,-7.756Zm-2.791,0.436c0,0 2.175,3.87 4.824,7.49c2.211,3.031 5.092,10.118 5.092,10.118c0,0 -6.547,0.502 -9.572,0.502c-3.034,0 -14.387,-0.502 -14.387,-0.502c0,0 4.307,-4.287 6.565,-7.058c2.267,-2.778 7.478,-10.55 7.478,-10.55Zm-29.308,-0.757c0,0 6.088,0.356 12.925,0.118c6.32,-0.22 13.522,0.017 13.522,0.017c0,0 -3.121,4.717 -4.626,6.736c-1.501,2.017 -8.717,10.36 -8.717,10.36c0,0 -4.388,-5.061 -6.156,-6.826c-1.766,-1.769 -6.948,-10.405 -6.948,-10.405Zm-2.931,0.736c0,0 3.417,5.519 4.931,7.54c1.516,2.018 9.079,10.34 9.079,10.34c0,0 -5.036,0.251 -8.319,0.251c-3.282,0 -14.304,-0.35 -14.304,-0.35c0,0 1.184,-4.69 2.445,-6.961c1.262,-2.273 6.168,-10.82 6.168,-10.82Zm-2.841,-0.294c0,0 -3.786,5.639 -4.794,8.163c-1.012,2.523 -3.519,9.01 -3.519,9.01c0,0 -2.374,-4.786 -3.685,-9.208c-1.025,-3.441 -2.281,-7.873 -2.281,-7.873c0,0 4.654,-0.092 8.436,-0.092l5.843,0Zm-8.145,-18.396c0,0 1.212,2.364 3.442,7.063c1.921,4.063 4.777,8.356 4.777,8.356c0,0 -3.255,0.259 -6.023,0.259c-2.769,0 -8.052,0.265 -8.052,0.265c0,0 1.462,-4.351 2.491,-7.742c1.254,-4.143 3.365,-8.201 3.365,-8.201Zm23.962,-2.999c0,0 -4.55,6.069 -5.804,7.32c-1.251,1.254 -7.306,10.586 -7.306,10.586c0,0 -3.527,-5.799 -4.539,-7.82c-1.013,-2.017 -4.259,-9.158 -4.259,-9.158c0,0 3.999,-0.422 9.297,-0.928c5.302,-0.504 12.611,0 12.611,0Zm3.325,0.242c0,0 3.174,4.693 5.944,7.977c2.77,3.281 7.001,10.043 7.001,10.043c0,0 -4.595,-0.601 -8.932,-0.477c-4.536,0.121 -17.495,0.555 -17.495,0.555c0,0 4.039,-5.59 5.551,-8.354c1.513,-2.772 7.931,-9.744 7.931,-9.744Zm25.582,0.717c0,0 -1.476,5.877 -3.24,8.151c-1.766,2.273 -6.068,8.792 -6.068,8.792c0,0 -4.032,-5.521 -5.787,-8.036c-1.764,-2.514 -7.258,-9.861 -7.258,-9.861c0,0 4.564,-0.693 10.729,-0.469c5.012,0.176 11.624,1.423 11.624,1.423Zm2.632,1.066c0,0 2.107,5.244 3.136,8.846c1.037,3.61 2.196,8.339 2.196,8.339c0,0 -4.486,-0.614 -6.531,-0.1c-2.058,0.515 -8.321,-0.221 -8.321,-0.221c0,0 3.549,-5.695 5.226,-8.08c2.1,-2.983 4.294,-8.784 4.294,-8.784Zm-16.022,-13.556c0,0 3.117,2.068 5.886,3.837c2.77,1.766 7.234,5.749 7.234,5.749c0,0 -7.041,-0.866 -12.837,-1.122c-5.8,-0.249 -9.426,0.481 -9.426,0.481c0,0 3.848,-4.407 4.859,-5.669c1.011,-1.265 4.284,-3.276 4.284,-3.276Zm-19.798,-1.075c0,0 4.579,-0.026 7.592,-0.277c3.027,-0.253 9.298,0.277 9.298,0.277c0,0 -3.458,2.908 -4.721,4.421c-1.264,1.517 -3.853,4.988 -3.853,4.988c0,0 -2.34,-1.847 -3.601,-3.363c-1.261,-1.515 -4.715,-6.046 -4.715,-6.046Zm-4.089,0.642c0,0 2.334,0.667 4.007,3.172c1.671,2.508 5.153,6.267 5.153,6.267c0,0 -4.979,0.415 -8.322,0c-3.342,-0.419 -13.85,0.654 -13.85,0.654c0,0 3.864,-3.771 6.37,-5.579c3.209,-2.318 6.642,-4.514 6.642,-4.514Z\" /><path d=\"M194.061,63.316c0,0 -3.117,-2.067 -5.885,-3.838c-2.77,-1.765 -7.232,-5.747 -7.232,-5.747c0,0 7.038,0.866 12.834,1.12c5.798,0.25 9.427,-0.48 9.427,-0.48c0,0 -3.849,4.407 -4.861,5.668c-1.01,1.265 -4.283,3.277 -4.283,3.277Zm19.801,1.074c0,0 -4.584,0.028 -7.594,0.278c-3.028,0.253 -9.298,-0.278 -9.298,-0.278c0,0 3.458,-2.907 4.72,-4.421c1.265,-1.517 3.853,-4.987 3.853,-4.987c0,0 2.34,1.848 3.601,3.363c1.262,1.515 4.718,6.045 4.718,6.045Zm4.087,-0.641c0,0 -2.335,-0.667 -4.007,-3.172c-1.671,-2.509 -5.154,-6.267 -5.154,-6.267c0,0 4.978,-0.415 8.323,0c3.342,0.418 13.849,-0.655 13.849,-0.655c0,0 -3.863,3.772 -6.369,5.58c-3.211,2.317 -6.642,4.514 -6.642,4.514Z\" /></g></g></svg>"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slide/40b7745b-1c5a-4d4e-8aac-19a800cd8dd7/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/40b7745b-1c5a-4d4e-8aac-19a800cd8dd7/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/40b7745b-1c5a-4d4e-8aac-19a800cd8dd7/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/40b7745b-1c5a-4d4e-8aac-19a800cd8dd7/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/40b7745b-1c5a-4d4e-8aac-19a800cd8dd7/relationships/image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slide",
+      "id": "4c58f738-5e51-424b-a689-211592478762",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slide/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slide/4c58f738-5e51-424b-a689-211592478762"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 12,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<svg width=\"200px\" height=\"100%\" viewBox=\"0 0 146 74\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" xmlns:serif=\"http://www.serif.com/\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\"><g><g><path d=\"M1.642,2.205l13.398,0l17.396,30.87l0.142,0l0,-30.87l12.28,0l0,50.093l-13.4,0l-17.4,-31.22l-0.138,0l0,31.22l-12.278,0l0,-50.093Z\"/><path d=\"M111.208,25.99l-16.347,-23.785l15.363,0l8.421,15.577l8.911,-15.577l14.87,0l-16.204,23.785l17.676,26.308l-15.85,0l-9.403,-16.699l-10.243,16.699l-15.014,0l17.82,-26.308Z\"/><path d=\"M75.349,34.549l9.118,0c-0.701,4.559 -5.05,7.576 -11.504,7.576c-8.421,0 -11.647,-7.436 -11.647,-14.872c0,-7.436 3.226,-14.873 11.647,-14.873c5.262,0 9.47,2.592 9.896,6.876l2.709,0l6.834,-9.497c-4.326,-5.902 -11.911,-8.606 -19.156,-8.606c-15.153,0 -24.977,11.578 -24.977,26.1c0,14.52 9.824,26.095 24.977,26.095c4.628,0 10.52,-1.683 13.961,-6.522l0.769,5.472l8.419,-11.703l0,-15.728l-21.046,0l0,9.682Z\"/><rect x=\"2.474\" y=\"57.521\" width=\"3.031\" height=\"15.155\" style=\"fill-rule:nonzero;\"/><path d=\"M18.912,72.677l-5.565,-8.271c-0.368,-0.563 -0.866,-1.32 -1.061,-1.71c0,0.563 0.043,2.469 0.043,3.312l0,6.669l-2.987,0l0,-15.156l2.901,0l5.369,8.011c0.368,0.563 0.866,1.32 1.062,1.711c0,-0.564 -0.044,-2.469 -0.044,-3.313l0,-6.409l2.987,0l0,15.156l-2.705,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M31.545,60.509l0,12.168l-3.03,0l0,-12.168l-4.352,0l0,-2.988l11.734,0l0,2.988l-4.352,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M38.442,72.677l0,-15.156l10.522,0l0,2.967l-7.491,0l0,2.619l4.352,0l0,2.944l-4.352,0l0,3.659l7.816,0l0,2.967l-10.847,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M59.28,60.466l-3.962,0l0,3.897l3.962,0c1.408,0 2.166,-0.65 2.166,-1.97c0,-1.364 -0.824,-1.927 -2.166,-1.927Zm1.797,12.211l-2.706,-5.457l-3.053,0l0,5.457l-3.031,0l0,-15.156l7.058,0c2.857,0 5.218,1.581 5.218,4.807c0,2.273 -0.975,3.702 -2.901,4.459l2.901,5.89l-3.486,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M74.671,63.67c-0.304,-0.888 -0.606,-1.797 -0.758,-2.36c-0.152,0.563 -0.455,1.472 -0.757,2.36l-0.975,2.749l3.464,0l-0.974,-2.749Zm3.204,9.007l-1.191,-3.378l-5.543,0l-1.19,3.378l-3.248,0l5.803,-15.156l2.944,0l5.758,15.156l-3.333,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M91.776,61.939c-0.541,-1.04 -1.407,-1.646 -2.771,-1.646c-2.272,0 -3.572,1.991 -3.572,4.806c0,2.728 1.321,4.806 3.594,4.806c1.364,0 2.165,-0.584 2.966,-1.926l2.554,1.515c-1.039,2.144 -2.857,3.421 -5.607,3.421c-3.961,0 -6.624,-3.032 -6.624,-7.816c0,-4.611 2.771,-7.816 6.732,-7.816c2.859,0 4.59,1.386 5.542,3.357l-2.814,1.299Z\" style=\"fill-rule:nonzero;\"/><path d=\"M104.092,60.509l0,12.168l-3.03,0l0,-12.168l-4.352,0l0,-2.988l11.734,0l0,2.988l-4.352,0Z\" style=\"fill-rule:nonzero;\"/><rect x=\"111.095\" y=\"57.521\" width=\"3.031\" height=\"15.155\" style=\"fill-rule:nonzero;\"/><path d=\"M125.028,72.677l-2.944,0l-5.391,-15.156l3.356,0l2.857,8.768c0.282,0.845 0.585,1.949 0.714,2.49c0.13,-0.562 0.412,-1.602 0.693,-2.49l2.793,-8.768l3.313,0l-5.391,15.156Z\" style=\"fill-rule:nonzero;\"/><path d=\"M132.911,72.677l0,-15.156l10.521,0l0,2.967l-7.49,0l0,2.619l4.351,0l0,2.944l-4.351,0l0,3.659l7.815,0l0,2.967l-10.846,0Z\" style=\"fill-rule:nonzero;\"/></g></g></svg>",
+          "format": "pure_html",
+          "processed": "<svg width=\"200px\" height=\"100%\" viewBox=\"0 0 146 74\" version=\"1.1\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g><g><path d=\"M1.642,2.205l13.398,0l17.396,30.87l0.142,0l0,-30.87l12.28,0l0,50.093l-13.4,0l-17.4,-31.22l-0.138,0l0,31.22l-12.278,0l0,-50.093Z\" /><path d=\"M111.208,25.99l-16.347,-23.785l15.363,0l8.421,15.577l8.911,-15.577l14.87,0l-16.204,23.785l17.676,26.308l-15.85,0l-9.403,-16.699l-10.243,16.699l-15.014,0l17.82,-26.308Z\" /><path d=\"M75.349,34.549l9.118,0c-0.701,4.559 -5.05,7.576 -11.504,7.576c-8.421,0 -11.647,-7.436 -11.647,-14.872c0,-7.436 3.226,-14.873 11.647,-14.873c5.262,0 9.47,2.592 9.896,6.876l2.709,0l6.834,-9.497c-4.326,-5.902 -11.911,-8.606 -19.156,-8.606c-15.153,0 -24.977,11.578 -24.977,26.1c0,14.52 9.824,26.095 24.977,26.095c4.628,0 10.52,-1.683 13.961,-6.522l0.769,5.472l8.419,-11.703l0,-15.728l-21.046,0l0,9.682Z\" /><rect x=\"2.474\" y=\"57.521\" width=\"3.031\" height=\"15.155\" style=\"fill-rule:nonzero;\" /><path d=\"M18.912,72.677l-5.565,-8.271c-0.368,-0.563 -0.866,-1.32 -1.061,-1.71c0,0.563 0.043,2.469 0.043,3.312l0,6.669l-2.987,0l0,-15.156l2.901,0l5.369,8.011c0.368,0.563 0.866,1.32 1.062,1.711c0,-0.564 -0.044,-2.469 -0.044,-3.313l0,-6.409l2.987,0l0,15.156l-2.705,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M31.545,60.509l0,12.168l-3.03,0l0,-12.168l-4.352,0l0,-2.988l11.734,0l0,2.988l-4.352,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M38.442,72.677l0,-15.156l10.522,0l0,2.967l-7.491,0l0,2.619l4.352,0l0,2.944l-4.352,0l0,3.659l7.816,0l0,2.967l-10.847,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M59.28,60.466l-3.962,0l0,3.897l3.962,0c1.408,0 2.166,-0.65 2.166,-1.97c0,-1.364 -0.824,-1.927 -2.166,-1.927Zm1.797,12.211l-2.706,-5.457l-3.053,0l0,5.457l-3.031,0l0,-15.156l7.058,0c2.857,0 5.218,1.581 5.218,4.807c0,2.273 -0.975,3.702 -2.901,4.459l2.901,5.89l-3.486,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M74.671,63.67c-0.304,-0.888 -0.606,-1.797 -0.758,-2.36c-0.152,0.563 -0.455,1.472 -0.757,2.36l-0.975,2.749l3.464,0l-0.974,-2.749Zm3.204,9.007l-1.191,-3.378l-5.543,0l-1.19,3.378l-3.248,0l5.803,-15.156l2.944,0l5.758,15.156l-3.333,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M91.776,61.939c-0.541,-1.04 -1.407,-1.646 -2.771,-1.646c-2.272,0 -3.572,1.991 -3.572,4.806c0,2.728 1.321,4.806 3.594,4.806c1.364,0 2.165,-0.584 2.966,-1.926l2.554,1.515c-1.039,2.144 -2.857,3.421 -5.607,3.421c-3.961,0 -6.624,-3.032 -6.624,-7.816c0,-4.611 2.771,-7.816 6.732,-7.816c2.859,0 4.59,1.386 5.542,3.357l-2.814,1.299Z\" style=\"fill-rule:nonzero;\" /><path d=\"M104.092,60.509l0,12.168l-3.03,0l0,-12.168l-4.352,0l0,-2.988l11.734,0l0,2.988l-4.352,0Z\" style=\"fill-rule:nonzero;\" /><rect x=\"111.095\" y=\"57.521\" width=\"3.031\" height=\"15.155\" style=\"fill-rule:nonzero;\" /><path d=\"M125.028,72.677l-2.944,0l-5.391,-15.156l3.356,0l2.857,8.768c0.282,0.845 0.585,1.949 0.714,2.49c0.13,-0.562 0.412,-1.602 0.693,-2.49l2.793,-8.768l3.313,0l-5.391,15.156Z\" style=\"fill-rule:nonzero;\" /><path d=\"M132.911,72.677l0,-15.156l10.521,0l0,2.967l-7.49,0l0,2.619l4.351,0l0,2.944l-4.351,0l0,3.659l7.815,0l0,2.967l-10.846,0Z\" style=\"fill-rule:nonzero;\" /></g></g></svg>"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slide/4c58f738-5e51-424b-a689-211592478762/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/4c58f738-5e51-424b-a689-211592478762/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/4c58f738-5e51-424b-a689-211592478762/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/4c58f738-5e51-424b-a689-211592478762/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/4c58f738-5e51-424b-a689-211592478762/relationships/image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slide",
+      "id": "dd6076da-3daf-43d3-babc-41a4758aeb20",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slide/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slide/dd6076da-3daf-43d3-babc-41a4758aeb20"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 15,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<svg height=\"100%\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" version=\"1.1\" viewbox=\"0 0 214 100\" width=\"200px\" xml:space=\"preserve\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g><path d=\"M107.674,31.659l-8.31,-3.936l-1.312,3.062l5.249,2.915l-5.54,2.77l1.458,3.207l8.455,-4.081l8.31,4.227l1.458,-3.207l-5.54,-3.061l5.394,-2.916l-1.604,-2.77l-8.018,3.79Zm1.749,-17.348c-0.518,-1.093 -1.749,-3.207 -1.749,-3.207l-6.414,13.121l6.409,3.114l6.565,-3.114c0,0 -3.282,-6.694 -4.811,-9.914m-1.754,-14.56l20.998,12.665l0.109,26.288c-13.994,17.104 -28.688,17.687 -42.532,-0.047c-0.222,-1.166 0,-26.095 0,-26.095l21.425,-12.811Z\"></path><path d=\"M109.673,22.419l-2.004,0.984l-2.078,-0.984l2.078,-3.662l2.004,3.662Z\"></path><path d=\"M47.319,65.773c0.895,0.918 1.213,2.262 1.604,3.499c1.192,3.768 2.407,7.884 3.644,11.663c2.011,-4.647 3.184,-10.132 5.103,-14.87c1.196,-0.455 4.056,-0.477 5.248,0c0.749,3.31 0.437,7.012 0.437,10.642c0,7.762 0.222,14.938 0,21.43c-0.988,0.998 -4.441,0.692 -5.685,0.146c-0.662,-4.373 -0.089,-9.09 -0.292,-13.849c-0.719,2.147 -1.091,4.642 -2.041,6.56c-1.589,-0.306 -3.834,0.044 -5.394,-0.292c-0.474,-2.247 -1.336,-4.106 -1.603,-6.56c-0.499,4.264 -0.087,9.438 -0.438,13.849c-1.262,0.555 -4.285,0.95 -5.539,0.146c-0.368,-2.081 -0.432,-4.752 -0.438,-7.143c-0.014,-6.675 0.138,-14.25 0.146,-21.722c0.001,-1.079 -0.572,-2.462 0.437,-3.353c1.086,-0.536 3.494,-0.303 4.811,-0.146\"></path><path d=\"M73.998,71.604c-0.33,1.638 -0.547,5.333 0,7.581c1.076,0.371 2.33,0.264 3.353,0.146c1.029,-1.753 0.459,-4.511 0.437,-7.289c-0.614,-0.734 -2.746,-1.051 -3.79,-0.438m-0.146,13.704c0.022,1.801 -0.139,4.044 -0.146,6.269c-0.007,2.385 0.479,4.881 -0.145,6.706c-1.261,0.435 -4.345,0.561 -5.395,-0.146c-0.704,-3.987 -0.097,-8.292 -0.145,-12.537c-0.067,-5.864 -0.349,-11.494 -0.146,-17.203c0.025,-0.697 0.047,-1.607 0.437,-2.187c1.153,-0.77 2.895,-0.439 4.374,-0.437c4.552,0.005 9.908,-0.925 10.788,2.77c0.146,0.613 -0.073,1.59 -0.146,2.77c-0.221,3.554 0.453,8.534 0,10.788c-0.871,4.336 -5.9,2.14 -9.476,3.207\"></path><path d=\"M1.543,95.805l0,-26.242c0.51,-1.046 1.042,-2.677 2.624,-3.353c1.517,-0.647 4.509,-0.276 7.144,-0.291c1.556,-0.009 2.518,-0.272 3.352,0c2.177,0.707 2.479,2.793 2.479,5.685c0,1.058 0.231,2.311 -0.438,3.062c-1.295,0.533 -4.259,0.432 -5.393,-0.146c-0.533,-0.488 -0.103,-1.938 -0.438,-2.624c-0.883,-0.475 -2.723,-0.347 -3.499,0.146c0.022,5.746 -0.185,13.337 0.146,20.41c0.834,0.44 2.74,0.223 3.645,-0.146c0.399,-0.913 -0.153,-2.777 0.437,-3.499c1.254,-0.616 4.053,-0.478 5.248,0c0.384,1.884 0.589,4.46 0.146,6.269c-0.805,3.29 -3.662,3.538 -7.872,3.644c-3.958,0.101 -6.793,-0.118 -7.581,-2.915\"></path><path d=\"M28.076,71.75c-0.276,0.016 -0.101,0.482 -0.438,0.438c0.129,3.457 -0.518,6.001 0.146,9.184c0.946,0.231 2.699,0.231 3.645,0c0.686,-2.44 0.599,-7.262 0.145,-9.476c-1.191,-0.342 -2.129,-0.748 -3.498,-0.146m9.038,26.533c-1.476,0.748 -3.908,0.462 -5.394,0c-0.935,-2.547 -0.139,-5.963 -0.437,-9.038c-0.639,-0.456 -2.509,-0.373 -3.353,-0.146c-0.697,2.505 0.19,6.159 -0.583,9.038c-1.148,0.516 -3.73,0.336 -5.103,0.146c-0.762,-2.002 -0.437,-4.391 -0.437,-6.852c0,-4.513 -0.049,-9.59 0,-14.287c0.054,-5.117 -0.847,-10.234 3.645,-11.225c1.468,-0.324 8.369,-0.554 9.913,0.146c2.983,1.351 2.041,7.712 2.041,12.391c0,5.527 -0.052,10.728 0,15.162c0.019,1.649 0.326,3.292 -0.292,4.665\"></path><path d=\"M105.925,72.334c0.212,2.843 -0.443,5.452 0.146,7.143c0.895,0.559 2.354,0.364 3.498,0.146c0.113,-0.106 0.188,-0.343 0.292,-0.583c0.59,-1.364 -0.04,-5.321 0,-6.706c-0.67,-0.675 -3.349,-0.997 -3.936,0m0.146,13.266c-0.523,3.905 0.14,8.263 -0.292,12.975c-1.144,0.692 -4.386,0.648 -5.54,0c-0.512,-2.729 -0.035,-21.184 -0.146,-28.428c-0.008,-0.573 -0.046,-1.109 0,-1.75c0.102,-1.415 -0.123,-2.058 1.604,-2.187c2.152,-0.159 2.999,-0.156 5.54,-0.145c1.993,0.008 4.807,-0.086 5.977,0.291c0.984,0.317 2.316,1.777 2.478,2.624c0.206,1.073 -0.253,2.39 -0.291,3.208c-0.135,2.917 0.291,6.242 0.146,10.35c-0.654,0.877 -0.616,1.596 -1.458,2.187c-1.919,1.347 -5.618,-0.032 -8.018,0.875\"></path><path d=\"M125.46,72.625c0.094,2.918 -0.191,6.217 0.145,8.893c1.038,0.65 2.817,0.421 3.791,0.146c0.771,-2.478 0.406,-7.101 0.292,-9.185c-0.797,-0.768 -3.662,-0.953 -4.228,0.146m9.476,26.095c-1.376,0.375 -4.594,0.669 -5.54,-0.291c-0.393,-2.404 -0.096,-5.878 -0.146,-8.747c-0.552,-0.67 -2.541,-0.492 -3.499,-0.292c-0.674,2.726 0.394,6.398 -0.583,9.185c-1.534,0.41 -3.032,0.046 -4.957,0.145c-1.063,-2.278 -0.463,-4.905 -0.437,-7.435c0.061,-5.789 -0.045,-11.877 0,-18.223c0.017,-2.355 -0.105,-4.133 1.167,-5.539c1.604,-1.775 6.382,-1.775 10.35,-1.458c3.008,0.24 4.046,1.894 4.082,5.394c0.037,3.594 -0.122,7.827 0,12.1c0.072,2.499 0.082,5.059 0,7.289c-0.098,2.651 0.31,5.472 -0.437,7.872\"></path><path d=\"M155.2,74.957c-1.5,0.384 -4.099,0.504 -5.394,-0.291c-0.591,-0.706 0.043,-1.762 -0.437,-2.478c-0.888,-0.525 -2.677,-0.268 -3.499,0.146c0,6.416 -0.012,13.44 0,20.118c0.789,0.751 2.495,0.564 3.644,0.291c0.634,-0.678 0.011,-2.613 0.438,-3.498c1.011,-0.78 3.789,-0.555 5.248,-0.146c1.012,3.598 0.582,7.559 -1.604,9.038c-1.371,0.929 -3.885,0.822 -6.414,0.875c-3.516,0.074 -6.828,0.053 -7.29,-3.207c-0.094,-0.668 -0.005,-1.489 0,-2.333c0.014,-2.028 0.029,-4.541 0,-6.998c-0.055,-4.804 0.019,-9.382 0,-13.557c-0.013,-2.984 0.574,-5.759 3.062,-6.561c2.124,-0.684 4.428,-0.131 6.852,-0.146c2.75,-0.016 4.653,-0.117 5.54,2.041c0.428,1.042 0.278,2.487 0.291,3.937c0.009,0.918 0.221,2.01 -0.437,2.769\"></path><path d=\"M165.259,66.356c0.539,2.713 0.276,5.491 0.292,8.31c0.026,4.889 0.145,10.479 0.145,16.328c0,2.734 0.285,5.44 -0.291,7.872c-1.19,0.431 -4.275,0.576 -5.248,-0.146c-0.531,-2.718 -0.292,-5.568 -0.292,-8.309c0,-5.475 -0.043,-10.446 0,-15.745c0.022,-2.738 -0.255,-5.485 0.292,-8.164c1.347,-0.623 3.331,-0.423 5.102,-0.146\"></path><path d=\"M183.336,66.502c0.594,0.638 0.09,1.528 0,2.478c-0.104,1.107 0.203,2.14 -0.437,2.77c-1.29,1.269 -5.326,-0.44 -6.56,0.584c-0.635,1.906 -0.169,5.199 -0.146,6.997c1.466,0.804 3.836,-0.164 5.394,0.583c0.693,1.002 0.594,4.04 0.145,5.248c-1.16,1.003 -3.857,-0.181 -5.393,0.584c-0.292,1.684 -0.146,4.032 -0.146,6.414c0,2.252 0.231,4.676 -0.292,6.415c-1.229,0.591 -3.64,0.422 -5.248,0c-0.543,-2.495 -0.263,-5.208 -0.292,-7.873c-0.058,-5.54 0,-11.105 0,-16.473c0,-2.665 -0.215,-5.297 0.292,-7.727c2.629,-0.58 5.448,-0.292 8.31,-0.292c1.468,0 3.048,-0.218 4.373,0.292\"></path><path d=\"M193.104,66.356c0.525,2.576 0.291,5.359 0.291,8.164c0,6.415 0.146,13.531 0.146,20.702c0,1.191 0.288,2.607 -0.437,3.644c-1.118,0.489 -3.978,0.451 -5.103,0c-0.705,-1.08 -0.301,-2.297 -0.291,-3.499c0.059,-7.355 0,-15.634 0,-24.054c0,-1.655 -0.226,-3.284 0.291,-4.811c1.348,-0.623 3.332,-0.423 5.103,-0.146\"></path><path d=\"M213.222,75.103c-1.892,0.134 -3.472,0.331 -5.248,-0.291c-0.565,-0.505 -0.019,-2.12 -0.583,-2.624c-0.864,-0.581 -2.679,-0.22 -3.499,0.146c0.195,7.182 -0.097,13.427 0.146,20.263c0.981,0.558 2.443,0.395 3.644,0.146c0.373,-0.939 -0.134,-2.758 0.438,-3.498c1.002,-0.865 3.432,-0.398 5.102,-0.292c0.799,1.763 0.794,3.922 0.583,5.54c-0.279,2.14 -1.782,3.963 -3.79,4.373c-1.267,0.259 -3.097,0.113 -4.665,0.146c-3.434,0.072 -6.83,0.105 -7.29,-3.207c-0.16,-1.157 0,-3.241 0,-4.957c0.001,-4.709 0.132,-10.699 0.146,-15.162c0.006,-1.688 -0.369,-4.238 -0.146,-5.539c0.261,-1.513 1.617,-3.339 3.062,-3.791c2.124,-0.664 4.441,-0.131 6.852,-0.146c2.772,-0.016 4.661,-0.098 5.54,2.041c0.43,1.049 0.302,2.575 0.291,4.083c-0.007,0.978 0.135,2.09 -0.583,2.769\"></path></g></svg>",
+          "format": "pure_html",
+          "processed": "<svg height=\"100%\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" version=\"1.1\" viewBox=\"0 0 214 100\" width=\"200px\" xml:space=\"preserve\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:serif=\"http://www.serif.com/\"><g><path d=\"M107.674,31.659l-8.31,-3.936l-1.312,3.062l5.249,2.915l-5.54,2.77l1.458,3.207l8.455,-4.081l8.31,4.227l1.458,-3.207l-5.54,-3.061l5.394,-2.916l-1.604,-2.77l-8.018,3.79Zm1.749,-17.348c-0.518,-1.093 -1.749,-3.207 -1.749,-3.207l-6.414,13.121l6.409,3.114l6.565,-3.114c0,0 -3.282,-6.694 -4.811,-9.914m-1.754,-14.56l20.998,12.665l0.109,26.288c-13.994,17.104 -28.688,17.687 -42.532,-0.047c-0.222,-1.166 0,-26.095 0,-26.095l21.425,-12.811Z\" /><path d=\"M109.673,22.419l-2.004,0.984l-2.078,-0.984l2.078,-3.662l2.004,3.662Z\" /><path d=\"M47.319,65.773c0.895,0.918 1.213,2.262 1.604,3.499c1.192,3.768 2.407,7.884 3.644,11.663c2.011,-4.647 3.184,-10.132 5.103,-14.87c1.196,-0.455 4.056,-0.477 5.248,0c0.749,3.31 0.437,7.012 0.437,10.642c0,7.762 0.222,14.938 0,21.43c-0.988,0.998 -4.441,0.692 -5.685,0.146c-0.662,-4.373 -0.089,-9.09 -0.292,-13.849c-0.719,2.147 -1.091,4.642 -2.041,6.56c-1.589,-0.306 -3.834,0.044 -5.394,-0.292c-0.474,-2.247 -1.336,-4.106 -1.603,-6.56c-0.499,4.264 -0.087,9.438 -0.438,13.849c-1.262,0.555 -4.285,0.95 -5.539,0.146c-0.368,-2.081 -0.432,-4.752 -0.438,-7.143c-0.014,-6.675 0.138,-14.25 0.146,-21.722c0.001,-1.079 -0.572,-2.462 0.437,-3.353c1.086,-0.536 3.494,-0.303 4.811,-0.146\" /><path d=\"M73.998,71.604c-0.33,1.638 -0.547,5.333 0,7.581c1.076,0.371 2.33,0.264 3.353,0.146c1.029,-1.753 0.459,-4.511 0.437,-7.289c-0.614,-0.734 -2.746,-1.051 -3.79,-0.438m-0.146,13.704c0.022,1.801 -0.139,4.044 -0.146,6.269c-0.007,2.385 0.479,4.881 -0.145,6.706c-1.261,0.435 -4.345,0.561 -5.395,-0.146c-0.704,-3.987 -0.097,-8.292 -0.145,-12.537c-0.067,-5.864 -0.349,-11.494 -0.146,-17.203c0.025,-0.697 0.047,-1.607 0.437,-2.187c1.153,-0.77 2.895,-0.439 4.374,-0.437c4.552,0.005 9.908,-0.925 10.788,2.77c0.146,0.613 -0.073,1.59 -0.146,2.77c-0.221,3.554 0.453,8.534 0,10.788c-0.871,4.336 -5.9,2.14 -9.476,3.207\" /><path d=\"M1.543,95.805l0,-26.242c0.51,-1.046 1.042,-2.677 2.624,-3.353c1.517,-0.647 4.509,-0.276 7.144,-0.291c1.556,-0.009 2.518,-0.272 3.352,0c2.177,0.707 2.479,2.793 2.479,5.685c0,1.058 0.231,2.311 -0.438,3.062c-1.295,0.533 -4.259,0.432 -5.393,-0.146c-0.533,-0.488 -0.103,-1.938 -0.438,-2.624c-0.883,-0.475 -2.723,-0.347 -3.499,0.146c0.022,5.746 -0.185,13.337 0.146,20.41c0.834,0.44 2.74,0.223 3.645,-0.146c0.399,-0.913 -0.153,-2.777 0.437,-3.499c1.254,-0.616 4.053,-0.478 5.248,0c0.384,1.884 0.589,4.46 0.146,6.269c-0.805,3.29 -3.662,3.538 -7.872,3.644c-3.958,0.101 -6.793,-0.118 -7.581,-2.915\" /><path d=\"M28.076,71.75c-0.276,0.016 -0.101,0.482 -0.438,0.438c0.129,3.457 -0.518,6.001 0.146,9.184c0.946,0.231 2.699,0.231 3.645,0c0.686,-2.44 0.599,-7.262 0.145,-9.476c-1.191,-0.342 -2.129,-0.748 -3.498,-0.146m9.038,26.533c-1.476,0.748 -3.908,0.462 -5.394,0c-0.935,-2.547 -0.139,-5.963 -0.437,-9.038c-0.639,-0.456 -2.509,-0.373 -3.353,-0.146c-0.697,2.505 0.19,6.159 -0.583,9.038c-1.148,0.516 -3.73,0.336 -5.103,0.146c-0.762,-2.002 -0.437,-4.391 -0.437,-6.852c0,-4.513 -0.049,-9.59 0,-14.287c0.054,-5.117 -0.847,-10.234 3.645,-11.225c1.468,-0.324 8.369,-0.554 9.913,0.146c2.983,1.351 2.041,7.712 2.041,12.391c0,5.527 -0.052,10.728 0,15.162c0.019,1.649 0.326,3.292 -0.292,4.665\" /><path d=\"M105.925,72.334c0.212,2.843 -0.443,5.452 0.146,7.143c0.895,0.559 2.354,0.364 3.498,0.146c0.113,-0.106 0.188,-0.343 0.292,-0.583c0.59,-1.364 -0.04,-5.321 0,-6.706c-0.67,-0.675 -3.349,-0.997 -3.936,0m0.146,13.266c-0.523,3.905 0.14,8.263 -0.292,12.975c-1.144,0.692 -4.386,0.648 -5.54,0c-0.512,-2.729 -0.035,-21.184 -0.146,-28.428c-0.008,-0.573 -0.046,-1.109 0,-1.75c0.102,-1.415 -0.123,-2.058 1.604,-2.187c2.152,-0.159 2.999,-0.156 5.54,-0.145c1.993,0.008 4.807,-0.086 5.977,0.291c0.984,0.317 2.316,1.777 2.478,2.624c0.206,1.073 -0.253,2.39 -0.291,3.208c-0.135,2.917 0.291,6.242 0.146,10.35c-0.654,0.877 -0.616,1.596 -1.458,2.187c-1.919,1.347 -5.618,-0.032 -8.018,0.875\" /><path d=\"M125.46,72.625c0.094,2.918 -0.191,6.217 0.145,8.893c1.038,0.65 2.817,0.421 3.791,0.146c0.771,-2.478 0.406,-7.101 0.292,-9.185c-0.797,-0.768 -3.662,-0.953 -4.228,0.146m9.476,26.095c-1.376,0.375 -4.594,0.669 -5.54,-0.291c-0.393,-2.404 -0.096,-5.878 -0.146,-8.747c-0.552,-0.67 -2.541,-0.492 -3.499,-0.292c-0.674,2.726 0.394,6.398 -0.583,9.185c-1.534,0.41 -3.032,0.046 -4.957,0.145c-1.063,-2.278 -0.463,-4.905 -0.437,-7.435c0.061,-5.789 -0.045,-11.877 0,-18.223c0.017,-2.355 -0.105,-4.133 1.167,-5.539c1.604,-1.775 6.382,-1.775 10.35,-1.458c3.008,0.24 4.046,1.894 4.082,5.394c0.037,3.594 -0.122,7.827 0,12.1c0.072,2.499 0.082,5.059 0,7.289c-0.098,2.651 0.31,5.472 -0.437,7.872\" /><path d=\"M155.2,74.957c-1.5,0.384 -4.099,0.504 -5.394,-0.291c-0.591,-0.706 0.043,-1.762 -0.437,-2.478c-0.888,-0.525 -2.677,-0.268 -3.499,0.146c0,6.416 -0.012,13.44 0,20.118c0.789,0.751 2.495,0.564 3.644,0.291c0.634,-0.678 0.011,-2.613 0.438,-3.498c1.011,-0.78 3.789,-0.555 5.248,-0.146c1.012,3.598 0.582,7.559 -1.604,9.038c-1.371,0.929 -3.885,0.822 -6.414,0.875c-3.516,0.074 -6.828,0.053 -7.29,-3.207c-0.094,-0.668 -0.005,-1.489 0,-2.333c0.014,-2.028 0.029,-4.541 0,-6.998c-0.055,-4.804 0.019,-9.382 0,-13.557c-0.013,-2.984 0.574,-5.759 3.062,-6.561c2.124,-0.684 4.428,-0.131 6.852,-0.146c2.75,-0.016 4.653,-0.117 5.54,2.041c0.428,1.042 0.278,2.487 0.291,3.937c0.009,0.918 0.221,2.01 -0.437,2.769\" /><path d=\"M165.259,66.356c0.539,2.713 0.276,5.491 0.292,8.31c0.026,4.889 0.145,10.479 0.145,16.328c0,2.734 0.285,5.44 -0.291,7.872c-1.19,0.431 -4.275,0.576 -5.248,-0.146c-0.531,-2.718 -0.292,-5.568 -0.292,-8.309c0,-5.475 -0.043,-10.446 0,-15.745c0.022,-2.738 -0.255,-5.485 0.292,-8.164c1.347,-0.623 3.331,-0.423 5.102,-0.146\" /><path d=\"M183.336,66.502c0.594,0.638 0.09,1.528 0,2.478c-0.104,1.107 0.203,2.14 -0.437,2.77c-1.29,1.269 -5.326,-0.44 -6.56,0.584c-0.635,1.906 -0.169,5.199 -0.146,6.997c1.466,0.804 3.836,-0.164 5.394,0.583c0.693,1.002 0.594,4.04 0.145,5.248c-1.16,1.003 -3.857,-0.181 -5.393,0.584c-0.292,1.684 -0.146,4.032 -0.146,6.414c0,2.252 0.231,4.676 -0.292,6.415c-1.229,0.591 -3.64,0.422 -5.248,0c-0.543,-2.495 -0.263,-5.208 -0.292,-7.873c-0.058,-5.54 0,-11.105 0,-16.473c0,-2.665 -0.215,-5.297 0.292,-7.727c2.629,-0.58 5.448,-0.292 8.31,-0.292c1.468,0 3.048,-0.218 4.373,0.292\" /><path d=\"M193.104,66.356c0.525,2.576 0.291,5.359 0.291,8.164c0,6.415 0.146,13.531 0.146,20.702c0,1.191 0.288,2.607 -0.437,3.644c-1.118,0.489 -3.978,0.451 -5.103,0c-0.705,-1.08 -0.301,-2.297 -0.291,-3.499c0.059,-7.355 0,-15.634 0,-24.054c0,-1.655 -0.226,-3.284 0.291,-4.811c1.348,-0.623 3.332,-0.423 5.103,-0.146\" /><path d=\"M213.222,75.103c-1.892,0.134 -3.472,0.331 -5.248,-0.291c-0.565,-0.505 -0.019,-2.12 -0.583,-2.624c-0.864,-0.581 -2.679,-0.22 -3.499,0.146c0.195,7.182 -0.097,13.427 0.146,20.263c0.981,0.558 2.443,0.395 3.644,0.146c0.373,-0.939 -0.134,-2.758 0.438,-3.498c1.002,-0.865 3.432,-0.398 5.102,-0.292c0.799,1.763 0.794,3.922 0.583,5.54c-0.279,2.14 -1.782,3.963 -3.79,4.373c-1.267,0.259 -3.097,0.113 -4.665,0.146c-3.434,0.072 -6.83,0.105 -7.29,-3.207c-0.16,-1.157 0,-3.241 0,-4.957c0.001,-4.709 0.132,-10.699 0.146,-15.162c0.006,-1.688 -0.369,-4.238 -0.146,-5.539c0.261,-1.513 1.617,-3.339 3.062,-3.791c2.124,-0.664 4.441,-0.131 6.852,-0.146c2.772,-0.016 4.661,-0.098 5.54,2.041c0.43,1.049 0.302,2.575 0.291,4.083c-0.007,0.978 0.135,2.09 -0.583,2.769\" /></g></svg>"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slide/dd6076da-3daf-43d3-babc-41a4758aeb20/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/dd6076da-3daf-43d3-babc-41a4758aeb20/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/dd6076da-3daf-43d3-babc-41a4758aeb20/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/dd6076da-3daf-43d3-babc-41a4758aeb20/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/dd6076da-3daf-43d3-babc-41a4758aeb20/relationships/image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slide",
+      "id": "64c6ebe2-dcf3-49e9-a273-a76c71ac725b",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slide/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slide/64c6ebe2-dcf3-49e9-a273-a76c71ac725b"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 14,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<svg height=\"100%\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" version=\"1.1\" viewbox=\"0 0 216 100\" width=\"200px\" xml:space=\"preserve\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g><path d=\"M157.114,85.58c0,0.286 -0.101,0.531 -0.305,0.731c-0.202,0.203 -0.451,0.302 -0.74,0.303l-4.719,0.016l0.022,6.495c0.001,0.286 -0.101,0.528 -0.305,0.729c-0.204,0.198 -0.453,0.3 -0.746,0.302l-1.052,0.002c-0.294,0.003 -0.542,-0.099 -0.748,-0.295c-0.204,-0.202 -0.308,-0.441 -0.308,-0.726l-0.022,-6.497l-4.723,0.015c-0.292,0 -0.539,-0.097 -0.744,-0.3c-0.205,-0.198 -0.307,-0.441 -0.309,-0.726l-0.003,-1.03c-0.001,-0.288 0.1,-0.529 0.303,-0.733c0.203,-0.2 0.451,-0.303 0.744,-0.303l12.598,-0.041c0.291,0 0.54,0.099 0.744,0.298c0.206,0.204 0.308,0.445 0.308,0.73l0.005,1.03Zm-122.891,7.999c-0.524,-0.479 -0.788,-1.058 -0.789,-1.739l-0.021,-5.604c-0.003,-0.681 0.258,-1.261 0.778,-1.742c0.523,-0.485 1.154,-0.727 1.894,-0.727l9.706,-0.03c0.307,-0.001 0.571,0.097 0.787,0.294c0.218,0.2 0.325,0.439 0.326,0.726l0.004,1.021c0.001,0.283 -0.106,0.527 -0.32,0.725c-0.215,0.2 -0.476,0.299 -0.784,0.3l-9.051,0.029l0.016,4.392l9.051,-0.026c0.308,-0.001 0.569,0.098 0.785,0.297c0.217,0.197 0.325,0.439 0.326,0.724l0.004,1.018c0.001,0.286 -0.105,0.527 -0.321,0.729c-0.215,0.197 -0.477,0.297 -0.785,0.299l-9.707,0.029c-0.739,0.002 -1.373,-0.237 -1.899,-0.715m-2.364,-3.898c-0.541,0.498 -1.193,0.75 -1.957,0.752l-5.831,0.019c-0.318,0 -0.59,-0.102 -0.814,-0.308c-0.223,-0.206 -0.335,-0.455 -0.336,-0.75l-0.004,-1.06c-0.001,-0.293 0.109,-0.543 0.331,-0.748c0.221,-0.208 0.492,-0.312 0.81,-0.312l5.146,-0.015l-0.001,-0.674l-7.047,0.021l0.016,4.552l7.265,-0.023c0.32,0.001 0.59,0.102 0.815,0.306c0.224,0.207 0.336,0.457 0.336,0.751l0.005,1.056c0.001,0.296 -0.11,0.545 -0.333,0.754c-0.222,0.205 -0.494,0.308 -0.812,0.309l-7.947,0.024c-0.765,0.002 -1.421,-0.243 -1.965,-0.741c-0.544,-0.495 -0.815,-1.097 -0.819,-1.799l-0.022,-5.803c-0.002,-0.705 0.269,-1.306 0.808,-1.805c0.54,-0.5 1.192,-0.753 1.958,-0.755l8.415,-0.025c0.764,-0.001 1.419,0.245 1.962,0.74c0.543,0.497 0.817,1.097 0.82,1.797l0.006,1.933c0.002,0.704 -0.267,1.305 -0.805,1.804m-14.263,-3.371c-0.221,0.208 -0.493,0.312 -0.81,0.314l-5.164,0.016l0.023,6.672c0.002,0.292 -0.11,0.541 -0.332,0.748c-0.224,0.204 -0.496,0.307 -0.818,0.311l-1.15,0.001c-0.32,0.001 -0.593,-0.102 -0.818,-0.304c-0.226,-0.205 -0.338,-0.452 -0.339,-0.747l-0.023,-6.672l-5.169,0.016c-0.318,0 -0.589,-0.102 -0.813,-0.308c-0.224,-0.203 -0.337,-0.452 -0.339,-0.747l-0.003,-1.06c-0.001,-0.294 0.11,-0.543 0.333,-0.751c0.222,-0.206 0.493,-0.31 0.813,-0.311l13.786,-0.042c0.319,0.001 0.59,0.102 0.814,0.307c0.224,0.204 0.338,0.455 0.337,0.749l0.005,1.06c0,0.292 -0.11,0.544 -0.333,0.748m30.357,-6.03c0.216,-0.195 0.478,-0.298 0.787,-0.299l1.113,-0.005c0.309,0.001 0.572,0.102 0.79,0.298c0.217,0.198 0.326,0.44 0.327,0.723l0.011,2.723l7.468,-0.022c0.738,-0.002 1.369,0.237 1.893,0.717c0.523,0.48 0.788,1.057 0.789,1.738l0.026,7.047c0.001,0.285 -0.107,0.525 -0.322,0.723c-0.216,0.198 -0.478,0.298 -0.788,0.299l-1.111,0.004c-0.311,0 -0.573,-0.099 -0.789,-0.295c-0.218,-0.197 -0.327,-0.435 -0.329,-0.719l-0.021,-6.444l-6.807,0.02l0.023,6.445c0.002,0.283 -0.106,0.521 -0.321,0.72c-0.215,0.198 -0.48,0.299 -0.788,0.3l-1.114,0.004c-0.308,0.001 -0.57,-0.099 -0.789,-0.295c-0.215,-0.2 -0.324,-0.44 -0.326,-0.722l-0.043,-12.236c-0.002,-0.283 0.106,-0.523 0.321,-0.724m14.248,3.705c0.217,-0.199 0.477,-0.3 0.784,-0.3l9.696,-0.028c0.741,-0.004 1.371,0.235 1.898,0.713c0.525,0.482 0.789,1.059 0.79,1.742l0.026,7.046c0,0.284 -0.107,0.524 -0.322,0.722c-0.218,0.198 -0.479,0.299 -0.788,0.3l-1.113,0.002c-0.309,0.003 -0.573,-0.098 -0.789,-0.294c-0.218,-0.198 -0.327,-0.436 -0.327,-0.718l-0.023,-6.444l-6.805,0.019l0.022,6.444c0.001,0.285 -0.107,0.523 -0.323,0.721c-0.215,0.199 -0.477,0.3 -0.786,0.3l-1.112,0.003c-0.31,0.002 -0.573,-0.097 -0.79,-0.295c-0.217,-0.196 -0.324,-0.436 -0.327,-0.72l-0.03,-8.491c-0.001,-0.281 0.106,-0.523 0.319,-0.722m14.702,0.38c0.521,-0.484 1.153,-0.727 1.889,-0.728l8.128,-0.024c0.738,-0.003 1.369,0.235 1.895,0.715c0.526,0.481 0.788,1.06 0.793,1.739l0.018,5.606c0.004,0.677 -0.257,1.26 -0.779,1.741c-0.521,0.483 -1.151,0.726 -1.89,0.728l-8.126,0.023c-0.738,0.003 -1.371,-0.236 -1.895,-0.714c-0.525,-0.48 -0.79,-1.059 -0.792,-1.738l-0.02,-5.605c-0.002,-0.681 0.258,-1.261 0.779,-1.743m9.381,6.711l-0.013,-4.394l-6.807,0.021l0.016,4.394l6.804,-0.021Zm128.744,4.286c0.003,0.686 -0.244,1.271 -0.736,1.758c-0.496,0.487 -1.091,0.732 -1.789,0.734l-7.253,0.023c-0.291,0 -0.54,-0.099 -0.743,-0.297c-0.205,-0.201 -0.308,-0.444 -0.309,-0.731l-0.003,-1.03c-0.001,-0.287 0.102,-0.529 0.302,-0.732c0.203,-0.201 0.449,-0.3 0.741,-0.302l6.629,-0.019l-0.027,-8.208l-6.442,0.021l0.017,4.43l4.713,-0.016c0.292,0 0.539,0.1 0.745,0.299c0.204,0.197 0.307,0.443 0.307,0.728l0.002,1.031c0.002,0.285 -0.097,0.528 -0.302,0.731c-0.203,0.2 -0.453,0.304 -0.741,0.305l-5.337,0.016c-0.701,0.003 -1.299,-0.237 -1.798,-0.721c-0.497,-0.484 -0.746,-1.068 -0.746,-1.752l-0.021,-5.652c-0.002,-0.685 0.244,-1.27 0.735,-1.757c0.496,-0.487 1.091,-0.731 1.792,-0.732l9.174,-0.031c0.294,0 0.541,0.101 0.744,0.3c0.204,0.197 0.307,0.441 0.311,0.726l0.035,10.878Zm-13.483,-2.277c0.004,0.287 -0.101,0.529 -0.305,0.73c-0.203,0.199 -0.449,0.302 -0.745,0.303l-1.051,0.002c-0.294,0.001 -0.542,-0.1 -0.748,-0.296c-0.206,-0.201 -0.308,-0.442 -0.308,-0.727l-0.023,-6.496l-6.439,0.02l0.021,6.497c0.002,0.284 -0.101,0.526 -0.304,0.728c-0.206,0.199 -0.454,0.301 -0.746,0.302l-1.054,0.004c-0.293,0.001 -0.541,-0.101 -0.745,-0.298c-0.207,-0.2 -0.309,-0.442 -0.311,-0.726l-0.027,-8.561c-0.003,-0.284 0.099,-0.528 0.302,-0.729c0.205,-0.199 0.451,-0.301 0.742,-0.302l9.177,-0.03c0.697,-0.002 1.295,0.239 1.793,0.722c0.497,0.484 0.745,1.066 0.749,1.753l0.022,7.104Zm-13.447,-0.213c0,0.286 -0.101,0.528 -0.305,0.73c-0.204,0.198 -0.454,0.3 -0.746,0.303l-1.053,0.002c-0.293,-0.001 -0.54,-0.101 -0.747,-0.297c-0.205,-0.2 -0.309,-0.443 -0.309,-0.727l-0.029,-8.561c-0.001,-0.285 0.101,-0.527 0.305,-0.729c0.205,-0.198 0.452,-0.299 0.745,-0.302l1.053,-0.003c0.292,0 0.542,0.1 0.748,0.297c0.204,0.2 0.307,0.442 0.308,0.728l0.03,8.559Zm-0.038,-11.303c0,0.289 -0.101,0.532 -0.304,0.733c-0.206,0.201 -0.454,0.303 -0.747,0.302l-1.052,0.005c-0.293,0 -0.542,-0.098 -0.747,-0.298c-0.207,-0.201 -0.309,-0.444 -0.31,-0.731l-0.004,-1.028c0,-0.287 0.101,-0.532 0.306,-0.734c0.204,-0.2 0.452,-0.3 0.744,-0.301l1.053,-0.004c0.292,0 0.542,0.098 0.748,0.297c0.205,0.201 0.309,0.446 0.307,0.732l0.006,1.027Zm-3.836,11.573c0,0.284 -0.101,0.528 -0.305,0.728c-0.204,0.199 -0.453,0.302 -0.746,0.303l-1.052,0.003c-0.292,0.001 -0.542,-0.099 -0.747,-0.297c-0.204,-0.201 -0.31,-0.443 -0.311,-0.725l-0.021,-6.497l-6.439,0.018l0.021,6.498c0,0.285 -0.099,0.528 -0.305,0.728c-0.204,0.199 -0.453,0.302 -0.746,0.302l-1.051,0.004c-0.294,0.001 -0.543,-0.101 -0.748,-0.299c-0.204,-0.199 -0.308,-0.441 -0.31,-0.725l-0.029,-8.562c0,-0.283 0.101,-0.527 0.305,-0.728c0.203,-0.198 0.451,-0.3 0.741,-0.302l9.177,-0.029c0.698,-0.002 1.296,0.239 1.794,0.721c0.496,0.484 0.746,1.068 0.749,1.752l0.023,7.107Zm-13.474,0.01c0,0.286 -0.098,0.528 -0.303,0.731c-0.204,0.197 -0.451,0.3 -0.742,0.3l-9.175,0.03c-0.7,0.003 -1.298,-0.239 -1.795,-0.722c-0.496,-0.485 -0.746,-1.069 -0.749,-1.753l-0.023,-7.106c-0.002,-0.283 0.101,-0.525 0.304,-0.727c0.205,-0.199 0.453,-0.302 0.746,-0.303l1.053,-0.004c0.291,0 0.541,0.1 0.747,0.297c0.205,0.2 0.308,0.442 0.309,0.726l0.021,6.499l6.442,-0.023l-0.023,-6.496c-0.002,-0.286 0.101,-0.526 0.306,-0.728c0.202,-0.198 0.451,-0.299 0.745,-0.302l1.053,-0.002c0.291,0 0.541,0.099 0.748,0.296c0.202,0.199 0.307,0.442 0.308,0.727l0.028,8.56Zm-33.853,2.187c0.003,0.685 -0.243,1.271 -0.737,1.758c-0.493,0.488 -1.089,0.731 -1.787,0.734l-7.253,0.023c-0.291,0.001 -0.54,-0.099 -0.744,-0.296c-0.205,-0.203 -0.307,-0.447 -0.308,-0.732l-0.003,-1.028c-0.001,-0.288 0.1,-0.531 0.302,-0.735c0.204,-0.199 0.45,-0.301 0.742,-0.301l6.628,-0.021l-0.003,-0.684l-7.07,0.024c-0.696,0.001 -1.295,-0.24 -1.791,-0.721c-0.495,-0.484 -0.743,-1.07 -0.746,-1.755l-0.025,-7.104c0.001,-0.285 0.101,-0.528 0.306,-0.728c0.203,-0.2 0.451,-0.303 0.743,-0.302l1.054,-0.004c0.292,-0.001 0.542,0.1 0.747,0.296c0.205,0.201 0.309,0.441 0.31,0.725l0.02,6.497l6.442,-0.02l-0.023,-6.497c0,-0.283 0.1,-0.526 0.307,-0.726c0.201,-0.198 0.451,-0.302 0.744,-0.302l1.052,-0.004c0.295,-0.001 0.542,0.1 0.748,0.299c0.205,0.2 0.308,0.441 0.31,0.726l0.035,10.878Zm-16.648,-4.33l-0.013,-4.431l-6.441,0.022l0.015,4.43l6.439,-0.021Zm3.163,0.599c0.002,0.684 -0.244,1.271 -0.737,1.757c-0.494,0.487 -1.09,0.733 -1.79,0.734l-7.69,0.025c-0.7,0.003 -1.296,-0.24 -1.793,-0.722c-0.497,-0.484 -0.747,-1.068 -0.75,-1.753l-0.019,-5.649c-0.001,-0.686 0.245,-1.271 0.738,-1.758c0.494,-0.487 1.089,-0.732 1.79,-0.734l7.689,-0.023c0.699,-0.003 1.297,0.238 1.795,0.72c0.495,0.484 0.746,1.068 0.747,1.753l0.02,5.65Zm-13.479,-6.028c0,0.286 -0.101,0.531 -0.305,0.731c-0.202,0.203 -0.45,0.302 -0.74,0.303l-4.719,0.016l0.022,6.495c0.001,0.286 -0.1,0.528 -0.305,0.729c-0.203,0.198 -0.453,0.3 -0.746,0.302l-1.051,0.002c-0.294,0.003 -0.543,-0.099 -0.748,-0.295c-0.205,-0.202 -0.309,-0.441 -0.308,-0.726l-0.022,-6.497l-4.724,0.015c-0.291,0 -0.539,-0.097 -0.744,-0.3c-0.205,-0.198 -0.307,-0.441 -0.309,-0.726l-0.003,-1.03c-0.001,-0.288 0.1,-0.529 0.304,-0.733c0.202,-0.2 0.45,-0.303 0.743,-0.303l12.598,-0.041c0.291,0 0.541,0.099 0.744,0.298c0.206,0.204 0.308,0.445 0.309,0.73l0.004,1.03Zm100.825,4.408c-0.203,-0.061 -0.419,-0.092 -0.642,-0.088l-3.612,0.012l-0.009,-2.243l4.256,-0.014l0.007,2.333Zm-26.443,-7.033c-0.102,0.12 -0.19,0.252 -0.263,0.392c-0.677,-0.599 -1.482,-0.894 -2.405,-0.879l-9.162,0.03c-0.53,-0.005 -1.017,0.186 -1.393,0.504c-0.383,-0.336 -0.889,-0.537 -1.439,-0.527l-1.034,0.003c-1.179,-0.014 -2.151,0.94 -2.15,2.123l0.019,5.407l-4.255,0.015l-0.018,-5.409c-0.007,-1.183 -0.983,-2.13 -2.162,-2.109l-1.035,0.004c-0.551,-0.006 -1.057,0.199 -1.439,0.54c-0.386,-0.385 -0.919,-0.622 -1.507,-0.621c-0.01,0 -0.018,0.001 -0.027,0.001l-12.582,0.041c-1.167,-0.012 -2.126,0.922 -2.144,2.091c0,0.015 0,0.028 0,0.043l0,-0.002l0.003,1.032c0.005,1.182 0.977,2.131 2.157,2.114l3.623,-0.012l0.018,5.405c0.005,1.186 0.982,2.135 2.164,2.11l1.03,-0.002c1.182,0.015 2.153,-0.94 2.151,-2.125l-0.018,-5.404l3.618,-0.012c0.288,0.002 0.563,-0.053 0.814,-0.155l0.013,4.184c-0.006,0.997 0.359,1.853 1.082,2.538c0.708,0.704 1.569,1.049 2.568,1.031l9.157,-0.03c0.532,0.006 1.02,-0.184 1.396,-0.504c0.384,0.337 0.89,0.537 1.439,0.528l1.033,-0.004c1.181,0.015 2.152,-0.94 2.15,-2.124l-0.017,-5.407l4.252,-0.012l0.017,5.41c0.009,1.182 0.986,2.126 2.164,2.106l1.035,-0.003c0.616,0.007 1.173,-0.249 1.565,-0.663c0.358,0.257 0.798,0.405 1.272,0.398l1.036,-0.002c0.469,0.005 0.904,-0.142 1.257,-0.395c0.395,0.404 0.949,0.651 1.558,0.641l1.035,-0.004c1.181,0.015 2.15,-0.94 2.149,-2.124l-0.017,-5.406l4.253,-0.013l0.018,5.403c0.005,1.185 0.98,2.135 2.163,2.112l1.031,-0.002c0.763,0.009 1.436,-0.385 1.818,-0.983c0.306,0.29 0.64,0.516 1,0.676c-0.127,0.267 -0.2,0.564 -0.204,0.879c0,0.014 0,0.026 0,0.041l0.003,1.028c0.002,1.172 0.955,2.121 2.128,2.119c0.01,0 0.019,0 0.028,0l7.237,-0.024c0.998,0.011 1.856,-0.34 2.56,-1.047c0.719,-0.69 1.078,-1.55 1.064,-2.548l-0.036,-10.876c-0.009,-1.18 -0.981,-2.125 -2.157,-2.111l-9.159,0.031c-0.999,-0.013 -1.859,0.338 -2.564,1.045c-0.122,0.117 -0.233,0.239 -0.334,0.365c-0.102,-0.126 -0.215,-0.248 -0.338,-0.364c-0.708,-0.701 -1.567,-1.046 -2.564,-1.029l-9.16,0.03c-0.342,-0.004 -0.666,0.074 -0.954,0.214c0.19,-0.319 0.298,-0.693 0.297,-1.093l-0.005,-1.024c-0.001,-1.17 -0.948,-2.118 -2.118,-2.12c-0.016,0 -0.03,0 -0.046,0l-1.032,0.004c-1.184,-0.014 -2.153,0.945 -2.149,2.131l0.003,1.03c0.003,0.524 0.194,1.002 0.509,1.37m-99.127,7.031l-4.619,0.015l-0.008,-2.208l4.62,-0.014l0.007,2.207Zm-38.617,0.233c-0.238,-0.082 -0.493,-0.12 -0.765,-0.115l-7.947,0.024l-0.009,-2.206l7.946,-0.025c0.273,0.004 0.528,-0.036 0.766,-0.119l0.009,2.441Zm-13.416,-6.237c-0.163,-0.234 -0.36,-0.452 -0.59,-0.651c-0.767,-0.701 -1.664,-1.038 -2.703,-1.017l-8.394,0.025c-1.041,-0.016 -1.938,0.329 -2.7,1.038c-0.015,0.013 -0.029,0.026 -0.044,0.04c-0.108,-0.175 -0.245,-0.335 -0.41,-0.48c-0.441,-0.401 -0.956,-0.594 -1.553,-0.584l-13.766,0.042c-0.599,-0.009 -1.115,0.189 -1.556,0.595c-0.462,0.413 -0.698,0.947 -0.692,1.568l0.004,1.051c-0.003,0.621 0.237,1.154 0.702,1.563c0.441,0.403 0.958,0.597 1.555,0.586l4.068,-0.012l0.019,5.573c-0.004,0.624 0.238,1.16 0.709,1.569c0.444,0.397 0.957,0.588 1.552,0.578l1.134,-0.002c0.597,0.006 1.11,-0.189 1.553,-0.59c0.465,-0.413 0.702,-0.948 0.695,-1.571l-0.019,-5.573l4.061,-0.012c0.296,0.003 0.572,-0.044 0.828,-0.141l0.015,4.219c-0.002,1.04 0.402,1.931 1.185,2.613c0.767,0.704 1.666,1.042 2.707,1.02l7.926,-0.024c0.597,0.008 1.113,-0.188 1.553,-0.592c0.463,-0.415 0.699,-0.951 0.692,-1.574l-0.004,-1.045c0.002,-0.35 -0.073,-0.672 -0.222,-0.96c0.309,-0.131 0.601,-0.305 0.876,-0.523c0.004,0.901 0.004,1.129 0.004,1.129c-0.004,1.017 0.39,1.888 1.156,2.555c0.749,0.684 1.625,1.013 2.64,0.992l9.687,-0.028c0.57,0.006 1.062,-0.175 1.487,-0.548c0.428,0.371 0.923,0.549 1.493,0.539l1.095,-0.004c0.586,0.007 1.09,-0.184 1.524,-0.578c0.458,-0.405 0.692,-0.932 0.685,-1.544l-0.02,-5.346l4.62,-0.013l0.018,5.345c-0.003,0.614 0.236,1.14 0.698,1.541c0.435,0.391 0.94,0.579 1.526,0.569l1.091,-0.004c0.575,0.007 1.072,-0.177 1.5,-0.556c0.429,0.378 0.928,0.559 1.503,0.547l1.09,-0.004c0.587,0.01 1.093,-0.183 1.525,-0.58c0.459,-0.404 0.693,-0.931 0.685,-1.543l-0.018,-5.345l4.619,-0.012l0.019,5.345c-0.003,0.612 0.234,1.138 0.695,1.539c0.435,0.393 0.943,0.581 1.529,0.568l1.092,-0.001c0.587,0.007 1.092,-0.186 1.525,-0.582c0.152,-0.135 0.28,-0.283 0.382,-0.444c0.007,0.006 0.015,0.013 0.022,0.019c0.748,0.684 1.623,1.013 2.637,0.992l8.104,-0.024c1.015,0.016 1.888,-0.32 2.631,-1.01c0.762,-0.67 1.151,-1.544 1.139,-2.56l-0.018,-5.599c0.001,-1.016 -0.393,-1.885 -1.157,-2.552c-0.747,-0.686 -1.624,-1.016 -2.639,-0.994l-8.106,0.024c-1.014,-0.016 -1.888,0.32 -2.63,1.011c-0.16,0.14 -0.302,0.29 -0.429,0.447c-0.127,-0.158 -0.272,-0.307 -0.433,-0.447c-0.749,-0.685 -1.625,-1.014 -2.64,-0.991l-9.675,0.028c-0.587,-0.008 -1.093,0.185 -1.526,0.583c-0.15,0.135 -0.275,0.282 -0.376,0.442c-0.006,-0.006 -0.013,-0.012 -0.019,-0.017c-0.747,-0.685 -1.621,-1.015 -2.635,-0.996l-6.366,0.019l-0.006,-1.626c0.001,-0.612 -0.235,-1.137 -0.695,-1.54c-0.435,-0.392 -0.94,-0.582 -1.526,-0.574l-1.099,0.005c-0.585,-0.006 -1.088,0.185 -1.521,0.579c-0.458,0.406 -0.691,0.933 -0.685,1.545l0.007,1.746c-0.239,-0.082 -0.495,-0.12 -0.767,-0.114l-9.685,0.029c-1.016,-0.017 -1.892,0.318 -2.636,1.01c-0.108,0.096 -0.209,0.195 -0.302,0.299m85.998,5.937l-4.254,0.014l-0.007,-2.244l4.254,-0.014l0.007,2.244Zm4.623,3.862c0.101,0.126 0.214,0.248 0.337,0.364c0.323,0.32 0.677,0.565 1.062,0.736c-0.126,0.265 -0.198,0.561 -0.203,0.874c-0.001,0.017 -0.001,0.032 -0.001,0.049l0.004,1.025l0,-0.002c0,1.172 0.952,2.122 2.124,2.121c0.012,0 0.022,0 0.033,0l7.236,-0.023c0.998,0.01 1.855,-0.341 2.558,-1.048c0.721,-0.69 1.08,-1.551 1.064,-2.549l-0.034,-10.873c-0.008,-1.184 -0.984,-2.132 -2.164,-2.112l-1.034,0.004c-1.179,-0.014 -2.15,0.939 -2.15,2.121l0.019,5.407l-4.255,0.013l-0.017,-5.407c-0.007,-1.183 -0.985,-2.129 -2.164,-2.107l-1.034,0.004c-0.76,-0.009 -1.433,0.384 -1.815,0.981c-0.697,-0.66 -1.535,-0.985 -2.504,-0.968l-7.672,0.024c-0.965,-0.012 -1.799,0.316 -2.489,0.976c-0.381,-0.581 -1.039,-0.965 -1.786,-0.963c-0.009,0 -0.018,0.001 -0.027,0.001l-12.581,0.041c-1.168,-0.012 -2.127,0.922 -2.145,2.091c0,0.015 0,0.028 0,0.043l0,-0.002l0.003,1.032c0.006,1.182 0.977,2.131 2.157,2.114l3.623,-0.012l0.019,5.405c0.004,1.186 0.981,2.135 2.163,2.11l1.03,-0.002c1.182,0.015 2.153,-0.94 2.151,-2.125l-0.018,-5.404l3.619,-0.012c0.23,0.001 0.452,-0.034 0.66,-0.1l0.014,4.039c-0.008,0.998 0.357,1.856 1.082,2.541c0.709,0.702 1.568,1.047 2.566,1.029l7.673,-0.025c0.999,0.012 1.857,-0.339 2.561,-1.046c0.122,-0.117 0.233,-0.239 0.335,-0.365\"></path><path d=\"M152.812,22.434c-9.801,2.082 -18.513,4.884 -28.746,7.725c-4.299,1.193 -9.816,1.819 -10.412,5.872c-0.295,2.004 1.184,7.997 2.769,9.585c2.988,2.991 8.667,0.298 12.669,-0.774c7.164,-1.922 12.87,-3.333 19.553,-5.145c2.968,-0.803 7.545,-1.544 9.588,-2.964c2.965,-2.061 2.263,-4.716 1.299,-8.352c-0.997,-3.764 -2.482,-6.31 -6.332,-5.941c-0.124,0.012 -0.267,-0.033 -0.388,-0.006m-59.193,12.308c4.216,-1.117 12.085,-1.986 12.948,-6.222c0.318,-1.562 -0.32,-3.784 -0.881,-5.854c-0.919,-3.397 -2.94,-6.488 -7.12,-5.371c-10.391,2.777 -19.894,5.288 -33.633,9.01c-7.651,2.075 -16.898,4.51 -25.225,6.808c-4.383,1.21 -9.01,1.899 -9.251,6.28c-0.105,1.902 1.16,6.753 2.398,8.411c2.331,3.122 6.377,1.756 10.114,0.743c6.933,-1.879 12.64,-3.765 19.75,-5.336c2.151,7.647 4.933,17.924 7.178,26.399c0.757,2.853 1.472,6.926 3.182,8.23c2.679,2.042 6.476,0.402 9.352,-0.437c2.243,-0.655 4.431,-1.559 4.93,-4.012c0.559,-2.739 -1.092,-6.347 -1.804,-8.986c-2.403,-8.901 -4.847,-17.136 -6.995,-25.617c4.955,-1.338 9.658,-2.616 15.057,-4.046m35.606,13.996c-4.515,1.196 -9.497,1.808 -10.406,5.483c-0.439,1.778 0.426,4.165 1.068,6.442c1.646,5.851 5.571,5.159 11.039,3.678c11.266,-3.045 21.704,-5.982 32.463,-8.833c4.32,-1.146 9.349,-1.863 12.909,-3.692c4.057,-2.083 7.448,-6.63 7.01,-12.351c-0.134,-1.754 -0.907,-3.962 -1.462,-6.059c-0.559,-2.11 -1.04,-4.453 -1.658,-6.061c-0.6,-1.567 -1.849,-2.699 -2.08,-3.928c-0.183,-0.98 0.191,-2.284 0.056,-3.505c-0.21,-1.893 -1.261,-4.286 -1.846,-6.455c-0.647,-2.397 -0.992,-4.769 -1.845,-6.454c-2.121,-4.184 -8.01,-7.63 -13.723,-6.447c-8.876,1.837 -16.965,4.324 -27.178,7.166c-4.351,1.211 -9.288,2.546 -13.494,3.682c-4.008,1.081 -10.709,2.01 -11.39,6.051c-0.358,2.141 1.032,7.276 2.196,8.992c2.082,3.063 5.579,2.126 9.328,1.12c13.568,-3.64 27.19,-7.549 40.088,-10.856c1.969,7.359 4.132,14.527 5.883,22.096c-13.274,3.332 -24.24,6.56 -36.958,9.931\"></path></g></svg>",
+          "format": "pure_html",
+          "processed": "<svg height=\"100%\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" version=\"1.1\" viewBox=\"0 0 216 100\" width=\"200px\" xml:space=\"preserve\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:serif=\"http://www.serif.com/\"><g><path d=\"M157.114,85.58c0,0.286 -0.101,0.531 -0.305,0.731c-0.202,0.203 -0.451,0.302 -0.74,0.303l-4.719,0.016l0.022,6.495c0.001,0.286 -0.101,0.528 -0.305,0.729c-0.204,0.198 -0.453,0.3 -0.746,0.302l-1.052,0.002c-0.294,0.003 -0.542,-0.099 -0.748,-0.295c-0.204,-0.202 -0.308,-0.441 -0.308,-0.726l-0.022,-6.497l-4.723,0.015c-0.292,0 -0.539,-0.097 -0.744,-0.3c-0.205,-0.198 -0.307,-0.441 -0.309,-0.726l-0.003,-1.03c-0.001,-0.288 0.1,-0.529 0.303,-0.733c0.203,-0.2 0.451,-0.303 0.744,-0.303l12.598,-0.041c0.291,0 0.54,0.099 0.744,0.298c0.206,0.204 0.308,0.445 0.308,0.73l0.005,1.03Zm-122.891,7.999c-0.524,-0.479 -0.788,-1.058 -0.789,-1.739l-0.021,-5.604c-0.003,-0.681 0.258,-1.261 0.778,-1.742c0.523,-0.485 1.154,-0.727 1.894,-0.727l9.706,-0.03c0.307,-0.001 0.571,0.097 0.787,0.294c0.218,0.2 0.325,0.439 0.326,0.726l0.004,1.021c0.001,0.283 -0.106,0.527 -0.32,0.725c-0.215,0.2 -0.476,0.299 -0.784,0.3l-9.051,0.029l0.016,4.392l9.051,-0.026c0.308,-0.001 0.569,0.098 0.785,0.297c0.217,0.197 0.325,0.439 0.326,0.724l0.004,1.018c0.001,0.286 -0.105,0.527 -0.321,0.729c-0.215,0.197 -0.477,0.297 -0.785,0.299l-9.707,0.029c-0.739,0.002 -1.373,-0.237 -1.899,-0.715m-2.364,-3.898c-0.541,0.498 -1.193,0.75 -1.957,0.752l-5.831,0.019c-0.318,0 -0.59,-0.102 -0.814,-0.308c-0.223,-0.206 -0.335,-0.455 -0.336,-0.75l-0.004,-1.06c-0.001,-0.293 0.109,-0.543 0.331,-0.748c0.221,-0.208 0.492,-0.312 0.81,-0.312l5.146,-0.015l-0.001,-0.674l-7.047,0.021l0.016,4.552l7.265,-0.023c0.32,0.001 0.59,0.102 0.815,0.306c0.224,0.207 0.336,0.457 0.336,0.751l0.005,1.056c0.001,0.296 -0.11,0.545 -0.333,0.754c-0.222,0.205 -0.494,0.308 -0.812,0.309l-7.947,0.024c-0.765,0.002 -1.421,-0.243 -1.965,-0.741c-0.544,-0.495 -0.815,-1.097 -0.819,-1.799l-0.022,-5.803c-0.002,-0.705 0.269,-1.306 0.808,-1.805c0.54,-0.5 1.192,-0.753 1.958,-0.755l8.415,-0.025c0.764,-0.001 1.419,0.245 1.962,0.74c0.543,0.497 0.817,1.097 0.82,1.797l0.006,1.933c0.002,0.704 -0.267,1.305 -0.805,1.804m-14.263,-3.371c-0.221,0.208 -0.493,0.312 -0.81,0.314l-5.164,0.016l0.023,6.672c0.002,0.292 -0.11,0.541 -0.332,0.748c-0.224,0.204 -0.496,0.307 -0.818,0.311l-1.15,0.001c-0.32,0.001 -0.593,-0.102 -0.818,-0.304c-0.226,-0.205 -0.338,-0.452 -0.339,-0.747l-0.023,-6.672l-5.169,0.016c-0.318,0 -0.589,-0.102 -0.813,-0.308c-0.224,-0.203 -0.337,-0.452 -0.339,-0.747l-0.003,-1.06c-0.001,-0.294 0.11,-0.543 0.333,-0.751c0.222,-0.206 0.493,-0.31 0.813,-0.311l13.786,-0.042c0.319,0.001 0.59,0.102 0.814,0.307c0.224,0.204 0.338,0.455 0.337,0.749l0.005,1.06c0,0.292 -0.11,0.544 -0.333,0.748m30.357,-6.03c0.216,-0.195 0.478,-0.298 0.787,-0.299l1.113,-0.005c0.309,0.001 0.572,0.102 0.79,0.298c0.217,0.198 0.326,0.44 0.327,0.723l0.011,2.723l7.468,-0.022c0.738,-0.002 1.369,0.237 1.893,0.717c0.523,0.48 0.788,1.057 0.789,1.738l0.026,7.047c0.001,0.285 -0.107,0.525 -0.322,0.723c-0.216,0.198 -0.478,0.298 -0.788,0.299l-1.111,0.004c-0.311,0 -0.573,-0.099 -0.789,-0.295c-0.218,-0.197 -0.327,-0.435 -0.329,-0.719l-0.021,-6.444l-6.807,0.02l0.023,6.445c0.002,0.283 -0.106,0.521 -0.321,0.72c-0.215,0.198 -0.48,0.299 -0.788,0.3l-1.114,0.004c-0.308,0.001 -0.57,-0.099 -0.789,-0.295c-0.215,-0.2 -0.324,-0.44 -0.326,-0.722l-0.043,-12.236c-0.002,-0.283 0.106,-0.523 0.321,-0.724m14.248,3.705c0.217,-0.199 0.477,-0.3 0.784,-0.3l9.696,-0.028c0.741,-0.004 1.371,0.235 1.898,0.713c0.525,0.482 0.789,1.059 0.79,1.742l0.026,7.046c0,0.284 -0.107,0.524 -0.322,0.722c-0.218,0.198 -0.479,0.299 -0.788,0.3l-1.113,0.002c-0.309,0.003 -0.573,-0.098 -0.789,-0.294c-0.218,-0.198 -0.327,-0.436 -0.327,-0.718l-0.023,-6.444l-6.805,0.019l0.022,6.444c0.001,0.285 -0.107,0.523 -0.323,0.721c-0.215,0.199 -0.477,0.3 -0.786,0.3l-1.112,0.003c-0.31,0.002 -0.573,-0.097 -0.79,-0.295c-0.217,-0.196 -0.324,-0.436 -0.327,-0.72l-0.03,-8.491c-0.001,-0.281 0.106,-0.523 0.319,-0.722m14.702,0.38c0.521,-0.484 1.153,-0.727 1.889,-0.728l8.128,-0.024c0.738,-0.003 1.369,0.235 1.895,0.715c0.526,0.481 0.788,1.06 0.793,1.739l0.018,5.606c0.004,0.677 -0.257,1.26 -0.779,1.741c-0.521,0.483 -1.151,0.726 -1.89,0.728l-8.126,0.023c-0.738,0.003 -1.371,-0.236 -1.895,-0.714c-0.525,-0.48 -0.79,-1.059 -0.792,-1.738l-0.02,-5.605c-0.002,-0.681 0.258,-1.261 0.779,-1.743m9.381,6.711l-0.013,-4.394l-6.807,0.021l0.016,4.394l6.804,-0.021Zm128.744,4.286c0.003,0.686 -0.244,1.271 -0.736,1.758c-0.496,0.487 -1.091,0.732 -1.789,0.734l-7.253,0.023c-0.291,0 -0.54,-0.099 -0.743,-0.297c-0.205,-0.201 -0.308,-0.444 -0.309,-0.731l-0.003,-1.03c-0.001,-0.287 0.102,-0.529 0.302,-0.732c0.203,-0.201 0.449,-0.3 0.741,-0.302l6.629,-0.019l-0.027,-8.208l-6.442,0.021l0.017,4.43l4.713,-0.016c0.292,0 0.539,0.1 0.745,0.299c0.204,0.197 0.307,0.443 0.307,0.728l0.002,1.031c0.002,0.285 -0.097,0.528 -0.302,0.731c-0.203,0.2 -0.453,0.304 -0.741,0.305l-5.337,0.016c-0.701,0.003 -1.299,-0.237 -1.798,-0.721c-0.497,-0.484 -0.746,-1.068 -0.746,-1.752l-0.021,-5.652c-0.002,-0.685 0.244,-1.27 0.735,-1.757c0.496,-0.487 1.091,-0.731 1.792,-0.732l9.174,-0.031c0.294,0 0.541,0.101 0.744,0.3c0.204,0.197 0.307,0.441 0.311,0.726l0.035,10.878Zm-13.483,-2.277c0.004,0.287 -0.101,0.529 -0.305,0.73c-0.203,0.199 -0.449,0.302 -0.745,0.303l-1.051,0.002c-0.294,0.001 -0.542,-0.1 -0.748,-0.296c-0.206,-0.201 -0.308,-0.442 -0.308,-0.727l-0.023,-6.496l-6.439,0.02l0.021,6.497c0.002,0.284 -0.101,0.526 -0.304,0.728c-0.206,0.199 -0.454,0.301 -0.746,0.302l-1.054,0.004c-0.293,0.001 -0.541,-0.101 -0.745,-0.298c-0.207,-0.2 -0.309,-0.442 -0.311,-0.726l-0.027,-8.561c-0.003,-0.284 0.099,-0.528 0.302,-0.729c0.205,-0.199 0.451,-0.301 0.742,-0.302l9.177,-0.03c0.697,-0.002 1.295,0.239 1.793,0.722c0.497,0.484 0.745,1.066 0.749,1.753l0.022,7.104Zm-13.447,-0.213c0,0.286 -0.101,0.528 -0.305,0.73c-0.204,0.198 -0.454,0.3 -0.746,0.303l-1.053,0.002c-0.293,-0.001 -0.54,-0.101 -0.747,-0.297c-0.205,-0.2 -0.309,-0.443 -0.309,-0.727l-0.029,-8.561c-0.001,-0.285 0.101,-0.527 0.305,-0.729c0.205,-0.198 0.452,-0.299 0.745,-0.302l1.053,-0.003c0.292,0 0.542,0.1 0.748,0.297c0.204,0.2 0.307,0.442 0.308,0.728l0.03,8.559Zm-0.038,-11.303c0,0.289 -0.101,0.532 -0.304,0.733c-0.206,0.201 -0.454,0.303 -0.747,0.302l-1.052,0.005c-0.293,0 -0.542,-0.098 -0.747,-0.298c-0.207,-0.201 -0.309,-0.444 -0.31,-0.731l-0.004,-1.028c0,-0.287 0.101,-0.532 0.306,-0.734c0.204,-0.2 0.452,-0.3 0.744,-0.301l1.053,-0.004c0.292,0 0.542,0.098 0.748,0.297c0.205,0.201 0.309,0.446 0.307,0.732l0.006,1.027Zm-3.836,11.573c0,0.284 -0.101,0.528 -0.305,0.728c-0.204,0.199 -0.453,0.302 -0.746,0.303l-1.052,0.003c-0.292,0.001 -0.542,-0.099 -0.747,-0.297c-0.204,-0.201 -0.31,-0.443 -0.311,-0.725l-0.021,-6.497l-6.439,0.018l0.021,6.498c0,0.285 -0.099,0.528 -0.305,0.728c-0.204,0.199 -0.453,0.302 -0.746,0.302l-1.051,0.004c-0.294,0.001 -0.543,-0.101 -0.748,-0.299c-0.204,-0.199 -0.308,-0.441 -0.31,-0.725l-0.029,-8.562c0,-0.283 0.101,-0.527 0.305,-0.728c0.203,-0.198 0.451,-0.3 0.741,-0.302l9.177,-0.029c0.698,-0.002 1.296,0.239 1.794,0.721c0.496,0.484 0.746,1.068 0.749,1.752l0.023,7.107Zm-13.474,0.01c0,0.286 -0.098,0.528 -0.303,0.731c-0.204,0.197 -0.451,0.3 -0.742,0.3l-9.175,0.03c-0.7,0.003 -1.298,-0.239 -1.795,-0.722c-0.496,-0.485 -0.746,-1.069 -0.749,-1.753l-0.023,-7.106c-0.002,-0.283 0.101,-0.525 0.304,-0.727c0.205,-0.199 0.453,-0.302 0.746,-0.303l1.053,-0.004c0.291,0 0.541,0.1 0.747,0.297c0.205,0.2 0.308,0.442 0.309,0.726l0.021,6.499l6.442,-0.023l-0.023,-6.496c-0.002,-0.286 0.101,-0.526 0.306,-0.728c0.202,-0.198 0.451,-0.299 0.745,-0.302l1.053,-0.002c0.291,0 0.541,0.099 0.748,0.296c0.202,0.199 0.307,0.442 0.308,0.727l0.028,8.56Zm-33.853,2.187c0.003,0.685 -0.243,1.271 -0.737,1.758c-0.493,0.488 -1.089,0.731 -1.787,0.734l-7.253,0.023c-0.291,0.001 -0.54,-0.099 -0.744,-0.296c-0.205,-0.203 -0.307,-0.447 -0.308,-0.732l-0.003,-1.028c-0.001,-0.288 0.1,-0.531 0.302,-0.735c0.204,-0.199 0.45,-0.301 0.742,-0.301l6.628,-0.021l-0.003,-0.684l-7.07,0.024c-0.696,0.001 -1.295,-0.24 -1.791,-0.721c-0.495,-0.484 -0.743,-1.07 -0.746,-1.755l-0.025,-7.104c0.001,-0.285 0.101,-0.528 0.306,-0.728c0.203,-0.2 0.451,-0.303 0.743,-0.302l1.054,-0.004c0.292,-0.001 0.542,0.1 0.747,0.296c0.205,0.201 0.309,0.441 0.31,0.725l0.02,6.497l6.442,-0.02l-0.023,-6.497c0,-0.283 0.1,-0.526 0.307,-0.726c0.201,-0.198 0.451,-0.302 0.744,-0.302l1.052,-0.004c0.295,-0.001 0.542,0.1 0.748,0.299c0.205,0.2 0.308,0.441 0.31,0.726l0.035,10.878Zm-16.648,-4.33l-0.013,-4.431l-6.441,0.022l0.015,4.43l6.439,-0.021Zm3.163,0.599c0.002,0.684 -0.244,1.271 -0.737,1.757c-0.494,0.487 -1.09,0.733 -1.79,0.734l-7.69,0.025c-0.7,0.003 -1.296,-0.24 -1.793,-0.722c-0.497,-0.484 -0.747,-1.068 -0.75,-1.753l-0.019,-5.649c-0.001,-0.686 0.245,-1.271 0.738,-1.758c0.494,-0.487 1.089,-0.732 1.79,-0.734l7.689,-0.023c0.699,-0.003 1.297,0.238 1.795,0.72c0.495,0.484 0.746,1.068 0.747,1.753l0.02,5.65Zm-13.479,-6.028c0,0.286 -0.101,0.531 -0.305,0.731c-0.202,0.203 -0.45,0.302 -0.74,0.303l-4.719,0.016l0.022,6.495c0.001,0.286 -0.1,0.528 -0.305,0.729c-0.203,0.198 -0.453,0.3 -0.746,0.302l-1.051,0.002c-0.294,0.003 -0.543,-0.099 -0.748,-0.295c-0.205,-0.202 -0.309,-0.441 -0.308,-0.726l-0.022,-6.497l-4.724,0.015c-0.291,0 -0.539,-0.097 -0.744,-0.3c-0.205,-0.198 -0.307,-0.441 -0.309,-0.726l-0.003,-1.03c-0.001,-0.288 0.1,-0.529 0.304,-0.733c0.202,-0.2 0.45,-0.303 0.743,-0.303l12.598,-0.041c0.291,0 0.541,0.099 0.744,0.298c0.206,0.204 0.308,0.445 0.309,0.73l0.004,1.03Zm100.825,4.408c-0.203,-0.061 -0.419,-0.092 -0.642,-0.088l-3.612,0.012l-0.009,-2.243l4.256,-0.014l0.007,2.333Zm-26.443,-7.033c-0.102,0.12 -0.19,0.252 -0.263,0.392c-0.677,-0.599 -1.482,-0.894 -2.405,-0.879l-9.162,0.03c-0.53,-0.005 -1.017,0.186 -1.393,0.504c-0.383,-0.336 -0.889,-0.537 -1.439,-0.527l-1.034,0.003c-1.179,-0.014 -2.151,0.94 -2.15,2.123l0.019,5.407l-4.255,0.015l-0.018,-5.409c-0.007,-1.183 -0.983,-2.13 -2.162,-2.109l-1.035,0.004c-0.551,-0.006 -1.057,0.199 -1.439,0.54c-0.386,-0.385 -0.919,-0.622 -1.507,-0.621c-0.01,0 -0.018,0.001 -0.027,0.001l-12.582,0.041c-1.167,-0.012 -2.126,0.922 -2.144,2.091c0,0.015 0,0.028 0,0.043l0,-0.002l0.003,1.032c0.005,1.182 0.977,2.131 2.157,2.114l3.623,-0.012l0.018,5.405c0.005,1.186 0.982,2.135 2.164,2.11l1.03,-0.002c1.182,0.015 2.153,-0.94 2.151,-2.125l-0.018,-5.404l3.618,-0.012c0.288,0.002 0.563,-0.053 0.814,-0.155l0.013,4.184c-0.006,0.997 0.359,1.853 1.082,2.538c0.708,0.704 1.569,1.049 2.568,1.031l9.157,-0.03c0.532,0.006 1.02,-0.184 1.396,-0.504c0.384,0.337 0.89,0.537 1.439,0.528l1.033,-0.004c1.181,0.015 2.152,-0.94 2.15,-2.124l-0.017,-5.407l4.252,-0.012l0.017,5.41c0.009,1.182 0.986,2.126 2.164,2.106l1.035,-0.003c0.616,0.007 1.173,-0.249 1.565,-0.663c0.358,0.257 0.798,0.405 1.272,0.398l1.036,-0.002c0.469,0.005 0.904,-0.142 1.257,-0.395c0.395,0.404 0.949,0.651 1.558,0.641l1.035,-0.004c1.181,0.015 2.15,-0.94 2.149,-2.124l-0.017,-5.406l4.253,-0.013l0.018,5.403c0.005,1.185 0.98,2.135 2.163,2.112l1.031,-0.002c0.763,0.009 1.436,-0.385 1.818,-0.983c0.306,0.29 0.64,0.516 1,0.676c-0.127,0.267 -0.2,0.564 -0.204,0.879c0,0.014 0,0.026 0,0.041l0.003,1.028c0.002,1.172 0.955,2.121 2.128,2.119c0.01,0 0.019,0 0.028,0l7.237,-0.024c0.998,0.011 1.856,-0.34 2.56,-1.047c0.719,-0.69 1.078,-1.55 1.064,-2.548l-0.036,-10.876c-0.009,-1.18 -0.981,-2.125 -2.157,-2.111l-9.159,0.031c-0.999,-0.013 -1.859,0.338 -2.564,1.045c-0.122,0.117 -0.233,0.239 -0.334,0.365c-0.102,-0.126 -0.215,-0.248 -0.338,-0.364c-0.708,-0.701 -1.567,-1.046 -2.564,-1.029l-9.16,0.03c-0.342,-0.004 -0.666,0.074 -0.954,0.214c0.19,-0.319 0.298,-0.693 0.297,-1.093l-0.005,-1.024c-0.001,-1.17 -0.948,-2.118 -2.118,-2.12c-0.016,0 -0.03,0 -0.046,0l-1.032,0.004c-1.184,-0.014 -2.153,0.945 -2.149,2.131l0.003,1.03c0.003,0.524 0.194,1.002 0.509,1.37m-99.127,7.031l-4.619,0.015l-0.008,-2.208l4.62,-0.014l0.007,2.207Zm-38.617,0.233c-0.238,-0.082 -0.493,-0.12 -0.765,-0.115l-7.947,0.024l-0.009,-2.206l7.946,-0.025c0.273,0.004 0.528,-0.036 0.766,-0.119l0.009,2.441Zm-13.416,-6.237c-0.163,-0.234 -0.36,-0.452 -0.59,-0.651c-0.767,-0.701 -1.664,-1.038 -2.703,-1.017l-8.394,0.025c-1.041,-0.016 -1.938,0.329 -2.7,1.038c-0.015,0.013 -0.029,0.026 -0.044,0.04c-0.108,-0.175 -0.245,-0.335 -0.41,-0.48c-0.441,-0.401 -0.956,-0.594 -1.553,-0.584l-13.766,0.042c-0.599,-0.009 -1.115,0.189 -1.556,0.595c-0.462,0.413 -0.698,0.947 -0.692,1.568l0.004,1.051c-0.003,0.621 0.237,1.154 0.702,1.563c0.441,0.403 0.958,0.597 1.555,0.586l4.068,-0.012l0.019,5.573c-0.004,0.624 0.238,1.16 0.709,1.569c0.444,0.397 0.957,0.588 1.552,0.578l1.134,-0.002c0.597,0.006 1.11,-0.189 1.553,-0.59c0.465,-0.413 0.702,-0.948 0.695,-1.571l-0.019,-5.573l4.061,-0.012c0.296,0.003 0.572,-0.044 0.828,-0.141l0.015,4.219c-0.002,1.04 0.402,1.931 1.185,2.613c0.767,0.704 1.666,1.042 2.707,1.02l7.926,-0.024c0.597,0.008 1.113,-0.188 1.553,-0.592c0.463,-0.415 0.699,-0.951 0.692,-1.574l-0.004,-1.045c0.002,-0.35 -0.073,-0.672 -0.222,-0.96c0.309,-0.131 0.601,-0.305 0.876,-0.523c0.004,0.901 0.004,1.129 0.004,1.129c-0.004,1.017 0.39,1.888 1.156,2.555c0.749,0.684 1.625,1.013 2.64,0.992l9.687,-0.028c0.57,0.006 1.062,-0.175 1.487,-0.548c0.428,0.371 0.923,0.549 1.493,0.539l1.095,-0.004c0.586,0.007 1.09,-0.184 1.524,-0.578c0.458,-0.405 0.692,-0.932 0.685,-1.544l-0.02,-5.346l4.62,-0.013l0.018,5.345c-0.003,0.614 0.236,1.14 0.698,1.541c0.435,0.391 0.94,0.579 1.526,0.569l1.091,-0.004c0.575,0.007 1.072,-0.177 1.5,-0.556c0.429,0.378 0.928,0.559 1.503,0.547l1.09,-0.004c0.587,0.01 1.093,-0.183 1.525,-0.58c0.459,-0.404 0.693,-0.931 0.685,-1.543l-0.018,-5.345l4.619,-0.012l0.019,5.345c-0.003,0.612 0.234,1.138 0.695,1.539c0.435,0.393 0.943,0.581 1.529,0.568l1.092,-0.001c0.587,0.007 1.092,-0.186 1.525,-0.582c0.152,-0.135 0.28,-0.283 0.382,-0.444c0.007,0.006 0.015,0.013 0.022,0.019c0.748,0.684 1.623,1.013 2.637,0.992l8.104,-0.024c1.015,0.016 1.888,-0.32 2.631,-1.01c0.762,-0.67 1.151,-1.544 1.139,-2.56l-0.018,-5.599c0.001,-1.016 -0.393,-1.885 -1.157,-2.552c-0.747,-0.686 -1.624,-1.016 -2.639,-0.994l-8.106,0.024c-1.014,-0.016 -1.888,0.32 -2.63,1.011c-0.16,0.14 -0.302,0.29 -0.429,0.447c-0.127,-0.158 -0.272,-0.307 -0.433,-0.447c-0.749,-0.685 -1.625,-1.014 -2.64,-0.991l-9.675,0.028c-0.587,-0.008 -1.093,0.185 -1.526,0.583c-0.15,0.135 -0.275,0.282 -0.376,0.442c-0.006,-0.006 -0.013,-0.012 -0.019,-0.017c-0.747,-0.685 -1.621,-1.015 -2.635,-0.996l-6.366,0.019l-0.006,-1.626c0.001,-0.612 -0.235,-1.137 -0.695,-1.54c-0.435,-0.392 -0.94,-0.582 -1.526,-0.574l-1.099,0.005c-0.585,-0.006 -1.088,0.185 -1.521,0.579c-0.458,0.406 -0.691,0.933 -0.685,1.545l0.007,1.746c-0.239,-0.082 -0.495,-0.12 -0.767,-0.114l-9.685,0.029c-1.016,-0.017 -1.892,0.318 -2.636,1.01c-0.108,0.096 -0.209,0.195 -0.302,0.299m85.998,5.937l-4.254,0.014l-0.007,-2.244l4.254,-0.014l0.007,2.244Zm4.623,3.862c0.101,0.126 0.214,0.248 0.337,0.364c0.323,0.32 0.677,0.565 1.062,0.736c-0.126,0.265 -0.198,0.561 -0.203,0.874c-0.001,0.017 -0.001,0.032 -0.001,0.049l0.004,1.025l0,-0.002c0,1.172 0.952,2.122 2.124,2.121c0.012,0 0.022,0 0.033,0l7.236,-0.023c0.998,0.01 1.855,-0.341 2.558,-1.048c0.721,-0.69 1.08,-1.551 1.064,-2.549l-0.034,-10.873c-0.008,-1.184 -0.984,-2.132 -2.164,-2.112l-1.034,0.004c-1.179,-0.014 -2.15,0.939 -2.15,2.121l0.019,5.407l-4.255,0.013l-0.017,-5.407c-0.007,-1.183 -0.985,-2.129 -2.164,-2.107l-1.034,0.004c-0.76,-0.009 -1.433,0.384 -1.815,0.981c-0.697,-0.66 -1.535,-0.985 -2.504,-0.968l-7.672,0.024c-0.965,-0.012 -1.799,0.316 -2.489,0.976c-0.381,-0.581 -1.039,-0.965 -1.786,-0.963c-0.009,0 -0.018,0.001 -0.027,0.001l-12.581,0.041c-1.168,-0.012 -2.127,0.922 -2.145,2.091c0,0.015 0,0.028 0,0.043l0,-0.002l0.003,1.032c0.006,1.182 0.977,2.131 2.157,2.114l3.623,-0.012l0.019,5.405c0.004,1.186 0.981,2.135 2.163,2.11l1.03,-0.002c1.182,0.015 2.153,-0.94 2.151,-2.125l-0.018,-5.404l3.619,-0.012c0.23,0.001 0.452,-0.034 0.66,-0.1l0.014,4.039c-0.008,0.998 0.357,1.856 1.082,2.541c0.709,0.702 1.568,1.047 2.566,1.029l7.673,-0.025c0.999,0.012 1.857,-0.339 2.561,-1.046c0.122,-0.117 0.233,-0.239 0.335,-0.365\" /><path d=\"M152.812,22.434c-9.801,2.082 -18.513,4.884 -28.746,7.725c-4.299,1.193 -9.816,1.819 -10.412,5.872c-0.295,2.004 1.184,7.997 2.769,9.585c2.988,2.991 8.667,0.298 12.669,-0.774c7.164,-1.922 12.87,-3.333 19.553,-5.145c2.968,-0.803 7.545,-1.544 9.588,-2.964c2.965,-2.061 2.263,-4.716 1.299,-8.352c-0.997,-3.764 -2.482,-6.31 -6.332,-5.941c-0.124,0.012 -0.267,-0.033 -0.388,-0.006m-59.193,12.308c4.216,-1.117 12.085,-1.986 12.948,-6.222c0.318,-1.562 -0.32,-3.784 -0.881,-5.854c-0.919,-3.397 -2.94,-6.488 -7.12,-5.371c-10.391,2.777 -19.894,5.288 -33.633,9.01c-7.651,2.075 -16.898,4.51 -25.225,6.808c-4.383,1.21 -9.01,1.899 -9.251,6.28c-0.105,1.902 1.16,6.753 2.398,8.411c2.331,3.122 6.377,1.756 10.114,0.743c6.933,-1.879 12.64,-3.765 19.75,-5.336c2.151,7.647 4.933,17.924 7.178,26.399c0.757,2.853 1.472,6.926 3.182,8.23c2.679,2.042 6.476,0.402 9.352,-0.437c2.243,-0.655 4.431,-1.559 4.93,-4.012c0.559,-2.739 -1.092,-6.347 -1.804,-8.986c-2.403,-8.901 -4.847,-17.136 -6.995,-25.617c4.955,-1.338 9.658,-2.616 15.057,-4.046m35.606,13.996c-4.515,1.196 -9.497,1.808 -10.406,5.483c-0.439,1.778 0.426,4.165 1.068,6.442c1.646,5.851 5.571,5.159 11.039,3.678c11.266,-3.045 21.704,-5.982 32.463,-8.833c4.32,-1.146 9.349,-1.863 12.909,-3.692c4.057,-2.083 7.448,-6.63 7.01,-12.351c-0.134,-1.754 -0.907,-3.962 -1.462,-6.059c-0.559,-2.11 -1.04,-4.453 -1.658,-6.061c-0.6,-1.567 -1.849,-2.699 -2.08,-3.928c-0.183,-0.98 0.191,-2.284 0.056,-3.505c-0.21,-1.893 -1.261,-4.286 -1.846,-6.455c-0.647,-2.397 -0.992,-4.769 -1.845,-6.454c-2.121,-4.184 -8.01,-7.63 -13.723,-6.447c-8.876,1.837 -16.965,4.324 -27.178,7.166c-4.351,1.211 -9.288,2.546 -13.494,3.682c-4.008,1.081 -10.709,2.01 -11.39,6.051c-0.358,2.141 1.032,7.276 2.196,8.992c2.082,3.063 5.579,2.126 9.328,1.12c13.568,-3.64 27.19,-7.549 40.088,-10.856c1.969,7.359 4.132,14.527 5.883,22.096c-13.274,3.332 -24.24,6.56 -36.958,9.931\" /></g></svg>"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slide/64c6ebe2-dcf3-49e9-a273-a76c71ac725b/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/64c6ebe2-dcf3-49e9-a273-a76c71ac725b/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/64c6ebe2-dcf3-49e9-a273-a76c71ac725b/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/64c6ebe2-dcf3-49e9-a273-a76c71ac725b/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/64c6ebe2-dcf3-49e9-a273-a76c71ac725b/relationships/image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slide",
+      "id": "f8b8e6e4-e9f2-4917-9913-91c0d4a24548",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slide/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slide/f8b8e6e4-e9f2-4917-9913-91c0d4a24548"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 29,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<svg width=\"200px\" height=\"100%\" viewBox=\"0 0 237 100\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" xmlns:serif=\"http://www.serif.com/\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\"><g><path d=\"M33.37,31.771c-6.566,-5.927 -7.063,-8.15 0.386,-16.426c5.548,-6.164 3.95,-11.819 2.922,-15.619c4.07,2.869 6.542,5.619 6.857,9.353c0.11,1.28 0.164,2.823 -0.238,4.302c-0.643,2.348 -2.059,4.603 -3.349,5.923c-3.635,3.722 -5.972,6.941 -6.443,9.142c-0.116,0.535 -0.171,1.14 -0.201,1.681c-0.039,0.736 0.066,1.644 0.066,1.644Z\" style=\"fill-rule:nonzero;\"/><path d=\"M27.297,24.227c-4.215,-5.011 -5.268,-8.173 -1.729,-11.808c2.342,-2.407 1.777,-5.829 -0.201,-8.083c7.302,3.253 9.044,8.53 5.642,12.291c-1.735,1.914 -2.806,3.443 -3.293,4.932c-0.209,0.637 -0.287,1.056 -0.358,1.571c-0.098,0.702 -0.061,1.097 -0.061,1.097Z\" style=\"fill-rule:nonzero;\"/><path d=\"M37.602,38.216c-4.044,-5.711 -5.029,-10.377 3.31,-17.663c2.129,-1.863 3.884,-3.515 4.94,-5.365c2.027,-3.547 2.111,-7.155 1.726,-9.716c3.713,3.354 4.141,6.482 4.027,10.226c-0.038,1.287 -0.427,2.674 -0.996,4.092c-0.906,2.251 -2.712,4.219 -4.001,5.463c-1.698,1.639 -4.295,3.601 -5.563,5.348c-2.93,4.04 -3.443,7.615 -3.443,7.615Z\" style=\"fill-rule:nonzero;\"/><path d=\"M31.086,42.814c-7.127,-10.572 -25.299,-10.815 -25.299,-10.815l-5.362,-9.326c23.962,1.494 28.675,10.27 30.661,20.141Z\" style=\"fill-rule:nonzero;\"/><path d=\"M43.556,42.814c7.127,-10.572 25.299,-10.815 25.299,-10.815l5.361,-9.326c-23.96,1.494 -28.673,10.272 -30.66,20.141Z\" style=\"fill-rule:nonzero;\"/><path d=\"M36.36,99.657c-2.75,-60.934 -5.081,-61.843 -30.096,-66.193c18.064,6.038 19.603,25.401 22.404,66.193l7.692,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M38.322,99.657l7.689,0c2.803,-40.792 4.341,-60.155 22.409,-66.193c-25.018,4.35 -27.346,5.259 -30.098,66.193Z\" style=\"fill-rule:nonzero;\"/><path d=\"M91.377,25.356l0,16.729l-2.939,0l0,-16.729l-5.331,0l0,-2.636l13.6,0l0,2.636l-5.33,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M107.344,25.356l-4.352,0l0,6.067l4.352,0c1.959,0 3.291,-1.115 3.291,-3.018c0,-1.905 -1.332,-3.049 -3.291,-3.049Zm3.401,16.729l-4.081,-8.16l-3.672,0l0,8.16l-2.937,0l0,-19.365l7.507,0c3.671,0 6.01,2.366 6.01,5.656c0,2.776 -1.686,4.543 -3.861,5.14l4.461,8.569l-3.427,0Z\" style=\"fill-rule:nonzero;\"/><rect x=\"117.873\" y=\"22.72\" width=\"2.938\" height=\"19.365\" style=\"fill-rule:nonzero;\"/><path d=\"M137.757,42.085l-8.95,-13.628l0,13.628l-2.935,0l0,-19.365l2.69,0l8.951,13.6l0,-13.6l2.936,0l0,19.365l-2.692,0Z\" style=\"fill-rule:nonzero;\"/><rect x=\"145.512\" y=\"22.72\" width=\"2.936\" height=\"19.365\" style=\"fill-rule:nonzero;\"/><path d=\"M160.064,25.356l0,16.729l-2.939,0l0,-16.729l-5.331,0l0,-2.636l13.599,0l0,2.636l-5.329,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M175.079,34.116l0,7.969l-2.938,0l0,-7.969l-5.794,-11.396l3.212,0l4.052,8.512l4.051,-8.512l3.209,0l-5.792,11.396Z\" style=\"fill-rule:nonzero;\"/><path d=\"M102.551,70.798l-2.557,0l-3.942,-13.571l-3.918,13.571l-2.555,0l-5.06,-19.364l3.099,0l3.375,13.845l3.889,-13.845l2.366,0l3.889,13.845l3.372,-13.845l3.104,0l-5.062,19.364Z\" style=\"fill-rule:nonzero;\"/><path d=\"M110.44,70.798l0,-19.364l12.379,0l0,2.636l-9.44,0l0,5.658l8.052,0l0,2.61l-8.052,0l0,5.823l9.44,0l0,2.637l-12.379,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M131.985,70.961c-2.91,0 -5.005,-0.678 -6.853,-2.555l1.958,-1.933c1.415,1.416 2.964,1.851 4.949,1.851c2.531,0 3.998,-1.089 3.998,-2.964c0,-0.845 -0.244,-1.551 -0.76,-2.014c-0.49,-0.461 -0.979,-0.651 -2.123,-0.816l-2.284,-0.326c-1.578,-0.217 -2.828,-0.761 -3.671,-1.552c-0.952,-0.896 -1.415,-2.12 -1.415,-3.697c0,-3.372 2.448,-5.684 6.475,-5.684c2.556,0 4.351,0.652 6.009,2.202l-1.874,1.85c-1.198,-1.143 -2.584,-1.498 -4.217,-1.498c-2.285,0 -3.537,1.305 -3.537,3.021c0,0.706 0.217,1.333 0.734,1.795c0.491,0.435 1.279,0.763 2.176,0.898l2.204,0.325c1.795,0.272 2.8,0.708 3.616,1.444c1.063,0.922 1.58,2.309 1.58,3.971c0,3.562 -2.913,5.682 -6.965,5.682Z\" style=\"fill-rule:nonzero;\"/><path d=\"M149.452,54.07l0,16.728l-2.939,0l0,-16.728l-5.33,0l0,-2.636l13.6,0l0,2.636l-5.331,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M158.128,70.798l0,-19.364l12.375,0l0,2.636l-9.435,0l0,5.658l8.049,0l0,2.61l-8.049,0l0,5.823l9.435,0l0,2.637l-12.375,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M181.82,54.07l-4.35,0l0,6.066l4.35,0c1.96,0 3.294,-1.113 3.294,-3.018c0,-1.904 -1.334,-3.048 -3.294,-3.048Zm3.402,16.728l-4.08,-8.158l-3.672,0l0,8.158l-2.934,0l0,-19.364l7.505,0c3.671,0 6.008,2.365 6.008,5.656c0,2.774 -1.685,4.543 -3.864,5.14l4.465,8.568l-3.428,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M204.236,70.798l-8.949,-13.626l0,13.626l-2.936,0l0,-19.364l2.691,0l8.948,13.601l0,-13.601l2.939,0l0,19.364l-2.693,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M95.315,99.677c-3.946,0 -6.938,-2.693 -6.938,-6.692l0,-12.836l2.937,0l0,12.699c0,2.584 1.579,4.19 4.001,4.19c2.417,0 4.024,-1.606 4.024,-4.19l0,-12.699l2.938,0l0,12.836c0,3.999 -3.022,6.692 -6.962,6.692Z\" style=\"fill-rule:nonzero;\"/><path d=\"M118.925,99.514l-8.949,-13.628l0,13.628l-2.937,0l0,-19.365l2.691,0l8.95,13.598l0,-13.598l2.938,0l0,19.365l-2.693,0Z\" style=\"fill-rule:nonzero;\"/><rect x=\"126.679\" y=\"80.149\" width=\"2.937\" height=\"19.365\" style=\"fill-rule:nonzero;\"/><path d=\"M140.933,99.514l-2.286,0l-6.366,-19.365l3.048,0l4.461,14.087l4.462,-14.087l3.1,0l-6.419,19.365Z\" style=\"fill-rule:nonzero;\"/><path d=\"M150.016,99.514l0,-19.365l12.375,0l0,2.637l-9.434,0l0,5.657l8.05,0l0,2.61l-8.05,0l0,5.821l9.434,0l0,2.64l-12.375,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M173.711,82.786l-4.352,0l0,6.064l4.352,0c1.957,0 3.291,-1.115 3.291,-3.018c0,-1.903 -1.334,-3.046 -3.291,-3.046Zm3.4,16.728l-4.081,-8.161l-3.671,0l0,8.161l-2.937,0l0,-19.365l7.505,0c3.674,0 6.013,2.365 6.013,5.654c0,2.776 -1.686,4.544 -3.864,5.142l4.461,8.569l-3.426,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M189.38,99.677c-2.91,0 -5.005,-0.68 -6.853,-2.556l1.957,-1.934c1.414,1.415 2.964,1.851 4.951,1.851c2.532,0 3.998,-1.09 3.998,-2.965c0,-0.844 -0.246,-1.551 -0.763,-2.014c-0.488,-0.459 -0.978,-0.652 -2.121,-0.814l-2.285,-0.328c-1.575,-0.215 -2.827,-0.76 -3.669,-1.55c-0.954,-0.897 -1.416,-2.12 -1.416,-3.699c0,-3.373 2.447,-5.684 6.473,-5.684c2.558,0 4.349,0.652 6.012,2.204l-1.879,1.847c-1.195,-1.141 -2.58,-1.495 -4.213,-1.495c-2.285,0 -3.538,1.305 -3.538,3.019c0,0.709 0.218,1.334 0.736,1.795c0.487,0.437 1.278,0.765 2.175,0.898l2.202,0.327c1.796,0.271 2.804,0.706 3.618,1.441c1.061,0.925 1.579,2.311 1.579,3.973c0,3.562 -2.911,5.684 -6.964,5.684Z\" style=\"fill-rule:nonzero;\"/><rect x=\"200.29\" y=\"80.149\" width=\"2.936\" height=\"19.365\" style=\"fill-rule:nonzero;\"/><path d=\"M214.842,82.786l0,16.728l-2.937,0l0,-16.728l-5.33,0l0,-2.637l13.598,0l0,2.637l-5.331,0Z\" style=\"fill-rule:nonzero;\"/><path d=\"M229.858,91.543l0,7.971l-2.937,0l0,-7.971l-5.794,-11.394l3.208,0l4.054,8.512l4.052,-8.512l3.212,0l-5.795,11.394Z\" style=\"fill-rule:nonzero;\"/></g></svg>",
+          "format": "pure_html",
+          "processed": "<svg width=\"200px\" height=\"100%\" viewBox=\"0 0 237 100\" version=\"1.1\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g><path d=\"M33.37,31.771c-6.566,-5.927 -7.063,-8.15 0.386,-16.426c5.548,-6.164 3.95,-11.819 2.922,-15.619c4.07,2.869 6.542,5.619 6.857,9.353c0.11,1.28 0.164,2.823 -0.238,4.302c-0.643,2.348 -2.059,4.603 -3.349,5.923c-3.635,3.722 -5.972,6.941 -6.443,9.142c-0.116,0.535 -0.171,1.14 -0.201,1.681c-0.039,0.736 0.066,1.644 0.066,1.644Z\" style=\"fill-rule:nonzero;\" /><path d=\"M27.297,24.227c-4.215,-5.011 -5.268,-8.173 -1.729,-11.808c2.342,-2.407 1.777,-5.829 -0.201,-8.083c7.302,3.253 9.044,8.53 5.642,12.291c-1.735,1.914 -2.806,3.443 -3.293,4.932c-0.209,0.637 -0.287,1.056 -0.358,1.571c-0.098,0.702 -0.061,1.097 -0.061,1.097Z\" style=\"fill-rule:nonzero;\" /><path d=\"M37.602,38.216c-4.044,-5.711 -5.029,-10.377 3.31,-17.663c2.129,-1.863 3.884,-3.515 4.94,-5.365c2.027,-3.547 2.111,-7.155 1.726,-9.716c3.713,3.354 4.141,6.482 4.027,10.226c-0.038,1.287 -0.427,2.674 -0.996,4.092c-0.906,2.251 -2.712,4.219 -4.001,5.463c-1.698,1.639 -4.295,3.601 -5.563,5.348c-2.93,4.04 -3.443,7.615 -3.443,7.615Z\" style=\"fill-rule:nonzero;\" /><path d=\"M31.086,42.814c-7.127,-10.572 -25.299,-10.815 -25.299,-10.815l-5.362,-9.326c23.962,1.494 28.675,10.27 30.661,20.141Z\" style=\"fill-rule:nonzero;\" /><path d=\"M43.556,42.814c7.127,-10.572 25.299,-10.815 25.299,-10.815l5.361,-9.326c-23.96,1.494 -28.673,10.272 -30.66,20.141Z\" style=\"fill-rule:nonzero;\" /><path d=\"M36.36,99.657c-2.75,-60.934 -5.081,-61.843 -30.096,-66.193c18.064,6.038 19.603,25.401 22.404,66.193l7.692,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M38.322,99.657l7.689,0c2.803,-40.792 4.341,-60.155 22.409,-66.193c-25.018,4.35 -27.346,5.259 -30.098,66.193Z\" style=\"fill-rule:nonzero;\" /><path d=\"M91.377,25.356l0,16.729l-2.939,0l0,-16.729l-5.331,0l0,-2.636l13.6,0l0,2.636l-5.33,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M107.344,25.356l-4.352,0l0,6.067l4.352,0c1.959,0 3.291,-1.115 3.291,-3.018c0,-1.905 -1.332,-3.049 -3.291,-3.049Zm3.401,16.729l-4.081,-8.16l-3.672,0l0,8.16l-2.937,0l0,-19.365l7.507,0c3.671,0 6.01,2.366 6.01,5.656c0,2.776 -1.686,4.543 -3.861,5.14l4.461,8.569l-3.427,0Z\" style=\"fill-rule:nonzero;\" /><rect x=\"117.873\" y=\"22.72\" width=\"2.938\" height=\"19.365\" style=\"fill-rule:nonzero;\" /><path d=\"M137.757,42.085l-8.95,-13.628l0,13.628l-2.935,0l0,-19.365l2.69,0l8.951,13.6l0,-13.6l2.936,0l0,19.365l-2.692,0Z\" style=\"fill-rule:nonzero;\" /><rect x=\"145.512\" y=\"22.72\" width=\"2.936\" height=\"19.365\" style=\"fill-rule:nonzero;\" /><path d=\"M160.064,25.356l0,16.729l-2.939,0l0,-16.729l-5.331,0l0,-2.636l13.599,0l0,2.636l-5.329,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M175.079,34.116l0,7.969l-2.938,0l0,-7.969l-5.794,-11.396l3.212,0l4.052,8.512l4.051,-8.512l3.209,0l-5.792,11.396Z\" style=\"fill-rule:nonzero;\" /><path d=\"M102.551,70.798l-2.557,0l-3.942,-13.571l-3.918,13.571l-2.555,0l-5.06,-19.364l3.099,0l3.375,13.845l3.889,-13.845l2.366,0l3.889,13.845l3.372,-13.845l3.104,0l-5.062,19.364Z\" style=\"fill-rule:nonzero;\" /><path d=\"M110.44,70.798l0,-19.364l12.379,0l0,2.636l-9.44,0l0,5.658l8.052,0l0,2.61l-8.052,0l0,5.823l9.44,0l0,2.637l-12.379,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M131.985,70.961c-2.91,0 -5.005,-0.678 -6.853,-2.555l1.958,-1.933c1.415,1.416 2.964,1.851 4.949,1.851c2.531,0 3.998,-1.089 3.998,-2.964c0,-0.845 -0.244,-1.551 -0.76,-2.014c-0.49,-0.461 -0.979,-0.651 -2.123,-0.816l-2.284,-0.326c-1.578,-0.217 -2.828,-0.761 -3.671,-1.552c-0.952,-0.896 -1.415,-2.12 -1.415,-3.697c0,-3.372 2.448,-5.684 6.475,-5.684c2.556,0 4.351,0.652 6.009,2.202l-1.874,1.85c-1.198,-1.143 -2.584,-1.498 -4.217,-1.498c-2.285,0 -3.537,1.305 -3.537,3.021c0,0.706 0.217,1.333 0.734,1.795c0.491,0.435 1.279,0.763 2.176,0.898l2.204,0.325c1.795,0.272 2.8,0.708 3.616,1.444c1.063,0.922 1.58,2.309 1.58,3.971c0,3.562 -2.913,5.682 -6.965,5.682Z\" style=\"fill-rule:nonzero;\" /><path d=\"M149.452,54.07l0,16.728l-2.939,0l0,-16.728l-5.33,0l0,-2.636l13.6,0l0,2.636l-5.331,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M158.128,70.798l0,-19.364l12.375,0l0,2.636l-9.435,0l0,5.658l8.049,0l0,2.61l-8.049,0l0,5.823l9.435,0l0,2.637l-12.375,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M181.82,54.07l-4.35,0l0,6.066l4.35,0c1.96,0 3.294,-1.113 3.294,-3.018c0,-1.904 -1.334,-3.048 -3.294,-3.048Zm3.402,16.728l-4.08,-8.158l-3.672,0l0,8.158l-2.934,0l0,-19.364l7.505,0c3.671,0 6.008,2.365 6.008,5.656c0,2.774 -1.685,4.543 -3.864,5.14l4.465,8.568l-3.428,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M204.236,70.798l-8.949,-13.626l0,13.626l-2.936,0l0,-19.364l2.691,0l8.948,13.601l0,-13.601l2.939,0l0,19.364l-2.693,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M95.315,99.677c-3.946,0 -6.938,-2.693 -6.938,-6.692l0,-12.836l2.937,0l0,12.699c0,2.584 1.579,4.19 4.001,4.19c2.417,0 4.024,-1.606 4.024,-4.19l0,-12.699l2.938,0l0,12.836c0,3.999 -3.022,6.692 -6.962,6.692Z\" style=\"fill-rule:nonzero;\" /><path d=\"M118.925,99.514l-8.949,-13.628l0,13.628l-2.937,0l0,-19.365l2.691,0l8.95,13.598l0,-13.598l2.938,0l0,19.365l-2.693,0Z\" style=\"fill-rule:nonzero;\" /><rect x=\"126.679\" y=\"80.149\" width=\"2.937\" height=\"19.365\" style=\"fill-rule:nonzero;\" /><path d=\"M140.933,99.514l-2.286,0l-6.366,-19.365l3.048,0l4.461,14.087l4.462,-14.087l3.1,0l-6.419,19.365Z\" style=\"fill-rule:nonzero;\" /><path d=\"M150.016,99.514l0,-19.365l12.375,0l0,2.637l-9.434,0l0,5.657l8.05,0l0,2.61l-8.05,0l0,5.821l9.434,0l0,2.64l-12.375,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M173.711,82.786l-4.352,0l0,6.064l4.352,0c1.957,0 3.291,-1.115 3.291,-3.018c0,-1.903 -1.334,-3.046 -3.291,-3.046Zm3.4,16.728l-4.081,-8.161l-3.671,0l0,8.161l-2.937,0l0,-19.365l7.505,0c3.674,0 6.013,2.365 6.013,5.654c0,2.776 -1.686,4.544 -3.864,5.142l4.461,8.569l-3.426,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M189.38,99.677c-2.91,0 -5.005,-0.68 -6.853,-2.556l1.957,-1.934c1.414,1.415 2.964,1.851 4.951,1.851c2.532,0 3.998,-1.09 3.998,-2.965c0,-0.844 -0.246,-1.551 -0.763,-2.014c-0.488,-0.459 -0.978,-0.652 -2.121,-0.814l-2.285,-0.328c-1.575,-0.215 -2.827,-0.76 -3.669,-1.55c-0.954,-0.897 -1.416,-2.12 -1.416,-3.699c0,-3.373 2.447,-5.684 6.473,-5.684c2.558,0 4.349,0.652 6.012,2.204l-1.879,1.847c-1.195,-1.141 -2.58,-1.495 -4.213,-1.495c-2.285,0 -3.538,1.305 -3.538,3.019c0,0.709 0.218,1.334 0.736,1.795c0.487,0.437 1.278,0.765 2.175,0.898l2.202,0.327c1.796,0.271 2.804,0.706 3.618,1.441c1.061,0.925 1.579,2.311 1.579,3.973c0,3.562 -2.911,5.684 -6.964,5.684Z\" style=\"fill-rule:nonzero;\" /><rect x=\"200.29\" y=\"80.149\" width=\"2.936\" height=\"19.365\" style=\"fill-rule:nonzero;\" /><path d=\"M214.842,82.786l0,16.728l-2.937,0l0,-16.728l-5.33,0l0,-2.637l13.598,0l0,2.637l-5.331,0Z\" style=\"fill-rule:nonzero;\" /><path d=\"M229.858,91.543l0,7.971l-2.937,0l0,-7.971l-5.794,-11.394l3.208,0l4.054,8.512l4.052,-8.512l3.212,0l-5.795,11.394Z\" style=\"fill-rule:nonzero;\" /></g></svg>"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slide/f8b8e6e4-e9f2-4917-9913-91c0d4a24548/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/f8b8e6e4-e9f2-4917-9913-91c0d4a24548/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/f8b8e6e4-e9f2-4917-9913-91c0d4a24548/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/f8b8e6e4-e9f2-4917-9913-91c0d4a24548/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/f8b8e6e4-e9f2-4917-9913-91c0d4a24548/relationships/image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "slide",
+      "id": "9867b7bf-f73d-4228-a962-429ffecec200",
+      "links": {
+        "describedby": {
+          "href": "https://cms.example.com/api/slide/resource/schema"
+        },
+        "self": {
+          "href": "https://cms.example.com/api/slide/9867b7bf-f73d-4228-a962-429ffecec200"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 65,
+        "created": null,
+        "changed": null,
+        "body": {
+          "value": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg width=\"100%\" height=\"100%\" viewBox=\"0 0 147 80\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" xmlns:serif=\"http://www.serif.com/\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\"><g><path d=\"M74.253,29.61l3.128,22.698l10.283,-17.183l-4.363,18.901l11.087,-10.605l-5.773,13.999l9.224,-6.882c-4.292,11.684 -8.035,18.235 -23.586,23.561c-15.552,-5.326 -19.294,-11.877 -23.586,-23.561l9.223,6.882l-5.772,-13.999l11.086,10.605l-4.362,-18.901l10.282,17.183l3.129,-22.698Z\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M57.962,22.005c-4.711,0 -7.526,-2.522 -7.526,-6.758l0,-10.144l3.907,0l0,9.983c0,2.463 1.294,3.816 3.65,3.816c2.415,0 3.694,-1.296 3.694,-3.745l0,-10.054l3.933,0l0,10.076c0,4.213 -2.933,6.826 -7.658,6.826\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M74.399,21.724l-5.456,0l0,-16.618l5.538,0c4.046,0 6.277,1.571 6.277,4.413c0,1.495 -0.782,2.648 -2.271,3.352c1.999,0.705 3.012,2.025 3.012,3.93c0,3.177 -2.519,4.923 -7.1,4.923m-1.682,-2.774l1.682,0c1.52,0 3.327,-0.388 3.327,-2.242c0,-1.909 -1.838,-2.316 -3.384,-2.316l-1.625,0l0,4.558Zm0,-7.169l1.419,0c1.902,0 2.953,-0.713 2.953,-2.007c0,-1.271 -0.915,-1.891 -2.798,-1.891l-1.574,0l0,3.898Z\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M92.441,22.005c-5.379,0 -8.853,-3.357 -8.853,-8.57c0,-5.147 3.601,-8.609 8.958,-8.609c1.987,0 3.66,0.391 5.113,1.198l0.127,0.07l-0.583,3.386l-0.258,-0.172c-1.427,-0.957 -2.783,-1.399 -4.266,-1.399c-3.197,0 -5.105,2.058 -5.105,5.507c0,3.386 1.976,5.486 5.158,5.486c1.509,0 2.993,-0.453 4.539,-1.381l0.252,-0.153l0.552,3.157l-0.122,0.07c-1.588,0.909 -3.545,1.41 -5.512,1.41\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M74.253,77.618c-18.36,-5.201 -27.122,-17.324 -27.122,-34.602l0,-40.904l54.244,0l0,40.904c0,17.278 -8.763,29.401 -27.122,34.602m-29.345,-77.728l0,43.404c0,18.24 9.923,31.448 29.345,36.628c19.418,-5.18 29.344,-18.388 29.344,-36.628l0,-43.404l-58.689,0Z\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M74.254,27.611c4.091,0 4.646,1.662 7.941,1.639c3.284,0.023 3.845,-1.639 7.938,-1.639c4.091,0 4.655,1.662 7.942,1.639l0,-3.811c-3.287,0.023 -3.851,-1.616 -7.942,-1.616c-4.093,0 -4.654,1.639 -7.938,1.616c-3.295,0.023 -3.85,-1.616 -7.941,-1.616c-4.091,0 -4.646,1.639 -7.942,1.616c-3.284,0.023 -3.847,-1.616 -7.938,-1.616c-4.091,0 -4.657,1.639 -7.941,1.616l0,3.811c3.284,0.023 3.85,-1.639 7.941,-1.639c4.091,0 4.654,1.662 7.938,1.639c3.296,0.023 3.851,-1.639 7.942,-1.639\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M76.846,34.497c1.973,0.473 2.913,1.373 5.348,1.359c3.284,0.02 3.848,-1.639 7.939,-1.639c4.091,0 4.654,1.659 7.941,1.639l0,-3.811c-3.287,0.023 -3.85,-1.616 -7.941,-1.616c-4.091,0 -4.655,1.639 -7.939,1.616c-2.647,0.017 -3.525,-1.036 -5.886,-1.452l0.538,3.904Z\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M66.313,35.856c2.435,0.014 3.374,-0.886 5.345,-1.359l0.538,-3.901c-2.359,0.416 -3.239,1.466 -5.883,1.449c-3.284,0.023 -3.848,-1.616 -7.939,-1.616c-4.091,0 -4.657,1.639 -7.941,1.616l0,3.811c3.284,0.02 3.85,-1.639 7.941,-1.639c4.091,0 4.655,1.659 7.939,1.639\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M77.795,41.381c1.115,0.382 1.973,0.852 3.301,1.019l2.288,-3.822c-0.36,0.048 -0.748,0.076 -1.19,0.073c-2.264,0.014 -3.233,-0.753 -4.945,-1.237l0.546,3.967Z\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M88.27,40.958c0.535,-0.085 1.144,-0.135 1.863,-0.135c4.091,0 4.655,1.659 7.941,1.639l0,-3.811c-3.286,0.023 -3.85,-1.617 -7.941,-1.617c-0.345,0 -0.665,0.012 -0.965,0.034l-0.898,3.89Z\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M60.235,40.958l-0.898,-3.89c-0.3,-0.023 -0.617,-0.034 -0.962,-0.034c-4.094,0 -4.657,1.639 -7.941,1.616l0,3.811c3.284,0.02 3.847,-1.639 7.941,-1.639c0.716,0 1.325,0.051 1.86,0.136\" style=\"fill:#fff;fill-rule:nonzero;\"/><path d=\"M67.41,42.4c1.325,-0.167 2.183,-0.634 3.301,-1.019l0.547,-3.967c-1.713,0.484 -2.681,1.251 -4.946,1.237c-0.439,0.003 -0.83,-0.025 -1.189,-0.073l2.287,3.822Z\" style=\"fill:#fff;fill-rule:nonzero;\"/></g></svg>",
+          "format": "pure_html",
+          "processed": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><svg width=\"100%\" height=\"100%\" viewBox=\"0 0 147 80\" version=\"1.1\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\" xmlns:serif=\"http://www.serif.com/\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g><path d=\"M74.253,29.61l3.128,22.698l10.283,-17.183l-4.363,18.901l11.087,-10.605l-5.773,13.999l9.224,-6.882c-4.292,11.684 -8.035,18.235 -23.586,23.561c-15.552,-5.326 -19.294,-11.877 -23.586,-23.561l9.223,6.882l-5.772,-13.999l11.086,10.605l-4.362,-18.901l10.282,17.183l3.129,-22.698Z\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M57.962,22.005c-4.711,0 -7.526,-2.522 -7.526,-6.758l0,-10.144l3.907,0l0,9.983c0,2.463 1.294,3.816 3.65,3.816c2.415,0 3.694,-1.296 3.694,-3.745l0,-10.054l3.933,0l0,10.076c0,4.213 -2.933,6.826 -7.658,6.826\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M74.399,21.724l-5.456,0l0,-16.618l5.538,0c4.046,0 6.277,1.571 6.277,4.413c0,1.495 -0.782,2.648 -2.271,3.352c1.999,0.705 3.012,2.025 3.012,3.93c0,3.177 -2.519,4.923 -7.1,4.923m-1.682,-2.774l1.682,0c1.52,0 3.327,-0.388 3.327,-2.242c0,-1.909 -1.838,-2.316 -3.384,-2.316l-1.625,0l0,4.558Zm0,-7.169l1.419,0c1.902,0 2.953,-0.713 2.953,-2.007c0,-1.271 -0.915,-1.891 -2.798,-1.891l-1.574,0l0,3.898Z\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M92.441,22.005c-5.379,0 -8.853,-3.357 -8.853,-8.57c0,-5.147 3.601,-8.609 8.958,-8.609c1.987,0 3.66,0.391 5.113,1.198l0.127,0.07l-0.583,3.386l-0.258,-0.172c-1.427,-0.957 -2.783,-1.399 -4.266,-1.399c-3.197,0 -5.105,2.058 -5.105,5.507c0,3.386 1.976,5.486 5.158,5.486c1.509,0 2.993,-0.453 4.539,-1.381l0.252,-0.153l0.552,3.157l-0.122,0.07c-1.588,0.909 -3.545,1.41 -5.512,1.41\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M74.253,77.618c-18.36,-5.201 -27.122,-17.324 -27.122,-34.602l0,-40.904l54.244,0l0,40.904c0,17.278 -8.763,29.401 -27.122,34.602m-29.345,-77.728l0,43.404c0,18.24 9.923,31.448 29.345,36.628c19.418,-5.18 29.344,-18.388 29.344,-36.628l0,-43.404l-58.689,0Z\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M74.254,27.611c4.091,0 4.646,1.662 7.941,1.639c3.284,0.023 3.845,-1.639 7.938,-1.639c4.091,0 4.655,1.662 7.942,1.639l0,-3.811c-3.287,0.023 -3.851,-1.616 -7.942,-1.616c-4.093,0 -4.654,1.639 -7.938,1.616c-3.295,0.023 -3.85,-1.616 -7.941,-1.616c-4.091,0 -4.646,1.639 -7.942,1.616c-3.284,0.023 -3.847,-1.616 -7.938,-1.616c-4.091,0 -4.657,1.639 -7.941,1.616l0,3.811c3.284,0.023 3.85,-1.639 7.941,-1.639c4.091,0 4.654,1.662 7.938,1.639c3.296,0.023 3.851,-1.639 7.942,-1.639\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M76.846,34.497c1.973,0.473 2.913,1.373 5.348,1.359c3.284,0.02 3.848,-1.639 7.939,-1.639c4.091,0 4.654,1.659 7.941,1.639l0,-3.811c-3.287,0.023 -3.85,-1.616 -7.941,-1.616c-4.091,0 -4.655,1.639 -7.939,1.616c-2.647,0.017 -3.525,-1.036 -5.886,-1.452l0.538,3.904Z\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M66.313,35.856c2.435,0.014 3.374,-0.886 5.345,-1.359l0.538,-3.901c-2.359,0.416 -3.239,1.466 -5.883,1.449c-3.284,0.023 -3.848,-1.616 -7.939,-1.616c-4.091,0 -4.657,1.639 -7.941,1.616l0,3.811c3.284,0.02 3.85,-1.639 7.941,-1.639c4.091,0 4.655,1.659 7.939,1.639\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M77.795,41.381c1.115,0.382 1.973,0.852 3.301,1.019l2.288,-3.822c-0.36,0.048 -0.748,0.076 -1.19,0.073c-2.264,0.014 -3.233,-0.753 -4.945,-1.237l0.546,3.967Z\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M88.27,40.958c0.535,-0.085 1.144,-0.135 1.863,-0.135c4.091,0 4.655,1.659 7.941,1.639l0,-3.811c-3.286,0.023 -3.85,-1.617 -7.941,-1.617c-0.345,0 -0.665,0.012 -0.965,0.034l-0.898,3.89Z\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M60.235,40.958l-0.898,-3.89c-0.3,-0.023 -0.617,-0.034 -0.962,-0.034c-4.094,0 -4.657,1.639 -7.941,1.616l0,3.811c3.284,0.02 3.847,-1.639 7.941,-1.639c0.716,0 1.325,0.051 1.86,0.136\" style=\"fill:#fff;fill-rule:nonzero;\" /><path d=\"M67.41,42.4c1.325,-0.167 2.183,-0.634 3.301,-1.019l0.547,-3.967c-1.713,0.484 -2.681,1.251 -4.946,1.237c-0.439,0.003 -0.83,-0.025 -1.189,-0.073l2.287,3.822Z\" style=\"fill:#fff;fill-rule:nonzero;\" /></g></svg>"
+        }
+      },
+      "relationships": {
+        "element_type": {
+          "data": null,
+          "links": {
+            "self": {
+              "href": "https://cms.example.com/api/slide/9867b7bf-f73d-4228-a962-429ffecec200/relationships/element_type"
+            }
+          }
+        },
+        "uid": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/9867b7bf-f73d-4228-a962-429ffecec200/uid"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/9867b7bf-f73d-4228-a962-429ffecec200/relationships/uid"
+            }
+          }
+        },
+        "image": {
+          "data": null,
+          "links": {
+            "related": {
+              "href": "https://cms.example.com/api/slide/9867b7bf-f73d-4228-a962-429ffecec200/image"
+            },
+            "self": {
+              "href": "https://cms.example.com/api/slide/9867b7bf-f73d-4228-a962-429ffecec200/relationships/image"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "count": 1
+  },
+  "links": {
+    "describedby": {
+      "href": "https://cms.example.com/api/page/collection/schema"
+    },
+    "self": {
+      "href": "https://cms.example.com/api/page?filter%5Bslug%5D=%2Fhome&include=section%2Csection.backgroundImage%2Csection.column%2Csection.column.element%2Csection.column.element.image%2Csection.column.element.slide%2Csection.column.element.slide.image"
+    }
+  }
+}
